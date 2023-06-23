@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="http://scrollmagic.io/assets/js/lib/highlight.pack.js"></script>
+    <script src="http://scrollmagic.io/assets/js/lib/modernizr.custom.min.js"></script>
+    <script src="http://scrollmagic.io/assets/js/examples.js"></script>
+    <script src="http://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script>
+    <script src="https://julian.com/research/velocity/vmd.min.js"></script>
+    <script src="http://scrollmagic.io/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.velocity.js"></script>
+    <script src="http://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script src="http://scrollmagic.io/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+    <!-- <script src="./velocity.min.js"></script>
+    <script src="./velocity-animate.js"></script>  -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header class="crypto__header"><a class="logo" href="/"><img class="crypto__user"
+                src="https://cdn.pixabay.com/photo/2018/04/18/18/56/user-3331256_960_720.png" alt="">
+            <h3>test</h3>
+        </a>
+        <div class="crypto__navbar"><a href="/">Home</a><a href="/wallet">Wallet</a><a href="/services">Services</a><a
+                href="/transactions">Transactions</a><a href="/contact">Contact</a>
+        </div>
+    </header>
+
+    <section>
+
+        <!-- <div class="banner-with-content">
+            <h1>Image Animation on Scroll</h1>
+        </div> -->
+
+        <div class="flex-container" id="animation-container">
+            <!-- <div class="top-white-panel"></div>
+            <div class="bottom-white-panel"></div> -->
+            <div class="left-div">
+                <div class="content-wrapper" id="reveal1">
+                    <h1>The Lord of the Rings</h1>
+                    <p>A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful
+                        One Ring and save Middle-earth from the Dark Lord Sauron.
+                    </p>
+                    <a href="javascript:void(0)">Click Here</a>
+                </div>
+                <div class="content-wrapper" id="reveal2">
+                    <h1>The Hobbit</h1>
+                    <p>A reluctant Hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of
+                        dwarves to reclaim their mountain home, and the gold within it from the dragon Smaug.
+                    </p>
+                    <a href="javascript:void(0)">Click Here</a>
+                </div>
+                <div class="content-wrapper" id="reveal3">
+                    <h1>Game of Thrones</h1>
+                    <p>Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns
+                        after being dormant for millennia.
+                    </p>
+                    <a href="javascript:void(0)">Click Here</a>
+                </div>
+                <div class="content-wrapper" id="reveal4">
+                    <h1>Stranger Things</h1>
+                    <p>When a young boy disappears, his mother, a police chief and his friends must confront terrifying
+                        supernatural forces in order to get him back.
+                    </p>
+                    <a href="javascript:void(0)">Click Here</a>
+                </div>
+                <div class="content-wrapper" id="reveal5">
+                    <h1>The Witcher</h1>
+                    <p>Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people
+                        often prove more wicked than beasts.
+                    </p>
+                    <a href="javascript:void(0)">Click Here</a>
+                </div>
+                <div class="content-wrapper" id="reveal6">
+                    <h1>Game of Thrones</h1>
+                    <p>Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns
+                        after being dormant for millennia.
+                    </p>
+                    <a href="javascript:void(0)">Click Here</a>
+                </div>
+                <div class="content-wrapper" id="reveal7">
+                    <h1>Stranger Things</h1>
+                    <p>When a young boy disappears, his mother, a police chief and his friends must confront terrifying
+                        supernatural forces in order to get him back.
+                    </p>
+                    <a href="javascript:void(0)">Click Here</a>
+                </div>
+                <div class="content-wrapper" id="reveal8">
+                    <h1>The Witcher</h1>
+                    <p>Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people
+                        often prove more wicked than beasts.
+                    </p>
+                    <a href="javascript:void(0)">Click Here</a>
+                </div>
+            </div>
+            <div id="imagesequence" class="right-div">
+                <img id="myimg" src="/images/0000.png"><br>
+            </div>
+        </div>
+
+        <!-- <div class="footer-with-content">
+            <h1>Image Animation on Scroll footer</h1>
+        </div> -->
+
+    </section>
+
+    <div class="crypto__footer section__padding">
+        <div class="crypto__footer-links">
+            <div class="crypto__footer-links_logo">
+                <h1 class="gradient__text">test Coder</h1>
+                <p>All Rights Reserved</p>
+            </div>
+            <div class="crypto__footer-links_div">
+                <h4>Social Links</h4><a to="https://github.com/test-coder" target="_blank" rel="noreferrer noopener"> <svg
+                        stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="i"
+                        height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        
+                    </svg> Github</a><a to="https://www.instagram.com/test_coder/" target="_blank"
+                    rel="noreferrer noopener"> <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                        viewBox="0 0 1024 1024" class="i" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        
+                    </svg> Instagram</a><a to="https://www.linkedin.com/in/bhavesh-sakpal-711770189/" target="_blank"
+                    rel="noreferrer noopener"> <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                        viewBox="0 0 1024 1024" class="i" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                       
+                    </svg>Linked In</a><a to="https://www.codechef.com/users/bhavessh" target="_blank"
+                    rel="noreferrer noopener"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img"
+                        viewBox="0 0 24 24" class="i" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <title></title>
+                       
+                    </svg>CodeChef</a>
+            </div>
+            <div class="crypto__footer-links_div">
+                <h4>Get in touch</h4><a to="#">test-coder</a><a to="#">8108054243</a><a
+                    to="mailto:testcoder01@gmail.com">testcoder01@gmail.com </a>
+            </div>
+        </div>
+        <div class="crypto__footer-copyright">
+            <p>2021 test-coder. All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script>
+        var controller = new ScrollMagic.Controller();
+
+        var sections = document.querySelectorAll('.content-wrapper');
+        sections.forEach(function (section, i) {
+            new ScrollMagic.Scene({
+                triggerElement: section,
+                duration: 300
+            }).setClassToggle(`#reveal${i + 1}`, "visible").addTo(controller);
+
+        });
+    </script>
+</body>
+
+</html>
