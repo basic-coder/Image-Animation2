@@ -150,12 +150,15 @@
 
     <script>
         var controller = new ScrollMagic.Controller();
+        var duration = window.innerWidth < 768 ? 250 : 300; // Set different duration for mobile devices
+        var offset = window.innerWidth < 768 ? -100 : -50;
 
         var sections = document.querySelectorAll('.content-wrapper');
         sections.forEach(function (section, i) {
             new ScrollMagic.Scene({
                 triggerElement: section,
-                duration: 300
+                duration: duration,
+                offset: offset // Set the offset
             }).setClassToggle(`#reveal${i + 1}`, "visible").addTo(controller);
 
         });

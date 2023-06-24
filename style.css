@@ -376,6 +376,40 @@ html {
   transform: translateX(0);
 }
 
+
+@media screen and (max-width:767px){
+  .flex-container {
+    flex-direction: column-reverse;
+  }
+  .right-div {
+    top: 7%;
+  }
+  .content-wrapper h1 {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .content-wrapper p {
+    font-size: 18px;
+  }
+  #myimg {
+    width: 360px;
+  }
+  .left-div {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .content-wrapper#reveal2 ,
+.content-wrapper#reveal4,
+.content-wrapper#reveal6,
+.content-wrapper#reveal8 {
+  transform: translateX(-50%) ;
+}
+
+.content-wrapper a {
+  margin: 0 auto;
+}
+}
+
 /* footer  */
 
 
