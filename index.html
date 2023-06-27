@@ -8,18 +8,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://scrollmagic.io/assets/js/lib/highlight.pack.js"></script>
-    <script src="https://scrollmagic.io/assets/js/lib/modernizr.custom.min.js"></script>
-    <script src="https://scrollmagic.io/assets/js/examples.js"></script>
-    <script src="https://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script>
-    <script src="https://julian.com/research/velocity/vmd.min.js"></script>
-    <script src="https://scrollmagic.io/scrollmagic/uncompressed/ScrollMagic.js"></script>
-    <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.velocity.js"></script>
-    <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-    <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
-    <!-- <script src="./velocity.min.js"></script>
-    <script src="./velocity-animate.js"></script>  -->
+    <script src="/script/jquery.js"></script>
+    <script src="/script/tweenmax.js"></script>
+    <script src="/script/gsap.js"></script>
+    <script src="/script/scrollmagic.js"></script>
+    <script src="/script/animation-velocity.js"></script>
+    <script src="/script/gsap-animation.js"></script>
+    <script src="/script/scrollmagic-indicator.js"></script>
+    <script src="/script/scrolltrigger.js"></script>
+
     <script src="script.js"></script>
 </head>
 
@@ -44,62 +41,15 @@
             <!-- <div class="top-white-panel"></div>
             <div class="bottom-white-panel"></div> -->
             <div class="left-div">
-                <div class="content-wrapper" id="reveal1">
-                    <h1>The Lord of the Rings</h1>
-                    <p>A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful
-                        One Ring and save Middle-earth from the Dark Lord Sauron.
+                <div class="content-wrapper">
+                    <h1 class="animate" id="reveal1">
+                        Puncture Safe 
+                    </h1>
+                    <p class="animate" id="reveal2">“The Gripp XL is perfect Classic 500. Enhanced performance, superior handling”
                     </p>
-                    <a href="javascript:void(0)">Click Here</a>
+                    <a class="animate" href="javascript:void(0)" id="reveal3">View Tyres</a>
                 </div>
-                <div class="content-wrapper" id="reveal2">
-                    <h1>The Hobbit</h1>
-                    <p>A reluctant Hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of
-                        dwarves to reclaim their mountain home, and the gold within it from the dragon Smaug.
-                    </p>
-                    <a href="javascript:void(0)">Click Here</a>
-                </div>
-                <div class="content-wrapper" id="reveal3">
-                    <h1>Game of Thrones</h1>
-                    <p>Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns
-                        after being dormant for millennia.
-                    </p>
-                    <a href="javascript:void(0)">Click Here</a>
-                </div>
-                <div class="content-wrapper" id="reveal4">
-                    <h1>Stranger Things</h1>
-                    <p>When a young boy disappears, his mother, a police chief and his friends must confront terrifying
-                        supernatural forces in order to get him back.
-                    </p>
-                    <a href="javascript:void(0)">Click Here</a>
-                </div>
-                <div class="content-wrapper" id="reveal5">
-                    <h1>The Witcher</h1>
-                    <p>Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people
-                        often prove more wicked than beasts.
-                    </p>
-                    <a href="javascript:void(0)">Click Here</a>
-                </div>
-                <div class="content-wrapper" id="reveal6">
-                    <h1>Game of Thrones</h1>
-                    <p>Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns
-                        after being dormant for millennia.
-                    </p>
-                    <a href="javascript:void(0)">Click Here</a>
-                </div>
-                <div class="content-wrapper" id="reveal7">
-                    <h1>Stranger Things</h1>
-                    <p>When a young boy disappears, his mother, a police chief and his friends must confront terrifying
-                        supernatural forces in order to get him back.
-                    </p>
-                    <a href="javascript:void(0)">Click Here</a>
-                </div>
-                <div class="content-wrapper" id="reveal8">
-                    <h1>The Witcher</h1>
-                    <p>Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people
-                        often prove more wicked than beasts.
-                    </p>
-                    <a href="javascript:void(0)">Click Here</a>
-                </div>
+
             </div>
             <div id="imagesequence" class="right-div">
                 <img id="myimg" src="/images/0000.png"><br>
@@ -119,23 +69,24 @@
                 <p>All Rights Reserved</p>
             </div>
             <div class="crypto__footer-links_div">
-                <h4>Social Links</h4><a to="https://github.com/test-coder" target="_blank" rel="noreferrer noopener"> <svg
-                        stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="i"
+                <h4>Social Links</h4><a to="https://github.com/test-coder" target="_blank" rel="noreferrer noopener">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="i"
                         height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                        
+
                     </svg> Github</a><a to="https://www.instagram.com/test_coder/" target="_blank"
                     rel="noreferrer noopener"> <svg stroke="currentColor" fill="currentColor" stroke-width="0"
                         viewBox="0 0 1024 1024" class="i" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                        
+
                     </svg> Instagram</a><a to="https://www.linkedin.com/in/bhavesh-sakpal-711770189/" target="_blank"
                     rel="noreferrer noopener"> <svg stroke="currentColor" fill="currentColor" stroke-width="0"
                         viewBox="0 0 1024 1024" class="i" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                       
+
                     </svg>Linked In</a><a to="https://www.codechef.com/users/bhavessh" target="_blank"
-                    rel="noreferrer noopener"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img"
-                        viewBox="0 0 24 24" class="i" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    rel="noreferrer noopener"> <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                        role="img" viewBox="0 0 24 24" class="i" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
                         <title></title>
-                       
+
                     </svg>CodeChef</a>
             </div>
             <div class="crypto__footer-links_div">
@@ -149,19 +100,55 @@
     </div>
 
     <script>
-        var controller = new ScrollMagic.Controller();
-        var duration = window.innerWidth < 768 ? 250 : 300; // Set different duration for mobile devices
-        var offset = window.innerWidth < 768 ? -100 : -50;
+        // var controller = new ScrollMagic.Controller();
+        // var duration = window.innerWidth < 768 ? 250 : 0; // Set different duration for mobile devices
+        // var offset = window.innerWidth < 768 ? -100 : -100;
 
-        var sections = document.querySelectorAll('.content-wrapper');
-        sections.forEach(function (section, i) {
-            new ScrollMagic.Scene({
-                triggerElement: section,
-                duration: duration,
-                offset: offset // Set the offset
-            }).setClassToggle(`#reveal${i + 1}`, "visible").addTo(controller);
+        // var sections = document.querySelectorAll('.animate');
+        // sections.forEach(function (section, i) {
+        //     new ScrollMagic.Scene({
+        //         triggerElement: section,
+        //         offset: offset, // Set the offset
+        //     })
+        //         .on("enter", function (event) {
+        //             $(`#reveal${i + 1}`).addClass("visible fixed-position");
+        //         })
+        //         .on("leave", function (event) {
+        //             // Check for reverse scrolling
+        //             if (event.scrollDirection === "REVERSE") {
 
-        });
+        //                 $(`#reveal${i + 1}`).removeClass("visible fixed-position");
+        //             }
+
+        //             // Check if the scene's progress reaches its duration
+
+        //             if (window.innerWidth < 768) {
+        //                 $(`#reveal${i + 1}`).removeClass("visible");
+        //             }
+        //         })
+        //         .addIndicators()
+        //         .addTo(controller);
+        // });
+
+        var start = window.innerWidth < 768 ? "+=500 center" : "center center"; // Set different duration for mobile devices
+        var end = window.innerWidth < 768 ? "bottom bottom" : "bottom bottom";
+
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".content-wrapper",
+                // start: "+=500 center",  
+                start: start,  
+                end: end, // Adjusted end time
+                scrub: true,
+                pin: true,
+                markers: true
+            }
+        })
+            .fromTo("#reveal1", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1,fadeIn: true, duration: 2  })
+            .fromTo("#reveal2", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1 ,fadeIn: true,  duration: 2 })
+            .fromTo("#reveal3", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1,fadeIn: true , duration: 2 });
+
+
     </script>
 </body>
 

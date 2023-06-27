@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -17,6 +18,7 @@ html {
   height: 100%;
   padding: 0.5rem;
 }
+
 .crypto__header .logo {
   display: flex;
   justify-content: flex-start;
@@ -25,6 +27,7 @@ html {
   align-items: center;
   width: 50%;
 }
+
 .crypto__header img {
   object-fit: cover;
   margin: 1rem 0;
@@ -34,11 +37,13 @@ html {
   width: 5rem;
   box-shadow: var(--box-shadow);
 }
+
 .crypto__header h3 {
   color: var(--black);
   font-size: 1.5rem;
   margin-left: 1rem;
 }
+
 .crypto__header .crypto__navbar {
   width: 100%;
   display: flex;
@@ -46,6 +51,7 @@ html {
   align-items: center;
   padding-top: 1rem;
 }
+
 .crypto__header .crypto__navbar a {
   display: block;
   margin: 1.5rem 0;
@@ -56,9 +62,11 @@ html {
   box-shadow: var(--box-shadow);
   color: var(--black);
 }
+
 .crypto__navbar a:hover {
   box-shadow: var(--box-shadow-inset);
 }
+
 .menu-btn {
   position: fixed;
   top: 1.5rem;
@@ -75,10 +83,12 @@ html {
   box-shadow: var(--box-shadow);
   display: none;
 }
+
 .menu-btn:hover {
   color: var(--green);
   box-shadow: var(--box-shadow-inset);
 }
+
 .crypto__header .theme__toggler {
   z-index: 100;
   height: 5rem;
@@ -112,6 +122,7 @@ html {
     height: 100%;
     padding: 2rem;
   }
+
   .crypto__header .logo {
     justify-content: center;
     flex-direction: column;
@@ -119,6 +130,7 @@ html {
     align-items: center;
     width: 100%;
   }
+
   .crypto__header img {
     object-fit: cover;
     margin: 1rem 0;
@@ -128,14 +140,17 @@ html {
     width: 8rem;
     box-shadow: var(--box-shadow);
   }
+
   .crypto__header h3 {
     color: var(--black);
     font-size: 2.5rem;
   }
+
   .crypto__header .crypto__navbar {
     padding-top: 1rem;
     flex-direction: column;
   }
+
   .crypto__header .crypto__navbar a {
     width: 80%;
     display: block;
@@ -146,6 +161,7 @@ html {
     box-shadow: var(--box-shadow);
     color: var(--black);
   }
+
   .crypto__navbar a:hover {
     box-shadow: var(--box-shadow-inset);
   }
@@ -166,6 +182,7 @@ html {
     color: var(--black);
     box-shadow: var(--box-shadow);
   }
+
   .menu-btn {
     position: fixed;
     display: flex;
@@ -185,6 +202,7 @@ html {
     box-shadow: var(--box-shadow);
     background: var(--bg-color);
   }
+
   .menu-btn:hover {
     color: var(--green);
     box-shadow: var(--box-shadow-inset);
@@ -195,10 +213,12 @@ html {
     transition: 0.4s linear;
   }
 }
+
 @media screen and (max-width: 450px) {
   .crypto__header {
     width: 100%;
   }
+
   .crypto__header .crypto__navbar a {
     width: 70%;
   }
@@ -209,7 +229,7 @@ html {
 /* animation */
 
 #myimg {
-  width: 500px;
+  width: 700px;
   margin: 0 auto;
 }
 
@@ -279,17 +299,18 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 200px;
+  min-height: 1300px;
 }
 
 .content-wrapper h1 {
   font-size: 50px;
-  margin: 20px 0;
+  margin-top: 20px;
 }
 
 .content-wrapper p {
   font-size: 24px;
   margin: 20px 0;
+  margin-bottom: 40px;
 }
 
 .content-wrapper a {
@@ -305,7 +326,7 @@ html {
 
 .right-div {
   position: sticky;
-  top: 30%;
+  top: 10%;
   text-align: center;
   width: 50%;
   max-width: 600px;
@@ -340,25 +361,40 @@ html {
 } */
 
 /* // animation 1 */
-.content-wrapper#reveal1 ,
-.content-wrapper#reveal3 ,
-.content-wrapper#reveal5 ,
-.content-wrapper#reveal7 {
+/* .animate {
   opacity: 0;
-  transform: translateX(-50%) ;
-  transition: opacity .5s, transform .5s;
+  transform: translateX(-50%);
+  transition: opacity .5s, transform s;
 }
 
-.content-wrapper#reveal1.visible ,
-.content-wrapper#reveal3.visible,
-.content-wrapper#reveal5.visible,
-.content-wrapper#reveal7.visible {
+.animate.visible {
   opacity: 1;
   transform: translateX(0);
+
+} */
+
+p{
+  max-width: 500px;
+}
+/* 
+h1.fixed-position{
+  position: fixed;
+  top: 10%;
 }
 
-/* // animation 2 */
+p.fixed-position {
+  position: fixed;
+  top: 20%;
+}
 
+a.fixed-position{
+  position: fixed;
+  top: 40%;
+} */
+
+
+/* // animation 2 */
+/* 
 .content-wrapper#reveal2 ,
 .content-wrapper#reveal4,
 .content-wrapper#reveal6,
@@ -374,46 +410,55 @@ html {
 .content-wrapper#reveal8.visible {
   opacity: 1;
   transform: translateX(0);
-}
+} */
+
+/* .animate{
+  transform: translateX(-100%);
+  opacity: 0;
+} */
 
 
-@media screen and (max-width:767px){
+@media screen and (max-width:767px) {
   .flex-container {
     flex-direction: column-reverse;
   }
+
   .right-div {
     top: 7%;
+    width: 100%;
   }
+
   .content-wrapper h1 {
     font-size: 30px;
     margin-bottom: 0;
   }
+
   .content-wrapper p {
     font-size: 18px;
   }
+
   #myimg {
     width: 360px;
   }
+
   .left-div {
     width: 90%;
     margin: 0 auto;
   }
-  .content-wrapper#reveal2 ,
-.content-wrapper#reveal4,
-.content-wrapper#reveal6,
-.content-wrapper#reveal8 {
-  transform: translateX(-50%) ;
-}
 
-.content-wrapper a {
-  margin: 0 auto;
-}
+  .content-wrapper#reveal {
+    transform: translateX(-50%);
+  }
+
+  .content-wrapper a {
+    margin: 0 auto;
+  }
 }
 
 /* footer  */
 
 
-.crypto__footer{
+.crypto__footer {
   color: var(--black);
   display: flex;
   flex-direction: column;
@@ -421,19 +466,22 @@ html {
   align-items: center;
   background: var(--bg-color);
 }
-.crypto__footer-heading{
+
+.crypto__footer-heading {
   width: 100%;
   text-align: center;
   margin-bottom: 3rem;
 }
-.crypto__footer-heading h1{
+
+.crypto__footer-heading h1 {
   font-weight: 800;
   font-size: 62px;
   line-height: 75px;
   text-align: center;
   letter-spacing: -0.04em;
 }
-.crypto__footer-btn{
+
+.crypto__footer-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -443,14 +491,16 @@ html {
   margin-bottom: 10rem;
   cursor: pointer;
 }
-.crypto__footer-heading p{
+
+.crypto__footer-heading p {
   box-sizing: border-box;
   font-size: 40px;
   line-height: 21px;
   color: var(--black);
   word-spacing: 2px;
 }
-.crypto__footer-links{
+
+.crypto__footer-links {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -459,36 +509,43 @@ html {
   width: 100%;
   text-align: left;
 }
+
 .crypto__footer-links div {
   width: 250px;
   margin: 1rem;
 }
-.crypto__footer-links_logo{
+
+.crypto__footer-links_logo {
   display: flex;
   flex-direction: column;
 }
-.crypto__footer-links_logo img{
+
+.crypto__footer-links_logo img {
   width: 118px;
   height: 30px;
   margin-bottom: 1rem;
 }
-.crypto__footer-links_logo p{
+
+.crypto__footer-links_logo p {
   font-size: 12px;
   line-height: 14px;
   color: var(--black);
 }
-.crypto__footer-links_div{
+
+.crypto__footer-links_div {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
 }
-.crypto__footer-links_div h4{
+
+.crypto__footer-links_div h4 {
   font-size: 20px;
   line-height: 16px;
   color: var(--black);
   margin-bottom: 1rem;
 }
-.crypto__footer-links_div a{
+
+.crypto__footer-links_div a {
   text-decoration: none;
   font-size: 15px;
   line-height: 14px;
@@ -496,28 +553,34 @@ html {
   margin: 0.5rem 0;
   cursor: pointer;
 }
-.crypto__footer-links_div a:hover{
+
+.crypto__footer-links_div a:hover {
   color: rgb(67, 165, 245);
 }
-.crypto__footer-links_div a .i{
+
+.crypto__footer-links_div a .i {
   margin-right: 10px;
 }
-.crypto__footer-copyright{
+
+.crypto__footer-copyright {
   margin-top: 2rem;
   text-align: center;
   width: 100%;
 }
-.crypto__footer-copyright p{
+
+.crypto__footer-copyright p {
   font-size: 12px;
   line-height: 14px;
   color: var(--black);
 }
+
 @media screen and (max-width: 550px) {
-  .crypto__footer-links div{
-      margin: 1rem 0;
+  .crypto__footer-links div {
+    margin: 1rem 0;
   }
-  .crypto__footer-btn p{
-      font-size: 14px;
-      line-height: 20px;
+
+  .crypto__footer-btn p {
+    font-size: 14px;
+    line-height: 20px;
   }
 }

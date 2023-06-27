@@ -53,25 +53,25 @@ var images = [
 
 var obj = { curImg: 0 };
 
-var tween = TweenMax.to(obj, 0.5,
-    {
-        curImg: images.length - 1,
-        roundProps: "curImg",
-        immediateRender: true,
-        ease: Linear.easeNone,
-        onUpdate: function () {
-            $("#myimg").attr("src", images[obj.curImg]);
-        }
-    }
-);
+var tween = TweenMax.to(obj, 0.5, {
+  curImg: images.length - 1,
+  roundProps: "curImg",
+  immediateRender: true,
+  ease: Linear.easeNone,
+  onUpdate: function () {
+    $("#myimg").attr("src", images[obj.curImg]);
+  }
+});
 
 var controller = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene({
-    triggerElement: "#imagesequence",
-    duration: 2000,
-}).setTween(tween)
-    .addTo(controller);
+  triggerElement: "#imagesequence",
+  duration: 700,
+})
+  .setTween(tween)
+  .addTo(controller);
+
 
 
 
