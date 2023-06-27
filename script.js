@@ -67,7 +67,7 @@ var controller = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene({
   triggerElement: "#imagesequence",
-  duration: 2000,
+  duration: 800,
 })
   .setTween(tween)
   .addTo(controller);
