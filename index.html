@@ -36,16 +36,26 @@
         <!-- <div class="banner-with-content">
             <h1>Image Animation on Scroll</h1>
         </div> -->
-
+       
+     
         <div class="flex-container" id="animation-container">
             <!-- <div class="top-white-panel"></div>
             <div class="bottom-white-panel"></div> -->
+           
             <div class="left-div">
+
+                <div class="box2">
+                    <h1 class="text4">Tyres are the essential point of contact between your vehicle and the road.<h2>
+                    <h1 class="text5">You can buy brand new tyres online in just few steps.</h2>
+        
+                </div>
+                
                 <div class="content-wrapper">
                     <h1 class="animate" id="reveal1">
-                        Puncture Safe 
+                        Puncture Safe
                     </h1>
-                    <p class="animate" id="reveal2">“The Gripp XL is perfect Classic 500. Enhanced performance, superior handling”
+                    <p class="animate" id="reveal2">“The Gripp XL is perfect Classic 500. Enhanced performance, superior
+                        handling”
                     </p>
                     <a class="animate" href="javascript:void(0)" id="reveal3">View Tyres</a>
                 </div>
@@ -137,17 +147,58 @@
             scrollTrigger: {
                 trigger: ".content-wrapper",
                 // start: "+=500 center",  
-                start: start,  
+                start: start,
                 end: end, // Adjusted end time
-                scrub: true,
+                scrub: 2,
                 pin: true,
                 markers: true
             }
         })
-            .fromTo("#reveal1", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1,fadeIn: true, duration: 2  })
-            .fromTo("#reveal2", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1 ,fadeIn: true,  duration: 2 })
-            .fromTo("#reveal3", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1,fadeIn: true , duration: 2 });
+            .fromTo("#reveal1", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1, fadeIn: true, duration: 2 })
+            .fromTo("#reveal2", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1, fadeIn: true, duration: 2 })
+            .fromTo("#reveal3", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1, fadeIn: true, duration: 2 });
 
+
+  var imageContainer = $('.right-div');
+  var image = $('#myimg');
+
+  // Set initial full-screen size
+  var initialHeight = $(window).innerHeight();
+  imageContainer.css('height', initialHeight);
+
+  // Set initial full-screen size
+  var initialHeight = $(window).innerHeight();
+  imageContainer.css('height', initialHeight);
+
+  $(window).scroll(function() {
+  var scrollTop = $(window).scrollTop();
+  var duration = Math.abs(scrollTop - initialHeight) / 500; // Adjust the division factor as needed
+  var translateX = (scrollTop - initialHeight) / 6; // Adjust the division factor as needed
+
+  if (scrollTop > 200) {
+    gsap.to(imageContainer, { height: 'auto', duration: duration });
+    gsap.to(image, { scale: 1.2, duration: duration });
+    gsap.to(image, { x: translateX, duration: duration });
+  } else {
+    gsap.to(imageContainer, { height: initialHeight, duration: duration });
+    gsap.to(image, { scale: 2, duration: duration });
+    gsap.to(image, { x: "-50%" , duration: duration });
+  }
+});
+
+gsap.timeline({
+  scrollTrigger: {
+    trigger: ".box2",
+    start: "center center",
+    end: "top top",
+    scrub: 4,
+    pin: true
+  }
+})
+.from(".text4", { opacity: 1, duration: 1 ,ease: "power2.out",fadeIn: true,})
+.from(".text5", { opacity: 1, duration: 1 ,ease: "power2.out",fadeIn: true, })
+.to(".text4", { opacity: 0, x: innerWidth * -1, duration: 1 , fadeIn: true,ease: "power2.out"}, "-=1") // Move text4 to the left
+.to(".text5", { opacity: 0, x: innerWidth * 1, duration: 1 , fadeIn: true,ease: "power2.out"}, "-=1");
 
     </script>
 </body>

@@ -373,8 +373,29 @@ html {
 
 } */
 
+#myimg {
+  transform: scale(2) translateX(-20%); /* Adjust the scale value as needed */
+}
+.box2{
+  z-index: 500;
+  position: relative;
+  margin-top: 60px;
+}
+
 p{
   max-width: 500px;
+}
+
+.box2 .text4{
+  font-size: 25px;
+  transform: translateX(0%);
+  text-align: left;
+}
+
+.box2 .text5{
+  font-size: 25px;
+  transform: translateX(100%);
+  text-align: right;
 }
 /* 
 h1.fixed-position{
