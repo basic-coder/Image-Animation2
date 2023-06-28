@@ -1,0 +1,134 @@
+.fix-your-car-tyre-section {
+  margin-top: 40px;
+}
+
+.fix-your-car-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fix-your-car-container .video-wrapper {
+  width: 45%;
+  max-width: 530px;
+  max-height: 341px;
+}
+
+.fix-your-car-container .video-wrapper img {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.fix-your-car-container .fix-your-car-content {
+  width: 50%;
+}
+
+.fix-your-car-content .heading h2 {
+  font-family: "Poppins-Light";
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 50px;
+  letter-spacing: normal;
+  color: #333333;
+  margin-bottom: 22px;
+}
+
+.fix-your-car-content .heading h3 {
+  font-family: "Poppins-SemiBold";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2.5;
+  letter-spacing: normal;
+  color: #333333;
+}
+
+.fix-your-car-content .para {
+  margin-top: 45px;
+}
+
+.fix-your-car-content .para p {
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #8c8c8c;
+  margin-bottom: 20px;
+}
+
+.fix-your-car-content .para p:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767.69px) {
+  .fix-your-car-tyre-section {
+    margin-top: 30px;
+  }
+
+  .fix-your-car-container {
+    display: block;
+  }
+
+  .fix-your-car-container .video-wrapper {
+    width: 100%;
+    /* margin: 0 auto; */
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+
+  .fix-your-car-container .fix-your-car-content {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  .fix-your-car-content .heading h2 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: normal;
+    /* text-align: center; */
+    color: #252525;
+    margin-bottom: 20px;
+  }
+
+  .fix-your-car-content .heading h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: normal;
+  }
+
+  .fix-your-car-content .para {
+    margin-top: 21px;
+  }
+
+  .fix-your-car-content .para p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: normal;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .fix-your-car-content .heading h2 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .fix-your-car-content .heading h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .fix-your-car-content .para {
+    margin-top: 30px;
+  }
+
+  .fix-your-car-content .para p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

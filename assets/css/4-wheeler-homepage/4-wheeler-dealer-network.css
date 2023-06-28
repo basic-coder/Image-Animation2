@@ -1,0 +1,213 @@
+.dealer-network-section {
+  margin-top: 60px;
+}
+
+.dealer-network-wrapper {
+  min-height: 260px;
+  height: 100%;
+  position: relative;
+}
+
+.dealer-network-content {
+  display: flex;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  padding: 0px 60px;
+}
+
+.dealer-network-content .lhs {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+
+.dealer-network-content .rhs {
+  display: flex;
+  width: 50%;
+  /* justify-content: space-between; */
+}
+
+.dealer-network-content .lhs img {
+  width: 176px;
+  height: 90px;
+  /* margin-top: 10px; */
+}
+
+.dealer-network-content .lhs .content-inner {
+  margin-left: 30px;
+}
+
+.dealer-network-content .rhs .content-inner:first-child {
+  margin-left: 20px;
+  padding-right: 40px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.dealer-network-content .rhs .content-inner:last-child {
+  margin-left: 45px;
+}
+
+.dealer-network-content .lhs .content-inner h3 {
+  font-family: "Poppins-Medium";
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 42px;
+  letter-spacing: normal;
+  color: #ffffff;
+  /* margin-bottom: 8px; */
+}
+
+.dealer-network-content .rhs .content-inner h3 {
+  font-family: "Poppins-Light";
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.dealer-network-content .lhs .content-inner p {
+  font-family: "Poppins-SemiBold";
+  font-size: 14px;
+  font-weight: 600;
+  color: #f5822d;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.dealer-network-content .rhs .content-inner p {
+  font-family: "Poppins-SemiBold";
+  font-size: 14px;
+  font-weight: 600;
+  color: #f5822d;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+  .dealer-network-section {
+    margin-top: 20px;
+  }
+
+  .dealer-network-wrapper {
+    min-height: 370px;
+    height: 100%;
+  }
+
+  .dealer-network-wrapper img {
+    height: 370px;
+    border-radius: 10px;
+  }
+
+  .dealer-network-content,
+  .dealer-network-content .lhs,
+  .dealer-network-content .rhs {
+    flex-direction: column;
+  }
+
+  .dealer-network-content {
+    /* padding: 40px 4px 39px 5px; */
+    /* padding: 20px 5px 20px 5px; */
+    padding: 0 0 0 0;
+    top: 20px;
+    justify-content: center;
+  }
+
+  .dealer-network-content .lhs {
+    width: 100%;
+  }
+
+  .dealer-network-content .rhs {
+    margin-top: 30px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .dealer-network-content .lhs img {
+    width: 120px;
+    height: 62px;
+    margin: 0 auto;
+  }
+
+  .dealer-network-content .lhs .content-inner {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .dealer-network-content .rhs .content-inner:first-child {
+    padding: 0;
+    margin: 0;
+    border-right: 0;
+    text-align: center;
+    padding-bottom: 21px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .dealer-network-content .rhs .content-inner:last-child {
+    margin-left: 0;
+    margin-top: 21px;
+    text-align: center;
+  }
+
+  .dealer-network-content .lhs .content-inner .content-inner-heading {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .dealer-network-content .rhs .content-inner .content-inner-heading {
+    display: flex;
+    margin-bottom: 9px;
+  }
+
+  .dealer-network-content .lhs .content-inner .content-inner-heading h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .dealer-network-content .rhs .content-inner .content-inner-heading h3 {
+    line-height: 32px;
+    font-size: 24px;
+    /* width: 90%; */
+    /* margin: 0 auto; */
+  }
+
+  .dealer-network-content .lhs .content-inner p {
+    font-size: 12px;
+    margin-top: 0px;
+  }
+  .dealer-network-content .rhs .content-inner p {
+    font-size: 12px;
+    margin-top: 0px;
+  }
+
+  .dealer-network-content .content-inner-heading h3:last-child {
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1260px) {
+  .dealer-network-wrapper img {
+    min-height: 260px;
+  }
+  .dealer-network-content .lhs img {
+    min-height: 0;
+    width: 140px;
+  }
+
+  .dealer-network-content .lhs {
+    align-items: center;
+  }
+  .dealer-network-content .rhs {
+    align-items: center;
+  }
+
+  .dealer-network-content .lhs .content-inner {
+    margin-left: 15px;
+  }
+  .dealer-network-content .lhs .content-inner h3 {
+    font-size: 32px;
+  }
+  .dealer-network-content .rhs .content-inner h3 {
+    font-size: 22px;
+  }
+}

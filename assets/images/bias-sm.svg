@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bias</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="80" height="80"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-624.000000, -206.000000)">
+            <g id="bias" transform="translate(624.000000, 206.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g id="Group-18-Copy-2" mask="url(#mask-2)">
+                    <g transform="translate(-20.000000, 19.000000)">
+                        <polygon id="Fill-1" fill="#CECECE" points="25.0136452 67.9944769 6.63547758 49.6156595 50.4041585 5.84697856 68.7823262 24.225796"></polygon>
+                        <polygon id="Fill-2" fill="#CECECE" points="68.7821962 49.6158545 50.4040286 67.9946719 6.63534763 24.2253411 25.0135153 5.84717349"></polygon>
+                        <g id="Group-12" stroke-width="1" fill="none" transform="translate(0.925926, 0.279402)"></g>
+                        <g id="Group-2" stroke-width="1" fill="none" transform="translate(1.243653, 0.317728)" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="60.56832" y1="5.89255651" x2="5.89255651" y2="60.56832" id="Stroke-13" stroke="#636363" stroke-width="1.3"></line>
+                            <line x1="54.6757635" y1="0" x2="6.57909941e-15" y2="54.6757635" id="Stroke-13" stroke="#636363" stroke-width="1.3"></line>
+                            <line x1="67.0498015" y1="12.374038" x2="12.374038" y2="67.0498015" id="Stroke-15" stroke="#636363" stroke-width="1.3"></line>
+                            <line x1="72.7361386" y1="18.7102777" x2="18.0603751" y2="73.3860411" id="Stroke-16" stroke="#636363" stroke-width="1.3"></line>
+                        </g>
+                        <g id="Group-2" stroke-width="1" fill="none" transform="translate(37.817728, 37.354765) rotate(-90.000000) translate(-37.817728, -37.354765) translate(1.243653, 0.317728)" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="60.56832" y1="5.89255651" x2="5.89255651" y2="60.56832" id="Stroke-13" stroke="#636363" stroke-width="1.3"></line>
+                            <line x1="54.6757635" y1="0" x2="6.57909941e-15" y2="54.6757635" id="Stroke-13" stroke="#636363" stroke-width="1.3"></line>
+                            <line x1="67.0498015" y1="12.374038" x2="12.374038" y2="67.0498015" id="Stroke-15" stroke="#636363" stroke-width="1.3"></line>
+                            <line x1="72.7361386" y1="18.7102777" x2="18.0603751" y2="73.3860411" id="Stroke-16" stroke="#636363" stroke-width="1.3"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

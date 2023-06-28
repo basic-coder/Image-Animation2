@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="240" viewBox="0 0 240 240">
+    <defs>
+        <circle id="mn3fs1z7va" cx="120" cy="120" r="120"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-738 -1796) translate(738 1796)">
+                <mask id="rkvzzjxa5b" fill="#fff">
+                    <use xlink:href="#mn3fs1z7va"/>
+                </mask>
+                <use fill="#F8F8F8" xlink:href="#mn3fs1z7va"/>
+                <g mask="url(#rkvzzjxa5b)">
+                    <g>
+                        <path fill="#DCDCDC" fill-rule="nonzero" d="M157.256 30.075L202 30.075 202 52.13 156 52.13zM62 100.251L10 100.251 22.794 0 49.206 0z" transform="translate(20 125.714)"/>
+                        <path fill="#BEBEBE" fill-rule="nonzero" d="M49.836 0L30 0 42.164 100.251 62 100.251z" transform="translate(20 125.714)"/>
+                        <path fill="#DCDCDC" fill-rule="nonzero" d="M49.063 0L22.937 0 20 24.06 52 24.06z" transform="translate(20 125.714)"/>
+                        <path fill="#BEBEBE" fill-rule="nonzero" d="M49.259 0L30 0 32.741 24.06 52 24.06z" transform="translate(20 125.714)"/>
+                        <path fill="#DCDCDC" fill-rule="nonzero" d="M195.573 8.02L195.573 51.455 161.288 51.455 161.288 8.02 116.862 8.02 116.862 51.455 70.703 97.895 0 97.895 0 152.381 240 152.381 240 8.02z" transform="translate(20 125.714)"/>
+                        <path fill="#BEBEBE" fill-rule="nonzero" d="M148 8.02L164 8.02 164 54.135 148 54.135z" transform="translate(20 125.714)"/>
+                        <g>
+                            <path fill="#FFF" fill-rule="nonzero" d="M113.233.098L128.877.098 128.877 49.046 113.233 49.046zM149.885.098L165.528.098 165.528 49.046 149.885 49.046zM186.534.098L202.178.098 202.178 49.046 186.534 49.046z" transform="translate(20 125.714) translate(14 76.19)"/>
+                        </g>
+                    </g>
+                </g>
+                <g mask="url(#rkvzzjxa5b)">
+                    <g fill-rule="nonzero">
+                        <path fill="#89C5CC" d="M194.633 133.151L95.935 134.486 8.633 15.648 107.331 14.313z" transform="scale(-1 1) rotate(-9 241.832 1974.865) rotate(9 101.633 74.4)"/>
+                        <g fill="#FDB62F" transform="scale(-1 1) rotate(-9 241.832 1974.865) rotate(9 -27.573 1130.4)">
+                            <circle cx="28" cy="28" r="15.077" transform="rotate(9 28 28)"/>
+                            <path d="M21.971 0.305L26.279 0.305 26.279 6.766 21.971 6.766z" transform="rotate(9 24.125 3.536)"/>
+                            <path d="M29.721 49.234L34.029 49.234 34.029 55.695 29.721 55.695z" transform="rotate(9 31.875 52.464)"/>
+                            <path d="M0.305 29.721L6.766 29.721 6.766 34.029 0.305 34.029z" transform="rotate(9 3.536 31.875)"/>
+                            <path d="M49.234 21.971L55.695 21.971 55.695 26.279 49.234 26.279z" transform="rotate(9 52.464 24.125)"/>
+                            <path d="M4.152 12.68L7.199 9.634 11.768 14.203 8.722 17.249z" transform="rotate(9 7.96 13.441)"/>
+                            <path d="M44.232 41.79L47.278 38.744 51.847 43.313 48.801 46.359z" transform="rotate(9 48.04 42.551)"/>
+                            <path d="M9.633 48.8L14.202 44.231 17.248 47.277 12.679 51.846z" transform="rotate(9 13.44 48.039)"/>
+                            <path d="M38.752 8.722L43.321 4.153 46.367 7.199 41.798 11.768z" transform="rotate(9 42.56 7.96)"/>
+                        </g>
+                        <path fill="#F7A72E" d="M193.395 63.414c7.38 3.612 16.471.94 20.305-5.969 3.008-5.421 1.942-12.052-2.64-16.422-3.626 8.824-9.73 16.56-17.665 22.39z" transform="scale(-1 1) rotate(-9 241.832 1974.865) rotate(9 204.395 53.023)"/>
+                        <path fill="#69A1AC" d="M70.724 113.35L90.672 139.98 190.724 138.634 134.353 63.381z" transform="scale(-1 1) rotate(-9 241.832 1974.865) rotate(9 130.724 101.68)"/>
+                        <path fill="#E2E2E2" d="M143.92 102.086l-17.478-24.545h27.757l-3.873-5.455h-27.768L105.08 47.541h27.8l-3.873-5.455h-27.81L81.778 14.814h-8.1l19.417 27.272H69.218L49.8 14.814h-8.101l19.418 27.272H29.518l3.873 5.455h31.624l17.478 24.545H50.869l3.873 5.455h31.652l17.478 24.545H72.156l3.873 5.455h31.695l19.418 27.273h8.101l-19.418-27.273h23.877l19.418 27.273h8.102l-19.418-27.273h27.714l-3.873-5.455H143.92zM71.518 46.814h24.25l17.75 24h-24.25l-17.75-24zm39.75 54l-17.75-24h24.25l17.75 24h-24.25z" transform="scale(-1 1) rotate(-9 241.832 1974.865) rotate(9 102.518 74.814)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

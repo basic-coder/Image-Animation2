@@ -1,0 +1,285 @@
+.faqwrapper {
+  margin-top: 60px;
+}
+
+.faq-container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 24px;
+  /* justify-content: space-between; */
+}
+
+.faq-container .faq-tab {
+  background: url(../../images/support/pngguru-com.jpg) no-repeat;
+  max-width: 376px;
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  border-radius: 10px;
+  /* margin: 60px 24px 44px 95px; */
+  padding: 30px 20px 46px;
+  /* object-fit: contain; */
+}
+
+.faq-container .faq-tab li {
+  width: 100%;
+  /* height: 60px; */
+  /* margin: 0 0 42px; */
+  /* padding: 16px 63px 16px 21px; */
+  border-radius: 10px;
+  margin-bottom: 10px;
+  /* background-color: #ffffff; */
+}
+
+.faq-container .faq-tab li:last-child {
+  margin-bottom: 0;
+}
+
+.faq-container .faq-tab li .faq-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  padding: 16px 0 16px 21px;
+  width: 100%;
+  display: block;
+  line-height: 1.8;
+  font-family: "Poppins-SemiBold";
+}
+
+.faq-container .faq-tab li .faq-link:hover,
+.faq-container .faq-tab li .faq-link.active {
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #0050a6;
+  /* width: 336px; */
+  /* padding: 16px 63px 16px 0; */
+  width: 100%;
+  max-width: 100%;
+  /* height: 60px; */
+}
+
+.faq-container .accordion {
+  width: 100%;
+  max-width: 776px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* padding: 30px 33px 30px 30px; */
+}
+.faq-container .accordion .accordion-item {
+  background-color: transparent;
+  /* padding: 30px 33px 30px 30px; */
+}
+.faq-container .accordion .accordion-item .accordian-item-heading {
+  border: 0;
+  display: block;
+  background: white;
+  width: 100%;
+  text-align: left;
+  transition: all 0.2s ease-in-out;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px 0 rgb(0 0 0 / 11%);
+  position: relative;
+}
+
+.faq-container .accordion .accordion-item .accordian-item-heading h3 {
+  max-width: 93%;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  font-family: "Poppins-SemiBold";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #333333;
+  position: relative;
+}
+
+.faq-container .accordion .accordion-item .accordian-item-heading:after {
+  content: "\e906";
+  font-family: "icomoon";
+  font-size: 6px;
+  float: right;
+  right: 30px;
+  top: 37px;
+  position: absolute;
+  cursor: pointer;
+  /* background: url(../../images/dropdown.svg); */
+  width: 14px;
+  height: 8px;
+  transition: all 0.4s ease-in-out;
+}
+
+.faq-container .accordion .accordion-item .accordian-item-heading.active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.faq-container .accordion .accordion-item .accordian-item-heading.active:after {
+  content: "\e906";
+  transition: all 0.4s ease-in-out;
+  font-family: "icomoon";
+  font-size: 6px;
+  transform: rotate(180deg);
+  float: right;
+  right: 30px;
+  top: 37px;
+  position: absolute;
+  cursor: pointer;
+}
+.faq-container .accordion .accordion-item .accordion-item__content {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.4s ease-in-out;
+  background-color: white;
+  box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.11);
+  border: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  top: -5px;
+}
+.faq-container .accordion .accordion-item .accordion-item__content.active {
+  display: block;
+}
+.faq-container .accordion .accordion-item .accordion-item__content p {
+  /* padding: 1rem; */
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #8c8c8c;
+  padding: 0 30px 30px 30px;
+}
+
+.viewMore {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.faq-container .accordian-wrapper .viewMore a {
+  font-family: "Poppins-SemiBold";
+  font-size: 14px;
+  font-weight: 600;
+  color: #f5822d;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 767.69px) and (min-width: 320px) {
+  .faqwrapper {
+    margin-top: 40px;
+  }
+
+  .faq-container {
+    display: block;
+  }
+
+  .faq-container .accordion {
+    gap: 10px;
+  }
+
+  .faq-container .faq-tab {
+    width: 100%;
+    margin: 0 auto 20px auto;
+    display: block;
+    padding: 20px 20px;
+    height: auto;
+    /* justify-content: center; */
+  }
+
+  .faq-container .faq-tab li .faq-link {
+    font-size: 14px;
+    padding: 12px 0px 12px 16px;
+    line-height: 2em;
+  }
+
+  .faq-container .faq-tab li:last-child {
+    margin-bottom: 20px;
+    height: 28px;
+  }
+
+  .faq-container .accordion .accordion-item .accordian-item-heading h3 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .faq-container .accordion .accordion-item .accordian-item-heading {
+    padding: 20px;
+  }
+
+  .faq-container .accordion .accordion-item .accordion-item__content p {
+    padding-left: 20px;
+    padding-right: 28px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .faq-container .accordion .accordion-item .accordian-item-heading:after {
+    right: 18px;
+    top: 21px;
+    /* background: url(/assets/images/mob-arrow-down.png); */
+    width: 11px;
+    height: 6px;
+  }
+
+  .faq-container
+    .accordion
+    .accordion-item
+    .accordian-item-heading.active:after {
+    right: 18px;
+    top: 21px;
+  }
+
+  .viewMore {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .form-container form fieldset textarea {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .faq-container .faq-tab {
+    width: 40%;
+    padding: 30px 20px;
+  }
+
+  .faq-container .accordian-wrapper {
+    width: 60%;
+  }
+
+  .faq-container .faq-tab li .faq-link {
+    padding: 12px 0 12px 10px;
+    font-size: 14px;
+  }
+
+  .faq-container .accordion .accordion-item .accordian-item-heading h3 {
+    font-size: 16px;
+  }
+
+  .faq-container .accordion .accordion-item .accordion-item__content p {
+    font-size: 14px;
+    padding: 0 20px 20px 20px;
+  }
+
+  .faq-container .accordion .accordion-item .accordian-item-heading {
+    padding: 20px;
+  }
+
+  .faq-container .accordion .accordion-item .accordian-item-heading:after {
+    right: 20px;
+    top: 26px;
+  }
+
+  .faq-container
+    .accordion
+    .accordion-item
+    .accordian-item-heading.active:after {
+    right: 20px;
+    top: 26px;
+  }
+}

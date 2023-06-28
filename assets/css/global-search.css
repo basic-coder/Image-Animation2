@@ -1,0 +1,381 @@
+body.overflow {
+  overflow: hidden;
+}
+/* only for header changes on click starts */
+header .cp-header.cp-header-with-banner {
+  background: #fff;
+}
+
+header .cp-header.cp-header-with-banner nav .logo-area .logo .typ-blue {
+  display: block;
+}
+
+header .cp-header.cp-header-with-banner nav .logo-area .logo .typ-white {
+  display: none;
+}
+
+header
+  .cp-header.cp-header-with-banner
+  .navbar
+  .navbar-left
+  .nav-item-left
+  .list
+  li
+  a {
+  color: #333333;
+}
+
+header
+  .cp-header.cp-header-with-banner
+  .navbar
+  .navbar-right
+  .list
+  .sub-dropdown
+  a
+  .text {
+  color: #333333;
+}
+
+header
+  .cp-header.cp-header-with-banner
+  .navbar
+  .navbar-right
+  .list
+  .item
+  a
+  .icon {
+  color: #333;
+}
+
+header .cp-header.cp-header-with-banner nav .logo-area .menu-btn {
+  color: #333;
+}
+/* header
+  .cp-header.cp-header-with-banner
+  .navbar
+  .navbar-right
+  .list
+  .item
+  a
+  img:first-child {
+  display: block;
+}
+
+header
+  .cp-header.cp-header-with-banner
+  .navbar
+  .navbar-right
+  .list
+  .item
+  a
+  img:last-child {
+  display: none;
+} */
+
+/* only for header changes on click ends */
+
+.global-search-section {
+  position: fixed;
+  display: none;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  top: 97px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.95;
+  box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.global-search-section.scrolled-header-search {
+  top: 70px;
+}
+.global-search-section.active {
+  display: block;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.global-search-section.active.global-search-on-banner {
+  top: 66px;
+}
+
+.global-search-wrapper.active::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.global-search-section.active.global-search-on-banner {
+  top: 66px;
+}
+
+.global-search-wrapper .search-input form .search-box {
+  position: relative;
+}
+
+.global-search-wrapper {
+  margin-top: 49px;
+}
+
+.global-search-wrapper .search-input form .search-box input {
+  border: none;
+  border-bottom: 1px solid #979797;
+  width: 100%;
+  padding-bottom: 8px;
+  font-family: "Poppins-Medium";
+  font-size: 24px;
+  font-weight: 500;
+  color: #333333;
+  outline: none;
+}
+
+.global-search-wrapper .search-input form .search-box input:focus {
+  background-color: #fff;
+}
+
+.global-search-wrapper .search-input form .search-box input::placeholder {
+  color: #8c8c8c;
+}
+
+.global-search-wrapper .search-input form .search-box img {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  right: 12px;
+  bottom: 11px;
+}
+
+.global-search-wrapper .search-results {
+  margin-top: 19.5px;
+}
+
+.global-search-wrapper .search-results .recent-searches {
+  margin-bottom: 40px;
+  /* display: none; */
+}
+
+.global-search-wrapper
+  .search-results
+  .recent-search-items
+  ul
+  .recent-search-list-item {
+  display: none;
+}
+
+.global-search-wrapper .search-results .recent-search-items,
+.popular-search-items {
+  margin-top: 11px;
+}
+
+.global-search-wrapper .search-results h3 {
+  font-family: "Poppins-SemiBold";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: normal;
+  color: #333;
+}
+
+.global-search-wrapper .search-results ul li {
+  font-family: "Poppins-Medium";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 46px;
+  letter-spacing: normal;
+  color: #8c8c8c;
+}
+
+.global-search-wrapper .did-you-mean {
+  margin-top: 20px;
+  display: none;
+}
+
+.global-search-wrapper .did-you-mean .did-you-mean-contents {
+  display: flex;
+}
+
+.global-search-wrapper .did-you-mean h3 {
+  font-family: "Poppins-SemiBold";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: normal;
+  color: #333;
+  margin-right: 60px;
+}
+
+.global-search-wrapper .did-you-mean .did-you-mean-items {
+  padding: 8px 20px 7px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  border: solid 1px #979797;
+  margin-right: 22px;
+}
+
+.global-search-wrapper .did-you-mean .did-you-mean-items span {
+  font-family: "Poppins-SemiBold";
+  font-size: 16px;
+  font-weight: 600;
+  /* line-height: 50px; */
+  letter-spacing: normal;
+  color: #333;
+}
+
+.global-search-wrapper .did-you-mean .no-result-found {
+  display: block;
+  margin-top: 150px;
+}
+
+.global-search-wrapper .did-you-mean .no-result-found img {
+  width: 176px;
+  height: 176px;
+  margin: 0 auto;
+}
+
+.global-search-wrapper .did-you-mean .no-result-found h2 {
+  font-family: "Poppins-Light";
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 50px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333;
+  margin-top: 12px;
+}
+
+.global-search-wrapper
+  .did-you-mean
+  .did-you-mean-contents
+  .did-you-mean-content-items {
+  display: flex;
+}
+
+.global-search-wrapper
+  .did-you-mean
+  .did-you-mean-contents
+  .did-you-mean-content-items::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+@media only screen and (min-width: 320px) and (max-width: 767.69px) {
+  /* header .cp-header.typ-transparent.cp-header-with-banner{
+    padding: 2rem 0 2rem;
+  } */
+
+  header .cp-header.typ-transparent.cp-header-with-banner .logo-area .menu-btn {
+    display: block;
+  }
+
+  header
+    .cp-header.typ-transparent.cp-header-with-banner
+    .logo-area
+    .menu-btn-white {
+    display: none;
+  }
+
+  .global-search-section {
+    top: 56px;
+  }
+
+  .global-search-section.active.global-search-on-banner {
+    top: 45px;
+  }
+
+  .global-search-section.scrolled-header-search {
+    top: 50px;
+  }
+  .global-search-wrapper {
+    margin-top: 40px;
+  }
+
+  .global-search-wrapper .search-input form .search-box input {
+    font-size: 16px;
+    color: #3a3a3a;
+  }
+
+  .global-search-wrapper .search-input form .search-box img {
+    width: 20px;
+    height: 20px;
+    right: 8px;
+    bottom: 10px;
+  }
+
+  .global-search-wrapper .search-results {
+    margin-top: 16px;
+  }
+
+  .global-search-wrapper .search-results h3 {
+    font-size: 16px;
+  }
+
+  .global-search-wrapper .search-results ul li {
+    font-size: 14px;
+    line-height: 34px;
+  }
+
+  .global-search-wrapper .search-results .recent-search-items,
+  .popular-search-items {
+    margin-top: 20px;
+  }
+
+  .global-search-wrapper .search-results .recent-searches {
+    margin-bottom: 30px;
+  }
+
+  .global-search-wrapper .did-you-mean {
+    margin-top: 16px;
+  }
+
+  .global-search-wrapper .did-you-mean .no-result-found {
+    margin-top: 78px;
+  }
+
+  .global-search-wrapper .did-you-mean .no-result-found img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .global-search-wrapper .did-you-mean .no-result-found h2 {
+    font-size: 24px;
+  }
+
+  .global-search-wrapper .did-you-mean .did-you-mean-items {
+    padding: 8px 13px;
+    border-radius: 24px;
+  }
+
+  .global-search-wrapper .did-you-mean h3 {
+    font-size: 16px;
+  }
+
+  .global-search-wrapper .did-you-mean .did-you-mean-contents {
+    display: block;
+  }
+
+  .global-search-wrapper .did-you-mean .did-you-mean-items span {
+    font-size: 12px;
+  }
+
+  .global-search-wrapper
+    .did-you-mean
+    .did-you-mean-contents
+    .did-you-mean-content-items {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .global-search-section {
+    top: 120px !important;
+  }
+
+  .global-search-section.scrolled-header-search {
+    top: 100px !important;
+  }
+}

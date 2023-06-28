@@ -1,0 +1,376 @@
+.tyre-range-main-wrap {
+  background: url(../../images/2-wheeler/tyre-range.jpg) no-repeat;
+  max-width: 1366px;
+    margin: 0 auto;
+}
+
+.tyre-range-section {
+  margin-top: 120px;
+  /* height: 444px; */
+  position: relative;
+  overflow: hidden;
+}
+
+.tyre-range-wrapper {
+  margin-right: -95px;
+  font-size: 0;
+}
+
+.tyre-range-wrapper > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.tyre-range-card-wrapper {
+  width: 84.4%;
+  margin: 58px 0;
+}
+
+.tyre-range-wrapper .tyre-card-heading-and-control {
+  width: 15.6%;
+  margin-top: 100px;
+}
+
+.tyre-range-wrapper .tyre-card-heading-and-control .controls {
+  display: flex;
+  margin-top: 60px;
+}
+
+.tyre-range-wrapper .tyre-card-heading-and-control .heading h2 {
+  font-family: "Poppins-Light";
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 48px;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.tyre-card-heading-and-control .link {
+  margin-top: 128px;
+}
+
+.tyre-card-heading-and-control .link a {
+  font-family: "Poppins-SemiBold";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #f5822d;
+  text-transform: uppercase;
+}
+
+
+.tyre-range-card-wrapper .tyre-range-card {
+  display: flex !important;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.11);
+  padding: 28px 41px 28px 0;
+  max-width: 376px;
+  /* min-width: 376px; */
+  max-height: 306px;
+  min-height: 306px;
+}
+
+.tyre-range-wrapper .tyre-range-card .lhs {
+  min-height: 250px;
+}
+
+.tyre-range-card-wrapper .tyre-range-card .lhs img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.tyre-range-card-wrapper .tyre-range-card .rhs {
+  margin: 10px 8px 0 23px;
+}
+
+.tyre-range-card-wrapper .tyre-range-card .rhs .heading {
+  font-family: "Poppins-SemiBold";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #2f2f2f;
+  text-transform: uppercase;
+}
+
+.tyre-range-card-wrapper .tyre-range-card .rhs .list {
+  margin-top: 30px;
+}
+
+.tyre-range-card-wrapper .tyre-range-card .rhs .list ul li {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.tyre-range-card-wrapper .tyre-range-card .rhs .list ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.tyre-range-card-wrapper .tyre-range-card .rhs .list ul li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.tyre-range-card-wrapper .tyre-range-card .rhs .list ul li span {
+  font-family: "Poppins-Light";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #8c8c8c;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767.69px) {
+  .tyre-range-main-wrap{
+    background: url(../../images/4-wheeler/tyre-range.jpg) no-repeat;
+    background-size: 100% 366px;
+  }
+  
+  .tyre-range-section {
+    margin-top: 60px;
+  }
+
+  .tyre-range-wrapper {
+    margin-right: -24px;
+    margin-left: -24px;
+  }
+
+  .tyre-range-wrapper > div {
+    display: block;
+  }
+
+  .tyre-range-wrapper .tyre-card-heading-and-control {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .tyre-range-card-wrapper {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin: 10px 0 26px 0;
+  }
+
+  .tyre-range-wrapper .tyre-card-heading-and-control .heading h2 {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .tyre-range-wrapper .tyre-card-heading-and-control .controls {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .tyre-card-heading-and-control .controls .control-left {
+    margin-right: 20px;
+  }
+
+  .tyre-card-heading-and-control .link {
+    margin-top: 78px;
+    text-align: center;
+  }
+
+  .tyre-range-card-wrapper .tyre-range-card {
+    padding: 20px 0px 20px 0px;
+    min-height: 270px;
+    max-height: 270px;
+    min-width: unset;
+    max-width: unset;
+  }
+
+  .tyre-range-card-wrapper .tyre-range-card .lhs {
+    min-height: unset;
+  }
+
+  .tyre-range-card-wrapper .tyre-range-card .lhs img {
+    width: 85%;
+  }
+
+  .tyre-range-card-wrapper .tyre-range-card .rhs {
+    margin: 10px 20px 0 10px;
+  }
+
+  .tyre-range-card-wrapper .tyre-range-card .rhs .heading {
+    font-size: 18px;
+  }
+
+  .tyre-range-card-wrapper .tyre-range-card .rhs .list ul li span {
+    font-size: 12px;
+  }
+
+  /* slick css starts */
+  .tyre-range-slick .slick-slide {
+    margin-right: 0 !important;
+    margin-left: 10px;
+  }
+
+  .tyre-range-slick .slick-slide:first-child {
+    margin-left: 18px;
+  }
+  /* slick css ends */
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  .tyre-range-card-wrapper .tyre-range-card {
+    max-width: 100%;
+    min-width: 356px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tyre-range-card-wrapper .tyre-range-card .rhs {
+    margin: 10px 0 0 20px;
+  }
+
+  .tyre-range-card-wrapper .tyre-range-card {
+    max-width: 100%;
+    min-width: 356px;
+  }
+}
+
+/* slick slide css */
+.tyre-range-slick .slick-slide {
+  padding: 10px 0;
+  margin-right: 24px;
+}
+
+.slick-next {
+  left: -13.5%;
+}
+
+.tyre-range-card-wrapper .control-left {
+  position: absolute;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 7px;
+  margin-right: 14px;
+  max-width: 34px;
+  max-height: 34px;
+  top: 58%;
+  left: -18.5%;
+}
+
+.tyre-range-card-wrapper .slick-arrow.slick-disabled {
+  border: 2px solid rgb(255, 255, 255, 0.5);
+}
+
+.tyre-range-card-wrapper .slick-arrow.slick-disabled .icon-arrow-left {
+  color: rgb(255, 255, 255, 0.5);
+}
+.tyre-range-card-wrapper .slick-arrow.slick-disabled .icon-arrow-right {
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.tyre-range-card-wrapper .slick-arrow .icon-arrow-left {
+  color: #fff;
+  font-size: 16px;
+}
+.tyre-range-card-wrapper .slick-arrow .icon-arrow-right {
+  color: #fff;
+  font-size: 16px;
+}
+
+.tyre-range-card-wrapper .control-right {
+  position: absolute;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 7px;
+  max-width: 34px;
+  max-height: 34px;
+  top: 58%;
+  left: -13.5%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767.69px) {
+  .tyre-range-card-wrapper .control-right {
+    top: -30%;
+    left: 51%;
+    max-width: 28px;
+    max-height: 28px;
+    padding: 5px;
+  }
+  .tyre-range-card-wrapper .slick-arrow .icon-arrow-right {
+    font-size: 13px;
+  }
+
+  .tyre-range-slick .slick-slide {
+    padding: 5px 0;
+    min-width: 312px;
+    /* max-height: 270px; */
+  }
+
+  .tyre-range-card-wrapper .control-left {
+    top: -30%;
+    left: 39%;
+    max-width: 28px;
+    max-height: 28px;
+    padding: 5px;
+  }
+  .tyre-range-card-wrapper .slick-arrow .icon-arrow-left {
+    font-size: 13px;
+  }
+
+  .tyre-range-wrapper .slick-dots {
+    bottom: -21px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .tyre-range-card-wrapper .control-left {
+    left: 40%;
+  }
+  .tyre-range-card-wrapper .control-right {
+    left: 50%;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 650px) {
+  .tyre-range-card-wrapper .control-left {
+    left: 43%;
+  }
+
+  .tyre-range-card-wrapper .control-right {
+    left: 51%;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 767.69px) {
+  .tyre-range-card-wrapper .control-left {
+    left: 45%;
+  }
+
+  .tyre-range-card-wrapper .control-right {
+    left: 51%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .tyre-range-card-wrapper .control-right {
+    top: 55%;
+    left: -12%;
+  }
+
+  .tyre-range-card-wrapper .control-left {
+    left: -18%;
+    top: 55%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .tyre-range-card-wrapper{
+    padding-left: 20px;
+  }
+
+  .tyre-range-card-wrapper .control-right {
+    left: -14%;
+  }
+
+  .tyre-range-card-wrapper .control-left {
+    left: -22%;
+  }
+}

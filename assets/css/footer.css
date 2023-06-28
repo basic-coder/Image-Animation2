@@ -1,0 +1,262 @@
+footer {
+  background-color: #384149;
+}
+
+.footer-section {
+  display: flex;
+  border-bottom: 2px dashed #8c8c8c;
+}
+
+footer a {
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #ffffff;
+  font-family: "Poppins-Medium";
+}
+
+footer a:hover {
+  transition: all 0.4s ease-in-out;
+  color: #f5822d;
+}
+
+.footer-section li a:hover {
+  transition: all 0.4s ease-in-out;
+  color: #f5822d;
+}
+
+.tyre-type,
+.why-ceat {
+  margin-top: 60px;
+  width: 25%;
+}
+
+.tyre-type .footer-drop .icon-down-arrow,
+.why-ceat .footer-drop .icon-down-arrow {
+  display: none;
+}
+
+.footer-inner {
+  margin-top: 60px;
+  width: 50%;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-inner p {
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #8c8c8c;
+}
+
+.social-media a {
+  display: inline-block;
+}
+
+.footer-section li a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  color: #8c8c8c;
+}
+
+.footer-section p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #8c8c8c;
+}
+
+.footer-drop {
+  margin-bottom: 22px;
+}
+
+.tyre-type .rop {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.tyre-type .tyreg {
+  margin-bottom: 106px;
+}
+
+.social-media p {
+  margin-bottom: 31px;
+}
+
+.social-media a {
+  /* margin-right: 40px; */
+  font-size: 25px;
+}
+
+.footer-section .links a:nth-child(1) {
+  margin-bottom: 60px;
+}
+.footer-inner .links {
+  width: 50%;
+}
+
+.footer-inner .social-media {
+  width: 50%;
+}
+
+.footer-inner .social-media .social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.copyright p {
+  padding: 40px 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: #8c8c8c;
+}
+
+.footer-section .footer-inner .lorem {
+  margin-top: -100px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767.69px) {
+  footer {
+    background-color: #384149;
+  }
+
+  .footer-section {
+    display: block;
+    padding: 42px 0 0 0;
+  }
+
+  .footer-section a {
+    margin-bottom: 30px !important;
+    margin-top: 0px !important;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-section .footer-inner .lorem {
+    margin-bottom: 20px;
+    margin-top: unset;
+  }
+
+  .footer-inner p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .footer-section .active {
+    margin-bottom: 0px !important;
+  }
+
+  .social-media p {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: normal;
+  }
+
+  .social-media a {
+    font-size: 20px;
+    margin-bottom: 0 !important;
+  }
+
+  .footer-inner .links {
+    width: 100%;
+  }
+
+  .footer-inner .social-media {
+    width: 100%;
+  }
+
+  .footer-inner .social-media .social-icons {
+    justify-content: unset;
+    margin-bottom: 31px;
+  }
+
+  .footer-inner .social-media .social-icons a {
+    margin-right: 40px;
+  }
+
+  .footer-inner .social-media .social-icons a:last-child {
+    margin-right: 0;
+  }
+  /* .social-media .twitter {
+    order: 4;
+  } */
+
+  .tyre-type,
+  .why-ceat,
+  .links,
+  .social-media {
+    margin-top: 0px !important;
+    width: auto;
+  }
+
+  .tyre-type .footer-drop .icon-down-arrow,
+  .why-ceat .footer-drop .icon-down-arrow {
+    display: block;
+    color: #8d8d8d;
+    font-size: 7px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .footer-drop.active .icon-down-arrow {
+    transform: rotate(180deg);
+  }
+
+  .footer-list-items {
+    display: none;
+  }
+
+  .footer-drop.active ~ .footer-list-items {
+    display: block;
+  }
+
+  .footer-list-items li a {
+    font-size: 14px;
+    color: #8c8c8c;
+    margin-bottom: 0px !important;
+    transition: 0.2s ease-in-out;
+  }
+
+  .copyright p {
+    padding: 20px 0 32px 0;
+  }
+
+  .footer-inner {
+    display: contents;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer-section a,
+  .footer-section li a,
+  .footer-section p {
+    font-size: 12px;
+  }
+  .footer-section p {
+    line-height: normal;
+  }
+  .footer-inner .links,
+  .footer-inner .social-media {
+    height: max-content;
+  }
+  .tyre-type .tyreg {
+    margin-bottom: 50px;
+  }
+
+  .footer-section .social-media a{
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,218 @@
+.touch-wrapper {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.touch-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.touch-wrapper h2 {
+  font-size: 36px;
+  font-family: "Poppins-Light";
+  font-weight: 300;
+  line-height: 50px;
+  color: #333333;
+}
+
+.touch-section .touch-section-region {
+  width: 100%;
+  max-width: 576px;
+  padding: 40px 57px 50px 101px;
+  border-radius: 10px;
+  background-color: #ddeaf5;
+  margin-top: 40px;
+  min-height: 375px;
+}
+
+.touch-section .touch-section-region h3 {
+  font-family: "Poppins-Light";
+  font-size: 36px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.touch-section .touch-section-region .info {
+  margin-bottom: 33px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.touch-section .touch-section-region .info:nth-child(4) {
+  align-items: center;
+}
+
+.touch-section .touch-section-region .info:last-child {
+  margin-bottom: 0;
+}
+
+.touch-section .touch-section-region .info img {
+  max-width: 20px;
+  width: 100%;
+  margin-right: 9px;
+}
+
+.touch-section .touch-section-region .info span {
+  /* display: block; */
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.touch-section .touch-section-region .info i {
+  margin-right: 6px;
+}
+
+.icomoon.phone::before {
+  content: "";
+  font-family: "icomoon";
+  color: #000;
+  font-size: 20px;
+}
+
+.icomoon.user::before {
+  content: "\e90b";
+  font-family: "icomoon";
+  color: #000;
+  font-size: 20px;
+}
+
+.icomoon.mail::before {
+  content: "\e90b";
+  font-family: "icomoon";
+  color: #000;
+  font-size: 20px;
+}
+
+.icomoon.location::before {
+  content: "\e90b";
+  font-family: "icomoon";
+  color: #000;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 767.69px) and (min-width: 320px) {
+  .touch-wrapper {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .touch-wrapper h2 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #252525;
+    text-align: center;
+    padding: 3px 0;
+  }
+
+  .touch-section {
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .touch-section .touch-section-region {
+    padding: 30.7px 15px 28px 20px;
+    margin-top: 0px;
+    min-height: auto;
+    max-width: 100%;
+  }
+
+  .touch-section .touch-section-region h3 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #252525;
+    margin-bottom: 20px;
+  }
+
+  .touch-section .touch-section-region .info {
+    margin-bottom: 22px;
+    /* width: 327px; */
+  }
+
+  .touch-section .touch-section-region .info:last-child {
+    margin-bottom: 0;
+  }
+
+  .touch-section .touch-section-region .info span {
+    font-size: 14px;
+    color: #333333;
+    line-height: normal;
+  }
+
+  .touch-section .touch-section-region .info i {
+    margin-right: 8px;
+  }
+
+  .touch-section .touch-section-region .info img {
+    max-width: 18px;
+    width: auto;
+    margin-right: 8px;
+  }
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 768px) {
+  .touch-wrapper {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .touch-wrapper h2 {
+    font-size: 28px;
+    line-height: 32px;
+    color: #252525;
+    text-align: center;
+    padding: 3px 0;
+  }
+
+  .touch-section {
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  .touch-section .touch-section-region {
+    padding: 28px;
+    margin-top: 0px;
+    min-height: auto;
+    max-width: 100%;
+  }
+
+  .touch-section .touch-section-region h3 {
+    font-size: 28px;
+    line-height: normal;
+  }
+
+  .touch-section .touch-section-region .info {
+    margin-bottom: 22px;
+    /* width: 327px; */
+  }
+
+  .touch-section .touch-section-region .info:last-child {
+    margin-bottom: 0;
+  }
+
+  .touch-section .touch-section-region .info span {
+    font-size: 14px;
+    color: #333333;
+    line-height: normal;
+  }
+
+  .touch-section .touch-section-region .info i {
+    margin-right: 8px;
+  }
+
+  .touch-section .touch-section-region .info img {
+    max-width: 18px;
+    width: auto;
+    margin-right: 8px;
+  }
+}

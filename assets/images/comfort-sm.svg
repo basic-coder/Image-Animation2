@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <path id="9kc4ypb6la" d="M0 0H80V80H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-49 -551) translate(49 551)">
+                <mask id="se9d00jwrb" fill="#fff">
+                    <use xlink:href="#9kc4ypb6la"/>
+                </mask>
+                <g mask="url(#se9d00jwrb)">
+                    <g>
+                        <path fill="#89C5CC" fill-rule="nonzero" d="M35.947 0h9.946c2.747 0 4.974 2.17 4.974 4.848l.72 3.637c0 2.677-2.227 4.848-4.973 4.848H35.227c-2.747 0-4.973-2.17-4.973-4.848l.72-3.637C30.974 2.171 33.2 0 35.947 0z" transform="translate(-20.444 25.778)"/>
+                        <path fill="#89C5CC" fill-rule="nonzero" d="M27.029 13.333h26.894c3.825 0 7.046 2.836 7.502 6.603l2.427 20.058c.365 3.022.171 6.085-.573 9.037l-2.652 10.525H20.325L17.672 49.03c-.744-2.952-.938-6.015-.573-9.037l2.427-20.058c.456-3.767 3.678-6.603 7.503-6.603z" transform="translate(-20.444 25.778)"/>
+                        <path fill="#5C63AB" fill-rule="nonzero" d="M25.809 13.333H54.253V59.555H25.809z" transform="translate(-20.444 25.778)"/>
+                        <path fill="#69A1AC" fill-rule="nonzero" d="M63.85 40.369l-2.445-19.674c-.229-1.825-1.16-3.502-2.607-4.695-.735 5.397-2.266 10.667-4.544 15.647v27.909H60.6l2.673-10.324c.75-2.895.946-5.9.578-8.863z" transform="translate(-20.444 25.778)"/>
+                        <path fill="#3B3944" fill-rule="nonzero" d="M25.81 13.66v.236c.299-.048.585-.236.888-.236h-.889zM55.142 13.66h-.888c.302 0 .588.188.888.236v-.236z" transform="translate(-20.444 25.778)"/>
+                        <path fill="#568D98" fill-rule="nonzero" d="M47.737 2.667c.603.81.927 1.773.927 2.76l.745 3.632c0 2.674-2.309 4.842-5.157 4.842H33.194c-1.052 0-2.08-.304-2.94-.872.96 1.304 2.54 2.082 4.23 2.082H45.54c2.848 0 5.157-2.168 5.157-4.842l-.745-3.63c-.001-1.585-.829-3.07-2.216-3.972z" transform="translate(-20.444 25.778)"/>
+                        <g>
+                            <path fill="#2F3676" fill-rule="nonzero" d="M26.552 0C20.79 16.885 3.392 27.522 0 29.333h26.667V22.92L26.552 0z" transform="translate(-20.444 25.778) translate(27.587 31.111)"/>
+                        </g>
+                        <path fill="#FFF" fill-rule="nonzero" d="M30.254 21.333H50.698V24H30.254zM30.254 27.556H50.698V30.223H30.254z" transform="translate(-20.444 25.778)"/>
+                        <path fill="#FFF" fill-rule="nonzero" d="M4.476 34.667H50.698V37.334H4.476z" transform="translate(-20.444 25.778) rotate(90 27.587 36)"/>
+                        <path fill="#FFF" fill-rule="nonzero" d="M30.254 34.667L76.476 34.667 76.476 37.333 30.254 37.333z" transform="translate(-20.444 25.778) rotate(90 53.365 36)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

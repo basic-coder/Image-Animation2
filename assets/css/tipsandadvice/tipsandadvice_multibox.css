@@ -1,0 +1,240 @@
+.multibox-section {
+  margin-top: 80px;
+}
+
+.multibox-section-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  column-gap: 24px;
+  row-gap: 30px;
+}
+
+.component {
+  position: relative;
+  flex-direction: column;
+  z-index: 1;
+  min-height: 532px;
+  max-width: 376px;
+}
+
+.component img {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.7)
+  ) !important;
+  height: 100%;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.component .cartyre-cont {
+  position: absolute;
+  z-index: 999;
+  top: 0rem;
+  padding: 60px 29px 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.72) 11%,
+    rgba(0, 0, 0, 0) 63%
+  );
+  border-radius: 10px;
+  height: 100%;
+}
+
+.component span {
+  color: #333333;
+  font-weight: 500;
+  font-size: 14px;
+  /* display: block;
+  width: fit-content;
+  height: 32px;
+  display: flex;
+  align-items: center; */
+  max-width: 88px;
+  width: 100%;
+  max-height: 32px;
+  height: 100%;
+  text-align: center;
+  background-color: #dedede;
+  line-height: normal;
+  border-radius: 20px;
+  padding: 6px 14px;
+  /* margin-bottom: 20px; */
+  font-family: "Poppins-Medium";
+}
+
+.component h3 {
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  font-family: "Poppins-Regular";
+  margin-top: 40px;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.component p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  /* margin-bottom: 60px; */
+  font-family: "Poppins-Medium";
+}
+
+.component a {
+  color: #f5822d;
+  text-decoration: none;
+  position: absolute;
+  bottom: 60px;
+  font-family: "Poppins-SemiBold";
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.more {
+  display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+  .multibox-section {
+    margin-top: 41px;
+  }
+
+  .multibox-section-wrapper {
+    width: 100%;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    row-gap: 12px;
+  }
+
+  .component {
+    width: 100%;
+    /* margin-bottom: 12px; */
+    min-height: 236px;
+    max-width: 100%;
+  }
+
+  .component .cartyre-cont {
+    padding: 21px 14px;
+  }
+
+  .component img {
+    height: 236px;
+    object-fit: cover;
+  }
+
+  .component span {
+    font-size: 8px;
+    margin-bottom: 20px;
+    padding: 4px 7px 4px 8px;
+    /* width: 49px;
+    height: 18px; */
+  }
+
+  .component h3 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 18px;
+    -webkit-line-clamp: 2;
+  }
+
+  .component p {
+    font-size: 10px;
+    margin-bottom: 10px;
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    height: 48px;
+    margin: 0 auto;
+    font-size: 10px;
+    line-height: 16px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .component h4,
+  .component a {
+    font-size: 10px !important;
+  }
+
+  .component a {
+    bottom: 21px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1203px) {
+  .multibox-section {
+    margin-top: 41px;
+  }
+
+  .multibox-section-wrapper {
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    row-gap: 16px;
+  }
+
+  .component {
+    width: 100%;
+    min-height: 236px;
+    max-width: 100%;
+  }
+
+  .component .cartyre-cont {
+    padding: 21px 14px;
+  }
+
+  .component img {
+    height: 236px;
+    object-fit: cover;
+  }
+
+  .component span {
+    font-size: 11px;
+    /* margin-bottom: 20px; */
+    padding: 5px 10px 5px 10px;
+  }
+
+  .component h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    line-height: 1.4em;
+    -webkit-line-clamp: 2;
+  }
+
+  .component p {
+    font-size: 10px;
+    margin-bottom: 10px;
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    height: 48px;
+    margin: 0 auto;
+    font-size: 10px;
+    line-height: 16px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .multibox-section-wrapper .component h4,
+  .multibox-section-wrapper a {
+    font-size: 10px !important;
+  }
+
+  .component a {
+    bottom: 21px;
+  }
+}

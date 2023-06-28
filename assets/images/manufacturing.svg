@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+    <defs>
+        <circle id="paegvqdmva" cx="60" cy="60" r="60"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-120 -37) translate(120 37)">
+                <mask id="g1vqrxqyeb" fill="#fff">
+                    <use xlink:href="#paegvqdmva"/>
+                </mask>
+                <use fill="#F8F8F8" xlink:href="#paegvqdmva"/>
+                <g mask="url(#g1vqrxqyeb)">
+                    <g>
+                        <path fill="#DCDCDC" fill-rule="nonzero" d="M78.628 15L101 15 101 26 78 26zM31 50L5 50 11.397 0 24.603 0z" transform="translate(10 63)"/>
+                        <path fill="#BEBEBE" fill-rule="nonzero" d="M24.918 0L15 0 21.082 50 31 50z" transform="translate(10 63)"/>
+                        <path fill="#DCDCDC" fill-rule="nonzero" d="M24.531 0L11.469 0 10 12 26 12z" transform="translate(10 63)"/>
+                        <path fill="#BEBEBE" fill-rule="nonzero" d="M24.629 0L15 0 16.371 12 26 12z" transform="translate(10 63)"/>
+                        <path fill="#DCDCDC" fill-rule="nonzero" d="M97.787 4L97.787 25.663 80.644 25.663 80.644 4 58.431 4 58.431 25.663 35.351 48.825 0 48.825 0 76 120 76 120 4z" transform="translate(10 63)"/>
+                        <path fill="#BEBEBE" fill-rule="nonzero" d="M74 4L82 4 82 27 74 27z" transform="translate(10 63)"/>
+                        <g>
+                            <path fill="#FFF" fill-rule="nonzero" d="M56.617.049L64.439.049 64.439 24.462 56.617 24.462zM74.942.049L82.764.049 82.764 24.462 74.942 24.462zM93.267.049L101.089.049 101.089 24.462 93.267 24.462z" transform="translate(10 63) translate(7 38)"/>
+                        </g>
+                    </g>
+                </g>
+                <g mask="url(#g1vqrxqyeb)">
+                    <g fill-rule="nonzero">
+                        <path fill="#89C5CC" d="M98.071 67.052L48.722 67.719 5.071 8.3 54.42 7.633z" transform="scale(-1 1) rotate(-9 118.268 992.465) rotate(9 51.571 37.676)"/>
+                        <g fill="#FDB62F" transform="scale(-1 1) rotate(-9 118.268 992.465) rotate(9 -16.434 570.233)">
+                            <circle cx="14" cy="14" r="7.538" transform="rotate(9 14 14)"/>
+                            <path d="M10.986 0.152L13.14 0.152 13.14 3.383 10.986 3.383z" transform="rotate(9 12.063 1.768)"/>
+                            <path d="M14.86 24.617L17.014 24.617 17.014 27.848 14.86 27.848z" transform="rotate(9 15.937 26.232)"/>
+                            <path d="M0.152 14.86L3.383 14.86 3.383 17.014 0.152 17.014z" transform="rotate(9 1.768 15.937)"/>
+                            <path d="M24.617 10.986L27.848 10.986 27.848 13.14 24.617 13.14z" transform="rotate(9 26.232 12.063)"/>
+                            <path d="M2.076 6.34L3.599 4.817 5.884 7.101 4.361 8.624z" transform="rotate(9 3.98 6.72)"/>
+                            <path d="M22.116 20.895L23.639 19.372 25.923 21.656 24.4 23.18z" transform="rotate(9 24.02 21.276)"/>
+                            <path d="M4.816 24.4L7.101 22.116 8.624 23.639 6.34 25.923z" transform="rotate(9 6.72 24.02)"/>
+                            <path d="M19.376 4.361L21.661 2.076 23.184 3.599 20.899 5.884z" transform="rotate(9 21.28 3.98)"/>
+                        </g>
+                        <path fill="#F7A72E" d="M97.452 32.183c3.69 1.806 8.236.47 10.153-2.984 1.504-2.711.97-6.027-1.32-8.211-1.813 4.412-4.865 8.28-8.833 11.195z" transform="scale(-1 1) rotate(-9 118.268 992.465) rotate(9 102.952 26.988)"/>
+                        <path fill="#69A1AC" d="M36.117 57.151L46.091 70.466 96.117 69.793 67.931 32.167z" transform="scale(-1 1) rotate(-9 118.268 992.465) rotate(9 66.117 51.316)"/>
+                        <path fill="#E2E2E2" d="M72.742 51.448l-8.74-12.273h13.88l-1.937-2.727H62.06l-8.74-12.273h13.9l-1.936-2.727H51.38L41.67 7.81h-4.05l9.71 13.637H35.39L25.683 7.81H21.63l9.709 13.637h-15.8l1.937 2.727H33.29l8.739 12.273H26.216l1.937 2.727h15.826l8.739 12.273H36.86l1.936 2.727h15.848l9.709 13.636h4.05l-9.709-13.636h11.939l9.709 13.636h4.05l-9.709-13.636h13.858l-1.937-2.727H72.742zM36.54 23.81h12.125l8.875 12H45.416l-8.875-12zm19.875 27l-8.875-12h12.125l8.875 12H56.416z" transform="scale(-1 1) rotate(-9 118.268 992.465) rotate(9 51.571 37.676)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

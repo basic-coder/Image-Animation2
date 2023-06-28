@@ -1,0 +1,692 @@
+.social-media-section-1 {
+  margin-top: 30px;
+}
+
+.social-media-section-2 {
+  margin-bottom: 60px;
+  margin-top: 24px;
+}
+
+.vertical-one {
+  grid-area: vertical-one;
+}
+
+.vertical-two {
+  grid-area: vertical-two;
+}
+
+.vertical-three {
+  grid-area: vertical-three;
+}
+
+.horizontal {
+  grid-area: horizontal;
+}
+
+.square {
+  grid-area: square;
+}
+
+.social-media-section-1 .social-media-wrapper {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "vertical-one horizontal horizontal"
+    "vertical-one vertical-two vertical-three"
+    "square vertical-two vertical-three";
+}
+
+.social-media-section-2 .social-media-wrapper {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "horizontal horizontal square"
+    /* "horizontal horizontal vertical-three" */
+    "vertical-one vertical-two vertical-three";
+}
+
+.social-media-wrapper .social-media-lhs {
+  display: flex;
+  max-width: 376px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.social-media-wrapper .social-media-rhs {
+  display: flex;
+  max-width: 776px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-left: 24px;
+}
+
+/* Common classes css for all components starts */
+.social-media-wrapper .scl-md-cmn {
+  /* margin-right: 24px; */
+  background-color: #ffffff;
+  border-radius: 10px;
+  /* margin-bottom: 24px; */
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.11);
+}
+
+/* .social-media-wrapper .scl-md-cmn:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+} */
+
+.social-media-wrapper .scl-md-cmn img {
+  /* width: 336px; */
+  /* height: 100%; */
+  max-height: 296px;
+}
+/* Common classes css for all components ends */
+
+/* vertical box css starts */
+.social-media-wrapper .social-media-component-vertical {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 376px;
+  padding: 20px;
+}
+
+.social-media-wrapper .social-media-component-vertical p {
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #8c8c8c;
+  margin-top: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.social-media-wrapper .social-media-component-vertical .likes-count {
+  display: flex;
+  margin-top: 24px;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.social-media-wrapper .social-media-component-vertical .likes-count span img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-media-wrapper .social-media-component-vertical .likes-count span {
+  margin-right: 11px;
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  color: #8c8c8c;
+}
+
+.social-media-wrapper
+  .social-media-component-vertical
+  .likes-count
+  span:last-child {
+  margin-right: 0;
+}
+
+.social-media-wrapper .social-media-component-vertical .social-media-type {
+  display: flex;
+  margin-top: 23px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media-wrapper
+  .social-media-component-vertical
+  .social-media-type
+  span
+  img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-media-wrapper .social-media-component-vertical .social-media-type span {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+}
+/* lhs vertical box css ends */
+
+/* lhs square box css starts */
+.social-media-wrapper .social-media-component-square {
+  position: relative;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.11);
+  border-radius: 10px;
+  /* margin-top: 24px;
+  margin-right: 24px; */
+  max-height: 336px;
+  max-width: 376px;
+  width: 100%;
+}
+
+.social-media-wrapper .social-media-component-square img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.social-media-wrapper .social-media-component-square .square-component-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.09);
+  padding: 64px 20px 20px 20px;
+}
+
+.social-media-wrapper
+  .social-media-component-square
+  .square-component-content
+  p {
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #c9c9c9;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.social-media-wrapper
+  .social-media-component-square
+  .square-component-content
+  .likes-logo {
+  display: flex;
+  margin-top: 14px;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-media-wrapper
+  .social-media-component-square
+  .square-component-content
+  .likes-logo
+  .likes-count
+  img {
+  height: 20px;
+  width: 20px;
+}
+.social-media-wrapper
+  .social-media-component-square
+  .square-component-content
+  .likes-logo
+  span {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.social-media-wrapper
+  .social-media-component-square
+  .square-component-content
+  .likes-logo
+  .likes-count {
+  display: flex;
+  align-items: center;
+}
+
+.social-media-wrapper
+  .social-media-component-square
+  .square-component-content
+  .likes-logo
+  .likes-count
+  span:first-child {
+  margin-right: 11px;
+}
+
+.social-media-wrapper
+  .social-media-component-square
+  .square-component-content
+  .likes-logo
+  .likes-count
+  span:nth-child(2) {
+  margin-right: 31px;
+}
+
+/* .social-media-wrapper
+  .social-media-component-square
+  .square-component-content
+  .likes-logo
+  span:nth-child(3) {
+  margin-right: 31px;
+} */
+/* square box css ends */
+
+/* horizontal box css starts */
+.social-media-wrapper .social-media-component-horizontal {
+  display: flex;
+  margin-right: 0;
+  width: 100%;
+  max-width: 776px;
+  /* margin-bottom: 24px; */
+  height: fit-content;
+  padding: 20px 30px 20px 20px;
+}
+
+.social-media-wrapper .social-media-component-horizontal .social-media-video {
+  /* width: 100;
+  max-width: 100%; */
+  width: 48%;
+  max-height: 296px;
+  max-width: 336px;
+}
+
+.social-media-wrapper
+  .social-media-component-horizontal
+  .social-media-video
+  iframe {
+  max-width: 336px;
+  height: 100%;
+  width: 100%;
+}
+
+.social-media-wrapper .social-media-component-horizontal .video-content {
+  /* margin-left: 20px;
+  width: 50%; */
+  margin-left: 20px;
+  width: 52%;
+  max-width: 370px;
+}
+
+.social-media-wrapper .social-media-component-horizontal .video-content p {
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #8c8c8c;
+  margin-top: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.social-media-wrapper
+  .social-media-component-horizontal
+  .video-content
+  p:first-child {
+  margin-top: 0;
+}
+
+.social-media-wrapper
+  .social-media-component-horizontal
+  .video-content
+  .likes-count {
+  display: flex;
+  margin-top: 55px;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.social-media-wrapper
+  .social-media-component-horizontal
+  .video-content
+  .likes-count
+  span
+  img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-media-wrapper
+  .social-media-component-horizontal
+  .video-content
+  .likes-count
+  span {
+  margin-right: 11px;
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  color: #8c8c8c;
+}
+
+.social-media-wrapper
+  .social-media-component-horizontal
+  .video-content
+  .likes-count
+  span:last-child {
+  margin-right: 0;
+}
+
+.social-media-wrapper
+  .social-media-component-horizontal
+  .video-content
+  .social-media-type {
+  display: flex;
+  margin-top: 25px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media-wrapper
+  .social-media-component-horizontal
+  .video-content
+  .social-media-type
+  span
+  img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-media-wrapper
+  .social-media-component-horizontal
+  .video-content
+  .social-media-type
+  span {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.media-flex {
+  display: flex;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767.69px) {
+  .social-media-section-1 .social-media-wrapper {
+    display: block;
+  }
+  .social-media-section-2 .social-media-wrapper {
+    display: block;
+  }
+
+  .social-media-section-1 .social-media-wrapper > div {
+    margin-bottom: 24px;
+  }
+  .social-media-section-2 .social-media-wrapper > div {
+    margin-bottom: 24px;
+  }
+
+  .social-media-section-2 .social-media-wrapper > div:last-child {
+    margin-bottom: 0;
+  }
+
+  .social-media-section-1 .social-media-heading {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .social-media-section-1 .social-media-heading h2 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #252525;
+  }
+
+  .social-media-section-1 .social-media-heading a {
+    margin-top: 10px;
+  }
+
+  /* .social-media-wrapper .social-media-lhs {
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .social-media-wrapper .social-media-rhs {
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100%;
+  } */
+
+  .social-media-wrapper .social-media-component-horizontal .social-media-video {
+    width: 100%;
+    max-height: 240px;
+    max-width: 100%;
+  }
+  .social-media-wrapper .social-media-component-vertical {
+    max-width: 100%;
+    /* margin-left: 0;
+    margin-right: 0; */
+    /* margin-bottom: 24px; */
+  }
+
+  .social-media-wrapper .social-media-component-horizontal {
+    flex-direction: column;
+    max-width: 100%;
+    /* margin-left: 0;
+    margin-right: 0; */
+    /* margin-bottom: 24px; */
+    padding: 20px;
+  }
+
+  .social-media-wrapper .social-media-component-square {
+    max-width: 100%;
+  }
+
+  .social-media-wrapper
+    .social-media-component-square
+    .square-component-content {
+    padding: 36.5px 15.6px 20px 22.4px;
+  }
+
+  .social-media-wrapper
+    .social-media-component-square
+    .square-component-content
+    p {
+    font-size: 14px;
+  }
+
+  .social-media-wrapper
+    .social-media-component-square
+    .square-component-content
+    .likes-logo
+    span {
+    font-size: 12px;
+  }
+
+  .social-media-wrapper
+    .social-media-component-square
+    .square-component-content
+    .likes-logo
+    .likes-count {
+    display: flex;
+  }
+
+  .social-media-wrapper
+    .social-media-component-square
+    .square-component-content
+    .likes-logo
+    .likes-count
+    span:first-child {
+    margin-right: 13px;
+  }
+
+  .social-media-wrapper
+    .social-media-component-square
+    .square-component-content
+    .likes-logo
+    .likes-count
+    span:nth-child(2) {
+    margin-right: 34px;
+  }
+
+  .social-media-wrapper
+    .social-media-component-square
+    .square-component-content
+    .likes-logo
+    img {
+    height: 18px;
+    width: 18px;
+  }
+
+  .social-media-wrapper .social-media-component-square img {
+    width: 100%;
+    max-height: 277px;
+    border-radius: 10px;
+  }
+
+  .social-media-wrapper .social-media-component-vertical p {
+    font-size: 14px;
+    margin-top: 18px;
+  }
+
+  .social-media-wrapper .social-media-component-vertical .likes-count {
+    margin-top: 16px;
+    align-items: center;
+  }
+
+  .social-media-wrapper .social-media-component-vertical .likes-count span {
+    font-size: 12px;
+  }
+  .social-media-wrapper .social-media-component-vertical .likes-count span img {
+    width: 18px;
+    height: 18px;
+  }
+  .social-media-wrapper .social-media-component-vertical .social-media-type {
+    margin-top: 20px;
+  }
+  .social-media-wrapper
+    .social-media-component-vertical
+    .social-media-type
+    span {
+    font-size: 12px;
+  }
+  .social-media-wrapper
+    .social-media-component-vertical
+    .social-media-type
+    span
+    img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .social-media-wrapper
+    .social-media-component-horizontal
+    .social-media-video
+    iframe {
+    width: 100%;
+    height: 240px;
+    max-width: 100%;
+  }
+
+  .social-media-wrapper .social-media-component-horizontal .video-content {
+    margin-left: 0;
+    margin-top: 18px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .social-media-wrapper .social-media-component-horizontal .video-content p {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .social-media-wrapper
+    .social-media-component-horizontal
+    .video-content
+    p:nth-child(2) {
+    display: none;
+  }
+
+  .social-media-wrapper
+    .social-media-component-horizontal
+    .video-content
+    .likes-count {
+    margin-top: 16px;
+    align-items: center;
+  }
+
+  .social-media-wrapper
+    .social-media-component-horizontal
+    .video-content
+    .likes-count
+    span
+    img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .social-media-wrapper
+    .social-media-component-horizontal
+    .video-content
+    .likes-count
+    span {
+    font-size: 12px;
+    margin-right: 12px;
+  }
+
+  .social-media-wrapper
+    .social-media-component-horizontal
+    .video-content
+    .social-media-type {
+    margin-top: 20px;
+  }
+
+  .social-media-wrapper
+    .social-media-component-horizontal
+    .video-content
+    .social-media-type
+    span {
+    font-size: 12px;
+  }
+
+  .social-media-wrapper
+    .social-media-component-horizontal
+    .video-content
+    .social-media-type
+    span
+    img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .social-media-wrapper .scl-md-cmn img {
+    width: 100%;
+    height: 100%;
+    max-height: 240px;
+  }
+
+  .media-flex {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .social-media-wrapper .social-media-component-square {
+    max-height: none;
+  }
+
+  .social-media-wrapper .social-media-component-horizontal .social-media-video {
+    max-height: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .social-media-wrapper p {
+    font-size: 14px !important;
+  }
+
+  .social-media-wrapper .social-media-component-square .square-component-content .likes-logo span {
+    font-size: 12px;
+  }
+
+  .social-media-wrapper .social-media-component-square .square-component-content .likes-logo .likes-count span:nth-child(2) {
+    margin-right: 20px;
+}
+
+}

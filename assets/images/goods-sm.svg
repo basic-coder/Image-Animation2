@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>goods</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="80" height="80"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-514.000000, -322.000000)">
+            <g id="goods" transform="translate(514.000000, 322.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g id="Group-4" mask="url(#mask-2)">
+                    <g transform="translate(-24.000000, 32.000000)">
+                        <path d="M5.90883002,43.9710074 C-6.94407796,47.7457106 2.31705833,53.9471948 22.6345836,55.2948666 C42.9521089,56.6425385 71.3247806,51.1035325 75.7704676,45.890367 C80.2161547,40.6772015 18.761738,40.1963042 5.90883002,43.9710074 Z" id="Background-Shape-Copy-2" fill="#CDD1D4"></path>
+                        <g id="Group-42" stroke-width="1" fill="none" transform="translate(7.000000, 0.500000)">
+                            <polygon id="Fill-1" fill="#C68C65" points="14.3298206 0 14.3298206 19.7345129 11.3624255 19.7345129 0 19.7345129 0 48 11.3624255 48 19.6966366 48 31.0590621 48 31.0590621 21.9902198 36.7956989 21.9902198 36.7956989 0"></polygon>
+                            <polygon id="Fill-2" fill="#C78B5B" points="26.1935484 48 42.4086022 48 42.4086022 26.1818182 26.1935484 26.1818182"></polygon>
+                            <polygon id="Fill-3" fill="#E5BE84" points="11.2258065 48 33.6774194 48 33.6774194 26.1818182 11.2258065 26.1818182"></polygon>
+                            <polygon id="Fill-4" fill="#EAD1B7" points="19.3333333 31.7922078 25.5698925 31.7922078 25.5698925 26.1818182 19.3333333 26.1818182"></polygon>
+                            <polygon id="Fill-5" fill="#EAD1B7" points="19.3333333 48 25.5698925 48 25.5698925 42.3896104 19.3333333 42.3896104"></polygon>
+                            <polygon id="Fill-16" fill="#E5BE84" points="35.5483871 48 58 48 58 26.1818182 35.5483871 26.1818182"></polygon>
+                            <polygon id="Fill-17" fill="#EAD1B7" points="43.655914 31.7922078 49.8924731 31.7922078 49.8924731 26.1818182 43.655914 26.1818182"></polygon>
+                            <polygon id="Fill-18" fill="#EAD1B7" points="43.655914 48 49.8924731 48 49.8924731 42.3896104 43.655914 42.3896104"></polygon>
+                            <polygon id="Fill-29" fill="#E5BE84" points="23.6989247 26.1818182 46.1505376 26.1818182 46.1505376 4.36363636 23.6989247 4.36363636"></polygon>
+                            <polygon id="Fill-30" fill="#EAD1B7" points="31.8064516 9.97402597 38.0430108 9.97402597 38.0430108 4.36363636 31.8064516 4.36363636"></polygon>
+                            <polygon id="Fill-31" fill="#EAD1B7" points="31.8064516 26.1818182 38.0430108 26.1818182 38.0430108 20.5714286 31.8064516 20.5714286"></polygon>
+                            <polygon id="Path-2" fill="#C68C65" points="46.1505376 4.36363636 36.7956989 0 33.6774194 3.12031255 33.6774194 4.36363636"></polygon>
+                            <polygon id="Path-3" fill="#C68C65" points="58 26.1818182 46.1505376 22.7599113 46.1505376 26.1818182"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

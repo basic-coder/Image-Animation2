@@ -1,0 +1,131 @@
+body {
+  padding-top: 90px;
+}
+
+.global-search-section {
+  top: 92px;
+}
+
+nav .navbar {
+  justify-content: flex-end;
+}
+nav .navbar-left {
+  display: none;
+}
+
+.plp-multibox {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.plp-multibox .multibox-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 24px;
+  row-gap: 30px;
+}
+
+.plp-component {
+  border-radius: 10px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.11);
+  background-color: #fff;
+  padding: 10px 0 34px 0;
+}
+
+.plp-component img {
+  margin: 0 auto;
+  height: 280px;
+}
+
+.plp-component h2 {
+  margin-top: 12px;
+  font-family: "Poppins-SemiBold";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  color: #2f2f2f;
+  text-transform: uppercase;
+}
+
+.plp-component .multibox-small-imgs {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.plp-component .multibox-small-imgs img {
+  width: 46px;
+  height: 46px;
+  margin: 0 20px 0 0;
+}
+
+.plp-component .multibox-small-imgs img:last-child {
+  margin: 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767.69px) {
+  body {
+    padding-top: 56px;
+  }
+
+  .plp-multibox {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  .plp-multibox .multibox-wrapper {
+    grid-template-columns: 1fr;
+    column-gap: unset;
+    row-gap: 20px;
+  }
+
+  .plp-component {
+    padding: 8px 0 40px 0;
+  }
+
+  .plp-component img {
+    margin: 0 auto;
+    height: 220px;
+  }
+
+  .plp-component h2 {
+    margin-top: 6px;
+  }
+
+  .plp-component .multibox-small-imgs img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .plp-component img {
+    margin: 0 auto;
+    height: 230px;
+  }
+
+  .plp-component h2 {
+    font-size: 20px;
+  }
+
+  .plp-component .multibox-small-imgs {
+    margin-top: 20px;
+  }
+
+  .plp-component .multibox-small-imgs img {
+    width: 30px;
+    height: auto;
+    margin: 0 10px 0 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .global-search-section {
+    top: 92px !important;
+  }
+
+  .global-search-section.scrolled-header-search {
+    top: 70px !important;
+  }
+}

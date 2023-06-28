@@ -1,0 +1,220 @@
+/* .feature-and-benefits-section {
+  margin-top: 60px;
+} */
+
+.feature-and-benefits-wrapper {
+  /* display: flex;
+  justify-content: flex-end; */
+  margin-top: 60px;
+}
+
+.feature-and-benefits-wrapper .rhs {
+  max-width: 476px;
+  width: 100%;
+}
+
+.feature-and-benefits-wrapper .feature-and-benefits .heading h2 {
+  font-family: "Poppins-Light";
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 42px;
+  color: #252525;
+}
+
+.feature-and-benefits-wrapper .feature-and-benefits .content {
+  margin-top: 40px;
+}
+
+.feature-and-benefits-wrapper .feature-and-benefits .content img {
+  width: 100%;
+  max-height: 465px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767.69px) {
+  .feature-and-benefits-section {
+    margin-top: 40px;
+  }
+  .feature-and-benefits-wrapper {
+    justify-content: unset;
+  }
+
+  .feature-and-benefits-wrapper .rhs {
+    max-width: 100%;
+  }
+
+  .feature-and-benefits-wrapper .feature-and-benefits .heading h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .feature-and-benefits-wrapper .feature-and-benefits .content {
+    margin-top: 30px;
+  }
+  .feature-and-benefits-wrapper .feature-and-benefits .content img {
+    max-height: 414px;
+    width: 100%;
+    min-height: 414px;
+  }
+}
+
+/* circular progress bar starts */
+
+.progress-round-bar {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.round-bar-wrapper {
+  text-align: center;
+}
+
+.round-bar-wrapper h4 {
+  font-family: "Poppins-Light";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: -0.05px;
+  color: #2a2828;
+  margin-top: 8px;
+}
+.progress-circle {
+  position: relative;
+  display: inline-block;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background-color: #d8d8d8;
+}
+
+.progress-circle:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-animation: colorload 2s;
+  animation: colorload 2s;
+}
+
+.progress-circle span {
+  position: absolute;
+  left: 44%;
+  top: 44%;
+  display: block;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  margin-left: -30px;
+  margin-top: -30px;
+  text-align: center;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 1;
+  font-family: "Poppins-SemiBold";
+  font-size: 20px;
+  font-weight: 600;
+  color: #2f2f2f;
+}
+
+.progress-circle.progress-92:after {
+  background-image: linear-gradient(
+      90deg,
+      #0054ab 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(-62.2deg, #0054ab 50%, #d8d8d8 50%, #d8d8d8);
+}
+
+.progress-circle.progress-85:after {
+  background-image: linear-gradient(
+      90deg,
+      #0054ab 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(-50.4deg, #0054ab 50%, #d8d8d8 50%, #d8d8d8);
+}
+
+.progress-circle.progress-68:after {
+  background-image: linear-gradient(
+      90deg,
+      #0054ab 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(395.2deg, #0054ab 50%, #d8d8d8 50%, #d8d8d8);
+}
+
+@-webkit-keyframes colorload {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-360deg);
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767.69px) {
+  .progress-round-bar {
+    margin-top: 40px;
+  }
+
+  .round-bar-wrapper {
+    /* text-align: center; */
+    max-width: 63px;
+  }
+
+  .round-bar-wrapper h4 {
+    font-size: 14px;
+    line-height: 15px;
+    margin-top: 6px;
+  }
+  .progress-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .progress-circle:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-animation: colorload 2s;
+    animation: colorload 2s;
+  }
+
+  .progress-circle span {
+    left: 58.5%;
+    top: 58.5%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .progress-round-bar {
+    margin-top: 40px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
+  /* .feature-and-benefits-wrapper {
+    display: flex;
+    justify-content: unset;
+  }
+
+  .feature-and-benefits-wrapper .rhs {
+    max-width: 100%;
+  } */
+}

@@ -1,0 +1,209 @@
+.ceat-partner-dealership-section {
+  margin-top: 112px;
+}
+
+.ceat-partner-dealership-wrapper {
+  display: flex;
+}
+
+.ceat-partner-dealership-wrapper .dealership-lhs {
+  width: 40%;
+  max-width: 432px;
+}
+
+.ceat-partner-dealership-wrapper .dealership-lhs img {
+  width: 432px;
+  height: 492px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.11);
+}
+
+.ceat-partner-dealership-wrapper .dealership-rhs {
+  margin-left: 74px;
+  width: 55%;
+}
+.dealership-rhs .dealership-heading {
+  margin-bottom: 35px;
+}
+.dealership-rhs .dealership-heading h2 {
+  font-family: "Poppins-Light";
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 50px;
+  letter-spacing: normal;
+  color: #333333;
+}
+
+.dealership-rhs .dealership-content .content-component img {
+  width: auto;
+  /* height: 68px; */
+  object-fit: contain;
+  margin-top: 15px;
+}
+
+.dealership-rhs .dealership-content .content-component {
+  display: flex;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+.dealership-rhs .dealership-content .content-component:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.dealership-rhs .dealership-content .content-component .content-inner {
+  margin-left: 24px;
+}
+
+.dealership-rhs .dealership-content .content-component .content-inner h3 {
+  font-family: "Poppins-SemiBold";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: normal;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.dealership-rhs .dealership-content .content-component .content-inner p {
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #8c8c8c;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767.69px) {
+  .ceat-partner-dealership-section {
+    margin-top: 70px;
+  }
+  .ceat-partner-dealership-wrapper {
+    flex-direction: column;
+  }
+
+  .ceat-partner-dealership-wrapper .dealership-lhs {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ceat-partner-dealership-wrapper .dealership-lhs img {
+    height: 354px;
+    width: 100%;
+  }
+
+  .ceat-partner-dealership-wrapper .dealership-rhs {
+    width: 100%;
+    margin: 30px auto 0;
+  }
+
+  .dealership-rhs .dealership-heading {
+    display: none;
+  }
+
+  .dealership-rhs .dealership-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dealership-rhs .dealership-content .content-component {
+    margin-bottom: 20px;
+    align-items: flex-start;
+  }
+
+  .dealership-rhs .dealership-content .content-component img {
+    width: 40px !important;
+    margin-top: 15px;
+  }
+
+  .dealership-rhs .dealership-content .content-component .content-inner {
+    margin-left: 13px;
+  }
+
+  .dealership-rhs .dealership-content .content-component .content-inner h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .dealership-rhs .dealership-content .content-component .content-inner p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1150px) {
+  .ceat-partner-dealership-wrapper {
+    flex-direction: column;
+  }
+
+  .ceat-partner-dealership-wrapper .dealership-lhs {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ceat-partner-dealership-wrapper .dealership-lhs img {
+    height: 354px;
+    width: 100%;
+  }
+
+  .ceat-partner-dealership-wrapper .dealership-rhs {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .ceat-partner-dealership-wrapper .dealership-rhs .dealership-heading {
+    text-align: center;
+  }
+
+  .ceat-partner-dealership-wrapper .dealership-rhs .dealership-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+
+  .ceat-partner-dealership-wrapper
+    .dealership-rhs
+    .dealership-content
+    .content-component {
+    flex-direction: column;
+    margin-bottom: 0;
+    min-height: 330px;
+    max-height: 100%;
+    width: 100%;
+  }
+
+  .ceat-partner-dealership-wrapper
+    .dealership-rhs
+    .dealership-content
+    .content-component
+    img {
+    margin: 0 auto;
+    height: 70px;
+  }
+
+  .dealership-rhs .dealership-content .content-component .content-inner {
+    margin-left: unset;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+  }
+
+  .dealership-rhs .dealership-content .content-component .content-inner p {
+    position: absolute;
+    /* bottom: 0; */
+    top: 70px;
+  }
+
+  .ceat-partner-dealership-wrapper
+    .dealership-rhs
+    .dealership-content
+    .content-component
+    .content-inner
+    h3 {
+    line-height: 30px;
+  }
+
+  /* .ceat-partner-dealership-wrapper .dealership-rhs .dealership-content .content-component:nth-child(3) .content-inner h3{
+    margin-bottom: 38px;
+  } */
+}

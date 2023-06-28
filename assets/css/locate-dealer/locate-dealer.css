@@ -1,0 +1,441 @@
+.locate-dealer-section {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.locate-dealer-wrapper {
+  display: flex;
+}
+
+.locate-dealer-wrapper .lhs {
+  max-width: 600px;
+  width: 100%;
+}
+
+.locate-dealer-wrapper .lhs .map-wrap {
+  min-height: 340px;
+  height: 100%;
+}
+
+.locate-dealer-wrapper .lhs .map-wrap img {
+  height: 340px;
+  width: 100%;
+}
+
+.locate-dealer-wrapper .rhs {
+  max-width: 476px;
+  width: 100%;
+  margin-left: 100px;
+}
+
+.rhs .store-list .form-heading {
+  margin-bottom: 40px;
+}
+
+.rhs .store-list .form-heading h2 {
+  font-family: "Poppins-Light";
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 50px;
+  color: #333333;
+}
+
+.rhs
+  .store-list
+  .form-wrapper-locate-dealer
+  .bs-form
+  .form-wrap
+  form
+  .form-input {
+  position: relative;
+  margin-bottom: 12px;
+  max-width: 376px;
+  width: 100%;
+}
+
+.rhs
+  .store-list
+  .form-wrapper-locate-dealer
+  .bs-form
+  .form-wrap
+  form
+  .form-input
+  input {
+  border: none;
+  border-bottom: 1px solid #979797;
+  padding-bottom: 8px;
+  padding-left: 0;
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  outline: none;
+  width: 100%;
+}
+
+.rhs
+  .store-list
+  .form-wrapper-locate-dealer
+  .bs-form
+  .form-wrap
+  form
+  .form-input
+  .floating-placeholder {
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  color: #8c8c8c;
+  transition: 0.2s ease all;
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  bottom: 8px;
+}
+
+.rhs
+  .store-list
+  .form-wrapper-locate-dealer
+  .bs-form
+  .form-wrap
+  form
+  .form-input
+  input:focus
+  ~ .floating-placeholder,
+.rhs
+  .store-list
+  .form-wrapper-locate-dealer
+  .bs-form
+  .form-wrap
+  form
+  .form-input
+  input:not(:focus):valid
+  ~ .floating-placeholder {
+  /* transform: translateY(-20px); */
+  bottom: 37px;
+  left: 0;
+  font-size: 14px;
+  opacity: 1;
+  line-height: unset;
+}
+
+.bs-form .form-wrap form .form-input .icon-search {
+  position: absolute;
+  right: 12.5px;
+  bottom: 12px;
+  color: #8c8c8c;
+  height: 16px;
+  width: 16px;
+}
+
+.bs-form .form-wrap form .form-content-wrapper .icon-pin-location {
+  margin-top: 5px;
+  margin-left: 11px;
+  color: #8c8c8c;
+  height: 16px;
+  width: 16px;
+}
+
+.rhs .bs-address.typ-store-address.active .item {
+  padding: 40px 0;
+  border-bottom: 1px dashed #979797;
+}
+
+.rhs .bs-address.typ-store-address .item:first-child {
+  padding-top: 0;
+}
+
+.rhs .bs-address.typ-store-address .item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.rhs .form-wrapper-locate-dealer .form-content-wrapper {
+  display: flex;
+}
+.bs-address.typ-store-address .item .store-name {
+  margin-bottom: 8px;
+  font-family: "Poppins-SemiBold";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: normal;
+  color: #333333;
+}
+
+.bs-address.typ-store-address .item:nth-child(3) .store-name {
+  margin-bottom: 0;
+}
+
+.bs-address.typ-store-address .item .address {
+  margin-bottom: 8px;
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #8c8c8c;
+  width: 65%;
+}
+
+.bs-address.typ-store-address .item .contact-no {
+  margin-bottom: 20px;
+  display: block;
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  color: #8c8c8c;
+}
+
+.bs-address.typ-store-address .item .distance-val {
+  font-family: "Poppins-Regular";
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 16px;
+  letter-spacing: -0.05px;
+  color: #8d8d8d;
+}
+
+.bs-address.typ-store-address .item img {
+  width: 54px;
+  height: 19px;
+  margin-bottom: 10px;
+}
+
+.bs-address.typ-store-address .item .act-wrap {
+  display: flex;
+  margin-top: 22px;
+}
+
+.bs-address.typ-store-address .item .act-wrap a{
+  cursor: pointer;
+}
+.bs-address.typ-store-address .item .act-wrap span {
+  font-size: 23px;
+  margin-right: 33px;
+  transition: all 0.4s ease-in-out;
+}
+
+.bs-address.typ-store-address .item .act-wrap span:hover {
+  color: #f5822d;
+}
+.bs-address.typ-store-address .item .act-wrap .icon-book {
+  margin-right: 0;
+}
+
+.bs-address {
+  margin-top: 40px;
+  display: none;
+}
+
+.bs-address.active {
+  display: block;
+}
+
+.bs-address .bs-address-heading {
+  margin-bottom: 20px;
+}
+.bs-address .bs-address-heading h3 {
+  font-family: "Poppins-SemiBold";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: normal;
+  color: #333333;
+}
+
+/* .bs-form .form-wrap form .form-input .icon {
+  font-size: 16px;
+} */
+
+.bs-form .form-wrap form span {
+  font-family: "Poppins-Regular";
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.05px;
+  color: #8d8d8d;
+}
+
+.bs-form .form-wrap form span.hide {
+  display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767.69px) {
+  .locate-dealer-section {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  .locate-dealer-wrapper {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .locate-dealer-wrapper .lhs {
+    width: 100%;
+    max-width: 100%;
+    /* order: 2; */
+  }
+
+  .locate-dealer-wrapper .lhs .map-wrap {
+    min-height: 458px;
+    height: 100%;
+    padding-top: 138px;
+  }
+
+  .locate-dealer-wrapper .lhs .map-wrap img {
+    height: 458px;
+  }
+
+  .locate-dealer-wrapper .rhs {
+    width: 100%;
+    margin-left: 0;
+    max-width: 100%;
+    /* order: 1; */
+  }
+
+  .rhs .store-list .form-wrapper-locate-dealer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .rhs .store-list .form-heading h2 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #252525;
+  }
+
+  .rhs
+    .store-list
+    .form-wrapper-locate-dealer
+    .bs-form
+    .form-wrap
+    form
+    .form-input {
+    margin-bottom: 9px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .rhs
+    .store-list
+    .form-wrapper-locate-dealer
+    .bs-form
+    .form-wrap
+    form
+    .form-input
+    input {
+    font-size: 14px;
+  }
+
+  .rhs
+  .store-list
+  .form-wrapper-locate-dealer
+  .bs-form
+  .form-wrap
+  form
+  .form-input
+  .floating-placeholder {
+    font-size: 14px;
+  }
+
+  .rhs
+  .store-list
+  .form-wrapper-locate-dealer
+  .bs-form
+  .form-wrap
+  form
+  .form-input
+  input:focus
+  ~ .floating-placeholder,
+.rhs
+  .store-list
+  .form-wrapper-locate-dealer
+  .bs-form
+  .form-wrap
+  form
+  .form-input
+  input:not(:focus):valid
+  ~ .floating-placeholder {
+    /* transform: translateY(-15px); */
+    bottom: 30px;
+    font-size: 12px;
+  }
+
+  /* .bs-form .form-wrap form .form-input .icon {
+    font-size: 12px;
+  } */
+
+  .bs-form .form-wrap form .form-input .icon-search {
+    right: 7px;
+  }
+
+  .bs-form .form-wrap form .form-content-wrapper .icon-pin-location {
+    margin-left: 5px;
+    margin-top: 3px;
+  }
+
+  .rhs .store-list .form-heading {
+    margin-bottom: 24px;
+  }
+
+  .bs-form .form-wrap form span {
+    font-size: 12px;
+    letter-spacing: -0.04px;
+  }
+
+  .bs-address .bs-address-heading {
+    margin-bottom: 18px;
+  }
+
+  .bs-address .bs-address-heading h3 {
+    font-size: 16px;
+  }
+
+  .bs-address.typ-store-address .item .store-name {
+    font-size: 16px;
+  }
+
+  .bs-address.typ-store-address .item .address {
+    font-size: 14px;
+    margin-bottom: 9px;
+    width: 100%;
+  }
+
+  .bs-address.typ-store-address .item .contact-no {
+    font-size: 14px;
+    margin-bottom: 22px;
+  }
+
+  .bs-address.typ-store-address .item .distance-val {
+    font-size: 12px;
+    letter-spacing: -0.04px;
+  }
+
+  .bs-address.typ-store-address .item img {
+    width: 45.5px;
+    height: 16px;
+    margin-bottom: 10px;
+  }
+
+  .bs-address.typ-store-address .item .act-wrap span {
+    font-size: 20px !important;
+    margin-right: 38px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .locate-dealer-wrapper .rhs {
+    margin-left: 70px;
+  }
+ 
+  .rhs .store-list .form-heading h2 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+  .bs-address.typ-store-address .item .address {
+    width: 100%;
+  }
+}

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="140" viewBox="0 0 140 140">
+    <defs>
+        <circle id="679t8l713a" cx="70" cy="70" r="70"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-475 -1118) translate(475 1118)">
+                <mask id="5aep03jvqb" fill="#fff">
+                    <use xlink:href="#679t8l713a"/>
+                </mask>
+                <use fill="#F0F0F0" xlink:href="#679t8l713a"/>
+                <g mask="url(#5aep03jvqb)">
+                    <g transform="translate(-92.75 54.25)">
+                        <g fill-rule="nonzero">
+                            <path fill="#BABAC0" d="M187.322 27.087h-6.69V17.052h-13.38v-6.69h16.725c1.846 0 3.345 1.498 3.345 3.345v13.38z"/>
+                            <path fill="#FFF" d="M40.14 73.917H0v-66.9C0 3.32 2.994.327 6.69.327h154.507c3.435 0 6.312 2.602 6.657 6.02l2.742 30.775 17.672 2.525c3.295.472 5.744 3.295 5.744 6.623v27.647h-10.035"/>
+                            <g fill="#30516C">
+                                <path d="M49.565.215H68.815V20.285H49.565zM25.065.215H44.315V20.285H25.065z" transform="translate(69.106 13.491)"/>
+                            </g>
+                            <g>
+                                <path fill="#E2E2E2" d="M.013.255H100.364V6.945H.013zM63.569 13.635H100.364V20.325H63.569z" transform="translate(10.022 43.557)"/>
+                                <path fill="#BABAC0" d="M180.619 30.453h-6.69V20.418c0-5.543-4.493-10.035-10.036-10.035h-23.415v-6.69h23.415c9.232.01 16.715 7.493 16.726 16.725v10.035z" transform="translate(10.022 43.557)"/>
+                            </g>
+                            <g fill="#25313B" transform="translate(40.088 60.518)">
+                                <circle cx="130.508" cy="13.4" r="13.38"/>
+                            </g>
+                            <path fill="#30516C" d="M160.561 17.052v16.725c0 1.846 1.499 3.345 3.345 3.345h6.69l-2.087-23.415h-4.603c-1.846 0-3.345 1.498-3.345 3.345z"/>
+                        </g>
+                        <circle cx="170.567" cy="73.816" r="8.287" fill="#EFE8E0"/>
+                        <circle cx="170.567" cy="73.816" r="3.662" fill="#F5822D"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

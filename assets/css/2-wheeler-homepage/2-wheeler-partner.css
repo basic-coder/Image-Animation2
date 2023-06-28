@@ -1,0 +1,95 @@
+.partner-section-main-wrap {
+  background-color: #ddeaf5;
+}
+
+.partner-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partner-section-wrapper .partner-section-image {
+  width: 25%;
+  min-width: 200px;
+  min-height: 260px;
+}
+
+.partner-section-wrapper .partner-section-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.partner-section-wrapper .partner-section-content {
+  width: 75%;
+}
+.partner-section-wrapper .partner-section-content h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #252525;
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.partner-section-wrapper .partner-section-content .partnerLink {
+  width: 234px;
+  height: 40px;
+  margin: 26px 0 0 0px;
+  padding: 9px 23px;
+  border-radius: 20.5px;
+  background-color: #f5822d;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins-SemiBold";
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767.69px) {
+  .partner-section-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .partner-section-wrapper .partner-section-image {
+    width: 200px;
+    height: 186px;
+    margin: 0 auto;
+    min-height: unset;
+  }
+
+  .partner-section-wrapper .partner-section-content h2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .partner-section-wrapper .partner-section-content {
+    text-align: center;
+    margin: 0 auto 31px auto;
+    left: 0;
+  }
+
+  .partner-section-wrapper .partner-section-content .partnerLink {
+    width: 207px;
+    margin: 0 auto;
+    height: 37px;
+    font-size: 14px;
+    font-weight: 600;
+    /* font-stretch: normal; */
+    letter-spacing: normal;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
+  .partner-section-wrapper .partner-section-content .partnerLink {
+    margin: 28px auto 0 auto;
+  }
+
+  .partner-section-wrapper .partner-section-content h2 {
+    margin-top: 30px;
+  }
+}

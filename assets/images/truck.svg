@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="245px" height="122px" viewBox="0 0 245 122" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 4</title>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tyre-selector_4-wheeler_desktop_Step-5" transform="translate(-697.000000, -99.000000)">
+            <g id="Group-4" transform="translate(697.000000, 99.000000)">
+                <g id="mover-truck" transform="translate(0.794838, 0.000000)">
+                    <g transform="translate(0.560773, 0.963158)">
+                        <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="0.358499962 0.0893559841 151.607119 0.0893559841 151.607119 88.3085334 0.358499962 88.3085334"></polygon>
+                        <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="242.401324 88.3085334 242.401324 53.520925 220.953735 49.1639934 199.767099 13.0989254 163.607119 13.0989254 163.607119 88.3085334"></polygon>
+                        <rect id="Rectangle" fill="#D8D8D8" x="152" y="22" width="12" height="66"></rect>
+                        <polygon id="Path" fill="#F5822D" fill-rule="nonzero" points="228.669978 63.6727577 242.401324 63.6727577 242.401324 74.827363 228.669978 74.827363"></polygon>
+                        <polygon id="Path" fill="#30516C" fill-rule="nonzero" points="207.010986 25.4300512 176.948688 25.4300512 176.948688 49.1639934 220.953735 49.1639934"></polygon>
+                        <polygon id="Path" fill="#25313B" fill-rule="nonzero" points="0.963208015 88.3085334 241.963208 88.3085334 241.963208 108.484784 0.963208015 108.484784"></polygon>
+                        <ellipse id="Oval" fill="#25313B" fill-rule="nonzero" cx="201.499699" cy="98.3511532" rx="22.3130232" ry="22.3555434"></ellipse>
+                        <ellipse id="Oval" fill="#EFE8E0" fill-rule="nonzero" cx="201.499699" cy="98.351153" rx="13.5017737" ry="13.527503"></ellipse>
+                        <ellipse id="Oval" fill="#F5822D" fill-rule="nonzero" cx="201.499699" cy="98.3511532" rx="5.29005281" ry="5.30013367"></ellipse>
+                        <g id="Group-2" transform="translate(11.009880, 75.995610)" fill-rule="nonzero">
+                            <ellipse id="Oval" fill="#25313B" cx="22.3130232" cy="22.3555434" rx="22.3130232" ry="22.3555434"></ellipse>
+                            <ellipse id="Oval" fill="#EFE8E0" cx="22.313023" cy="22.3555433" rx="13.5017737" ry="13.527503"></ellipse>
+                            <ellipse id="Oval" fill="#F5822D" cx="22.3130232" cy="22.3555435" rx="5.29005281" ry="5.30013367"></ellipse>
+                        </g>
+                        <g id="Group-2" transform="translate(64.009880, 75.995610)" fill-rule="nonzero">
+                            <ellipse id="Oval" fill="#25313B" cx="22.3130232" cy="22.3555434" rx="22.3130232" ry="22.3555434"></ellipse>
+                            <ellipse id="Oval" fill="#EFE8E0" cx="22.313023" cy="22.3555433" rx="13.5017737" ry="13.527503"></ellipse>
+                            <ellipse id="Oval" fill="#F5822D" cx="22.3130232" cy="22.3555435" rx="5.29005281" ry="5.30013367"></ellipse>
+                        </g>
+                        <polygon id="Path" fill="#CCCBCB" fill-rule="nonzero" points="176.644388 62.0368421 176.644388 58.0368421 183.260671 58.0368421 183.260671 62.0368421"></polygon>
+                    </g>
+                </g>
+                <polygon id="Path-3" fill="#25313B" points="178.3043 26.3932091 187.809218 26.3932091 202.453041 50.1271513 178.3043 50.1271513"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
