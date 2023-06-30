@@ -844,6 +844,8 @@
         var initialHeight = $(window).innerHeight();
         imageContainer.css('height', initialHeight + 600);
 
+        var maxScrollHeight = 800
+
         $(window).scroll(function () {
             var scrollTop = $(window).scrollTop();
             var duration = Math.abs(scrollTop - initialHeight) / 500; // Adjust the division factor as needed
@@ -851,14 +853,18 @@
 
             if (scrollTop > 550) {
                 gsap.to(imageContainer, { height: 'auto', duration: duration });
-                gsap.to(image, { scale: 1.2, duration: duration + 2 });
-                gsap.to(image, { x: translateX, duration: duration + 1 });
+                
+                if (scrollTop < maxScrollHeight || scrollTop > 1100 ) {
+                    gsap.to(image, { scale: 1.2, duration: duration + 1 });
+                    gsap.to(image, { x: translateX, duration: duration + 1 });
+                }
             } else {
                 gsap.to(imageContainer, { height: initialHeight, duration: duration });
-                gsap.to(image, { scale: 2, duration: duration + 2 });
+                gsap.to(image, { scale: 2, duration: duration + 1 });
                 gsap.to(image, { x: "-50%", duration: duration + 1 });
             }
         });
+
 
         gsap.timeline({
             scrollTrigger: {
