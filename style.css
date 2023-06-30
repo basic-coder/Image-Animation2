@@ -7,18 +7,19 @@ html {
   scroll-behavior: smooth;
 }
 
-section{
+section {
   max-width: 1440px;
 }
 
 /* animation */
 
-#myimg {
-  width: 700px;
+/* #myimg {
+  width: 300px;
+  display: block;
   margin: 0 auto;
-}
+} */
 
-.scroll-title{
+.scroll-title {
   font-size: 30px;
   font-weight: 600;
   text-align: center;
@@ -118,10 +119,21 @@ section{
 
 .right-div {
   position: sticky;
-  top: 10%;
+  top: 25%;
   text-align: center;
   width: 50%;
   max-width: 600px;
+}
+
+.right-div img {
+  display: none;
+  max-width: 300px;
+  max-height: 300px;
+  margin: 0 auto;
+}
+
+.right-div img:first-child {
+  display: block;
 }
 
 #trigger1,
@@ -165,26 +177,26 @@ section{
 
 } */
 
-#myimg {
-  transform: scale(2) translateX(-20%); /* Adjust the scale value as needed */
-}
-.box2{
+/* #myimg {
+  transform: scale(1) translateX(0%); 
+} */
+.box2 {
   z-index: 500;
   position: relative;
   margin-top: 60px;
 }
 
-p{
+p {
   max-width: 500px;
 }
 
-.box2 .text4{
+.box2 .text4 {
   font-size: 25px;
   transform: translateX(0%);
   text-align: left;
 }
 
-.box2 .text5{
+.box2 .text5 {
   font-size: 25px;
   transform: translateX(100%);
   text-align: right;
@@ -204,7 +216,6 @@ a.fixed-position{
   position: fixed;
   top: 40%;
 } */
-
 
 /* // animation 2 */
 /* 
@@ -230,8 +241,7 @@ a.fixed-position{
   opacity: 0;
 } */
 
-
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .flex-container {
     flex-direction: column-reverse;
   }
@@ -250,9 +260,9 @@ a.fixed-position{
     font-size: 18px;
   }
 
-  #myimg {
+  /* #myimg {
     width: 360px;
-  }
+  } */
 
   .left-div {
     width: 90%;
