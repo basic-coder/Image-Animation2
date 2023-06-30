@@ -91,7 +91,7 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100px;
+  min-height: 700px;
 }
 
 .content-wrapper h1 {
@@ -166,7 +166,7 @@ section{
 } */
 
 #myimg {
-  transform: scale(1) translateX(-20%); 
+  transform: scale(2) translateX(-20%); /* Adjust the scale value as needed */
 }
 .box2{
   z-index: 500;
