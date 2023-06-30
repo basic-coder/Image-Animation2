@@ -934,7 +934,6 @@
                 end: end, // Adjusted end time
                 scrub: 2,
                 pin: true,
-                markers: true
             }
         })
             .fromTo("#reveal1", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1, fadeIn: true, duration: 2 })
@@ -946,27 +945,52 @@
         var image = $('#myimg');
 
         // Set initial full-screen size
-        var initialHeight = $(window).innerHeight();
-        imageContainer.css('height', initialHeight + 600);
-        var maxScrollHeight = 800;
+        // var initialHeight = $(window).innerHeight();
+        // imageContainer.css('height', initialHeight + 600);
+        // var maxScrollHeight = 800;
 
-        $(window).scroll(function () {
-            var scrollTop = $(window).scrollTop();
-            var duration = Math.abs(scrollTop - initialHeight) / 500; // Adjust the division factor as needed
-            var translateX = (scrollTop - initialHeight) / 8; // Adjust the division factor as needed
-
-            if (scrollTop > 550) {
-                gsap.to(imageContainer, { height: 'auto', duration: duration });
-                gsap.to(image, { scale: 1.2, duration: duration + 2 });
-                if (scrollTop < maxScrollHeight) {
-                    gsap.to(image, { x: translateX, duration: duration + 1 });
-                }
-            } else {
-                gsap.to(imageContainer, { height: initialHeight, duration: duration });
-                gsap.to(image, { scale: 2, duration: duration + 2 });
-                gsap.to(image, { x: "-50%", duration: duration + 1 });
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: image,
+                start: '50% 50%',
+                end: '90% bottom',
+                scrub: 2,
+                markers: true,
             }
-        });
+        })
+            .fromTo(image,
+                {
+                    x: '-50%' ,
+                    opacity: 1,
+                    scale: 2 // Initial scale of 2
+                },
+                {
+                    x: 0,
+                    opacity: 1,
+                    scale: 1.2, // Scale from 2 to 1.2
+                    fadeIn: true,
+                    duration: 2
+                }
+            );
+
+
+        // $(window).scroll(function () {
+        //     var scrollTop = $(window).scrollTop();
+        //     var duration = Math.abs(scrollTop - initialHeight) / 500; // Adjust the division factor as needed
+        //     var translateX = (scrollTop - initialHeight) / 8; // Adjust the division factor as needed
+
+        //     if (scrollTop > 550) {
+        //         gsap.to(imageContainer, { height: 'auto', duration: duration });
+        //         gsap.to(image, { scale: 1.2, duration: duration + 1 });
+        //         // if (scrollTop < maxScrollHeight) {
+        //             gsap.to(image, { x: translateX, duration: duration + 1 });
+        //         //  }
+        //     } else {
+        //         gsap.to(imageContainer, { height: initialHeight, duration: duration });
+        //         gsap.to(image, { scale: 2, duration: duration + 1 });
+        //         gsap.to(image, { x: "-50%", duration: duration + 1 });
+        //     }
+        // });
 
         gsap.timeline({
             scrollTrigger: {
