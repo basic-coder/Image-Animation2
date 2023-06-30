@@ -51,6 +51,18 @@ var images = [
   '0049'
 ];
 
+// Function to preload the images and cache them in the browser
+function preloadImages() {
+for (var i = 0; i < images.length; i++) {
+  var image = new Image();
+  image.src = images[i];
+}
+}
+
+// Preload the images and cache them in the browser
+preloadImages();
+
+// Initialize the ScrollMagic scene
 var obj = { curImg: 0 };
 
 var tween = TweenMax.to(obj, 0.5, {
@@ -67,13 +79,12 @@ var tween = TweenMax.to(obj, 0.5, {
 var controller = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene({
-  triggerElement: "#imagesequence",
-  duration: 700,
-  offset: 500,
+triggerElement: "#imagesequence",
+duration: 700,
+offset: 500,
 })
-  .setTween(tween)
-  .addTo(controller);
-
+.setTween(tween)
+.addTo(controller);
 
 
 

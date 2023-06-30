@@ -6,64 +6,944 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Images</title>
 
-    <style>
-        img {
-            display: block;
-        }
-    </style>
+    <link rel="preload" as="image" href="./animated-images/0000.png">
+    <link rel="preload" as="image" href="./animated-images/0001.png">
+    <link rel="preload" as="image" href="./animated-images/0002.png">
+    <link rel="preload" as="image" href="./animated-images/0003.png">
+    <link rel="preload" as="image" href="./animated-images/0004.png">
+    <link rel="preload" as="image" href="./animated-images/0005.png">
+    <link rel="preload" as="image" href="./animated-images/0006.png">
+    <link rel="preload" as="image" href="./animated-images/0007.png">
+    <link rel="preload" as="image" href="./animated-images/0008.png">
+    <link rel="preload" as="image" href="./animated-images/0009.png">
+    <link rel="preload" as="image" href="./animated-images/0010.png">
+    <link rel="preload" as="image" href="./animated-images/0011.png">
+    <link rel="preload" as="image" href="./animated-images/0012.png">
+    <link rel="preload" as="image" href="./animated-images/0013.png">
+    <link rel="preload" as="image" href="./animated-images/0014.png">
+    <link rel="preload" as="image" href="./animated-images/0015.png">
+    <link rel="preload" as="image" href="./animated-images/0016.png">
+    <link rel="preload" as="image" href="./animated-images/0017.png">
+    <link rel="preload" as="image" href="./animated-images/0018.png">
+    <link rel="preload" as="image" href="./animated-images/0019.png">
+    <link rel="preload" as="image" href="./animated-images/0020.png">
+    <link rel="preload" as="image" href="./animated-images/0021.png">
+    <link rel="preload" as="image" href="./animated-images/0022.png">
+    <link rel="preload" as="image" href="./animated-images/0023.png">
+    <link rel="preload" as="image" href="./animated-images/0024.png">
+    <link rel="preload" as="image" href="./animated-images/0025.png">
+    <link rel="preload" as="image" href="./animated-images/0026.png">
+    <link rel="preload" as="image" href="./animated-images/0027.png">
+    <link rel="preload" as="image" href="./animated-images/0028.png">
+    <link rel="preload" as="image" href="./animated-images/0029.png">
+    <link rel="preload" as="image" href="./animated-images/0030.png">
+    <link rel="preload" as="image" href="./animated-images/0031.png">
+    <link rel="preload" as="image" href="./animated-images/0032.png">
+    <link rel="preload" as="image" href="./animated-images/0033.png">
+    <link rel="preload" as="image" href="./animated-images/0034.png">
+    <link rel="preload" as="image" href="./animated-images/0035.png">
+    <link rel="preload" as="image" href="./animated-images/0036.png">
+    <link rel="preload" as="image" href="./animated-images/0037.png">
+    <link rel="preload" as="image" href="./animated-images/0038.png">
+    <link rel="preload" as="image" href="./animated-images/0039.png">
+    <link rel="preload" as="image" href="./animated-images/0040.png">
+    <link rel="preload" as="image" href="./animated-images/0041.png">
+    <link rel="preload" as="image" href="./animated-images/0042.png">
+    <link rel="preload" as="image" href="./animated-images/0043.png">
+    <link rel="preload" as="image" href="./animated-images/0044.png">
+    <link rel="preload" as="image" href="./animated-images/0045.png">
+    <link rel="preload" as="image" href="./animated-images/0046.png">
+    <link rel="preload" as="image" href="./animated-images/0047.png">
+    <link rel="preload" as="image" href="./animated-images/0048.png">
+    <link rel="preload" as="image" href="./animated-images/0049.png">
+
+    <script src="/script/jquery.js"></script>
+    <script src="/script/tweenmax.js"></script>
+    <script src="/script/gsap.js"></script>
+    <script src="/script/scrollmagic.js"></script>
+    <script src="/script/animation-velocity.js"></script>
+    <script src="/script/gsap-animation.js"></script>
+    <script src="/script/scrollmagic-indicator.js"></script>
+    <script src="/script/scrolltrigger.js"></script>
+
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <img src="./animated-images/0000.png">
-    <img src="./animated-images/0001.png">
-    <img src="./animated-images/0002.png">
-    <img src="./animated-images/0003.png">
-    <img src="./animated-images/0004.png">
-    <img src="./animated-images/0005.png">
-    <img src="./animated-images/0006.png">
-    <img src="./animated-images/0007.png">
-    <img src="./animated-images/0008.png">
-    <img src="./animated-images/0009.png">
-    <img src="./animated-images/0010.png">
-    <img src="./animated-images/0011.png">
-    <img src="./animated-images/0012.png">
-    <img src="./animated-images/0013.png">
-    <img src="./animated-images/0014.png">
-    <img src="./animated-images/0015.png">
-    <img src="./animated-images/0016.png">
-    <img src="./animated-images/0017.png">
-    <img src="./animated-images/0018.png">
-    <img src="./animated-images/0019.png">
-    <img src="./animated-images/0020.png">
-    <img src="./animated-images/0021.png">
-    <img src="./animated-images/0022.png">
-    <img src="./animated-images/0023.png">
-    <img src="./animated-images/0024.png">
-    <img src="./animated-images/0025.png">
-    <img src="./animated-images/0026.png">
-    <img src="./animated-images/0027.png">
-    <img src="./animated-images/0028.png">
-    <img src="./animated-images/0029.png">
-    <img src="./animated-images/0030.png">
-    <img src="./animated-images/0031.png">
-    <img src="./animated-images/0032.png">
-    <img src="./animated-images/0033.png">
-    <img src="./animated-images/0034.png">
-    <img src="./animated-images/0035.png">
-    <img src="./animated-images/0036.png">
-    <img src="./animated-images/0037.png">
-    <img src="./animated-images/0038.png">
-    <img src="./animated-images/0039.png">
-    <img src="./animated-images/0040.png">
-    <img src="./animated-images/0041.png">
-    <img src="./animated-images/0042.png">
-    <img src="./animated-images/0043.png">
-    <img src="./animated-images/0044.png">
-    <img src="./animated-images/0045.png">
-    <img src="./animated-images/0046.png">
-    <img src="./animated-images/0047.png">
-    <img src="./animated-images/0048.png">
-    <img src="./animated-images/0049.png">
+
+    <!-- header start -->
+    <header>
+        <div class="cp-header typ-transparent" id="cp-header">
+            <section>
+                <nav>
+                    <div class="logo-area">
+                        <!-- <picture>
+                            <img data-src="./assets/images/header/menu-btn.svg" class="lozad menu-btn">
+                            <img data-src="./assets/images/header/menu-btn-white.svg" class="lozad menu-btn-white">
+                        </picture> -->
+                        <span class="icon-hamburger menu-btn"></span>
+                        <div class="logo">
+                            <a href="javascript:void(0)">
+                                <img data-src="./assets/images/logo.jpg" alt="abcd tyre logo"
+                                    class="logo-image typ-blue lozad">
+                                <img data-src="./assets/images/logo.jpg" alt="abcd tyre logo"
+                                    class="logo-image typ-white lozad">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="navbar">
+                        <div class="navbar-left">
+                            <div class="nav-item-left">
+                                <ul class="list">
+                                    <li class="item">
+                                        <a class="" href="javascript:void(0)">4 Wheeler</a>
+                                    </li>
+                                    <li class="item">
+                                        <a class="" href="javascript:void(0)">2 Wheeler</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="javascript:void(0)">Commercial</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="javascript:void(0)">Support</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="navbar-right">
+                            <ul class="list">
+                                <li class="item">
+                                    <a href="javascript:void(0)" class="nav-link" id="nav-link-search">
+                                        <!-- <picture>
+                                            <img class="lozad" data-src="./assets/images/header/search.svg" alt="">
+                                            <img class="lozad" data-src="./assets/images/header/search-white.svg"
+                                                alt="">
+                                        </picture> -->
+                                        <span class="icon icon-search"></span>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="javascript:void(0)" class="nav-link">
+                                        <!-- <picture>
+                                            <img class="lozad" data-src="./assets/images/header/location.svg" alt="">
+                                            <img class="lozad" data-src="./assets/images/header/location-white.svg"
+                                                alt="">
+                                        </picture> -->
+                                        <span class="icon icon-location"></span>
+                                    </a>
+                                </li>
+                                <li class="item sub-dropdown">
+                                    <a href="javascript:void(0)" class="nav-link">
+                                        <span class="text">EN</span>
+                                        <span class="icon icon-down-arrow"></span>
+                                        <!-- <div class="dropdown-image">
+                                            <picture>
+                                                <img class="lozad" data-src="./assets/images/header/dropdown.svg"
+                                                    alt="">
+                                                <img class="lozad" data-src="./assets/images/header/dropdown-white.svg"
+                                                    alt="">
+                                            </picture>
+                                        </div> -->
+                                    </a>
+                                    <div class="sub-nav-language">
+                                        <ul class="list">
+                                            <li class="item">
+                                                <a href="javascript:void(0)" class="nav-link">HI</a>
+                                            </li>
+                                            <li class="item">
+                                                <a href="javascript:void(0)" class="nav-link">ES</a>
+                                            </li>
+                                            <li class="item">
+                                                <a href="javascript:void(0)" class="nav-link">RU</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="item sub-dropdown">
+                                    <a href="javascript:void(0)" class="nav-link">
+                                        <span class="text">United Kingdom</span>
+                                        <span class="icon icon-down-arrow"></span>
+                                        <!-- <div class="dropdown-image">
+                                            <picture>
+                                                <img class="lozad" data-src="./assets/images/header/dropdown.svg"
+                                                    alt="">
+                                                <img class="lozad" data-src="./assets/images/header/dropdown-white.svg"
+                                                    alt="">
+                                            </picture>
+                                        </div> -->
+                                    </a>
+                                    <div class="sub-nav-country">
+                                        <ul class="list">
+                                            <li class="item">
+                                                <a href="javascript:void(0)" class="nav-link">India</a>
+                                            </li>
+                                            <li class="item">
+                                                <a href="javascript:void(0)" class="nav-link">Spain</a>
+                                            </li>
+                                            <li class="item">
+                                                <a href="javascript:void(0)" class="nav-link">Russia</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cp-menu">
+                        <div class="cp-menu-wrapper">
+                            <div class="heading">
+                                <!-- <picture>
+                                    <img class="lozad menu-close" data-src="./assets/images/header/menu-close.svg"
+                                        alt="">
+                                </picture> -->
+                                <span class="icon-cross lozad menu-close"></span>
+                            </div>
+                            <div class="nav-bar">
+                                <div class="navbar-top">
+                                    <ul>
+                                        <li><a href="javascript:void(0)">4 Wheeler</a></li>
+                                        <li><a href="javascript:void(0)">2 Wheeler</a></li>
+                                        <li><a href="javascript:void(0)">Trucks & Buses</a></li>
+                                        <li><a href="javascript:void(0)">Support</a></li>
+                                    </ul>
+                                </div>
+                                <div class="navbar-bottom">
+                                    <ul>
+                                        <li class="item sub-dropdown">
+                                            <a href="javascript:void(0)" class="nav-link" id="nav-link-language">
+                                                <span class="text">EN</span>
+                                                <!-- <picture>
+                                                    <img class="lozad" data-src="./assets/images/header/dropdown.svg"
+                                                        alt="">
+                                                </picture> -->
+                                                <span class="icon-down-arrow lozad"></span>
+                                            </a>
+                                            <div class="sub-nav-language">
+                                                <ul class="list">
+                                                    <li class="item">
+                                                        <a href="javascript:void(0)" class="nav-link">HI</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="javascript:void(0)" class="nav-link">ES</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="javascript:void(0)" class="nav-link">RU</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="item sub-dropdown">
+                                            <a href="javascript:void(0)" class="nav-link" id="nav-link-country">
+                                                <span class="text">United Kingdom</span>
+                                                <!-- <picture>
+                                                    <img class="lozad" data-src="./assets/images/header/dropdown.svg"
+                                                        alt="">
+                                                </picture> -->
+                                                <span class="icon-down-arrow lozad"></span>
+                                            </a>
+                                            <div class="sub-nav-country">
+                                                <ul class="list">
+                                                    <li class="item">
+                                                        <a href="javascript:void(0)" class="nav-link">India</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="javascript:void(0)" class="nav-link">Spain</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="javascript:void(0)" class="nav-link">Russia</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-overlay"></div>
+                </nav>
+            </section>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- Banner starts -->
+    <div class="cp-banner">
+        <div class="banner-slider-wrapper">
+            <div class="banner-1">
+                <div class="header-container">
+                    <div class="banner-image">
+                        <picture>
+                            <source width="1366px" media="(min-width: 1025px)"
+                                srcSet="./assets/images/banner/banner-1.jpg" />
+                            <source width="1024px" media="(min-width: 768px) and (max-width: 1024px)"
+                                srcSet="./assets/images/banner/banner-1.jpg" />
+                            <source width="767px" media="(max-width: 767px)"
+                                srcSet="./assets/images/banner/4w-banner-4-mb.jpg" />
+                            <img class="lozad fetch-img" data-src="./assets/images/banner/banner-1.jpg"
+                                alt="ABCD Home Banner" title="ABCD Home Banner" />
+                        </picture>
+                    </div>
+                    <div class="banner-image-overlay"></div>
+                    <div class="banner-info">
+                        <div class="banner-title">
+                            <h2>Will Never <br>Let You Loose The Grip </h2>
+                            <h1>In Any Season </h1>
+                            <a href="javascript:void(0)">Explore Tyres</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-2">
+                <div class="header-container">
+                    <div class="banner-image">
+                        <picture>
+                            <source width="1366px" media="(min-width: 1025px)"
+                                srcSet="./assets/images/banner/2w-banner-1.jpg" />
+                            <source width="1024px" media="(min-width: 768px) and (max-width: 1024px)"
+                                srcSet="./assets/images/banner/2w-banner-1.jpg" />
+                            <source width="767px" media="(max-width: 767px)"
+                                srcSet="./assets/images/banner/2w-banner-1-mb.jpg" />
+                            <img class="lozad fetch-img" data-src="./assets/images/banner/2w-banner-1.jpg"
+                                alt="ABCD Home Banner" title="ABCD Home Banner" />
+                        </picture>
+                    </div>
+                    <div class="banner-image-overlay"></div>
+                    <div class="banner-info">
+                        <div class="banner-title">
+                            <h2>Will Never <br>Let You Loose The Grip </h2>
+                            <h1> Reign all terrains! </h1>
+                            <a href="javascript:void(0)">Explore Tyres</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-3">
+                <div class="header-container">
+                    <div class="banner-image">
+                        <picture>
+                            <source width="1366px" media="(min-width: 1025px)"
+                                srcSet="./assets/images/banner/4w-banner-3.jpg" />
+                            <source width="1024px" media="(min-width: 768px) and (max-width: 1024px)"
+                                srcSet="./assets/images/banner/4w-banner-3.jpg" />
+                            <source width="767px" media="(max-width: 767px)"
+                                srcSet="./assets/images/banner/4w-banner-3-mb.jpg" />
+                            <img class="lozad fetch-img" data-src="./assets/images/banner/4w-banner-3.jpg"
+                                alt="ABCD Home Banner" title="ABCD Home Banner" />
+                        </picture>
+                    </div>
+                    <div class="banner-image-overlay"></div>
+                    <div class="banner-info">
+                        <div class="banner-title">
+                            <h2>Long-Lasting <br> Grip on all terrains ! </h2>
+                            <h1> Reign all terrains! </h1>
+                            <a href="javascript:void(0)">Explore Tyres</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-4">
+                <div class="header-container">
+                    <div class="banner-image">
+                        <picture>
+                            <source width="1366px" media="(min-width: 1025px)"
+                                srcSet="./assets/images/banner/2w-banner-3.jpg" />
+                            <source width="1024px" media="(min-width: 768px) and (max-width: 1024px)"
+                                srcSet="./assets/images/banner/2w-banner-3.jpg" />
+                            <source width="767px" media="(max-width: 767px)"
+                                srcSet="./assets/images/banner/2w-banner-3-mb.jpg" />
+                            <img class="lozad fetch-img" data-src="./assets/images/banner/2w-banner-3.jpg"
+                                alt="ABCD Home Banner" title="ABCD Home Banner" />
+                        </picture>
+                    </div>
+                    <div class="banner-image-overlay"></div>
+                    <div class="banner-info">
+                        <div class="banner-title">
+                            <h2>Long-Lasting <br> Grip on all terrains ! </h2>
+                            <h1> Reign all terrains! </h1>
+                            <a href="javascript:void(0)">Explore Tyres</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-5">
+                <div class="header-container">
+                    <div class="banner-image">
+                        <picture>
+                            <source width="1366px" media="(min-width: 1025px)"
+                                srcSet="./assets/images/banner/2w-banner-4.jpg" />
+                            <source width="1024px" media="(min-width: 768px) and (max-width: 1024px)"
+                                srcSet="./assets/images/banner/2w-banner-4.jpg" />
+                            <source width="767px" media="(max-width: 767px)"
+                                srcSet="./assets/images/banner/2w-banner-4-mb.jpg" />
+                            <img class="lozad fetch-img" data-src="./assets/images/banner/2w-banner-4.jpg"
+                                alt="ABCD Home Banner" title="ABCD Home Banner" />
+                        </picture>
+                    </div>
+                    <div class="banner-image-overlay"></div>
+                    <div class="banner-info">
+                        <div class="banner-title">
+                            <h2>Long-Lasting <br> Grip on all terrains ! </h2>
+                            <h1> Reign all terrains! </h1>
+                            <a href="javascript:void(0)">Explore Tyres</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-6">
+                <div class="header-container">
+                    <div class="banner-image">
+                        <picture>
+                            <source width="1366px" media="(min-width: 1025px)"
+                                srcSet="./assets/images/banner/4w-banner-1.jpg" />
+                            <source width="1024px" media="(min-width: 768px) and (max-width: 1024px)"
+                                srcSet="./assets/images/banner/4w-banner-1.jpg" />
+                            <source width="767px" media="(max-width: 767px)"
+                                srcSet="./assets/images/banner/4w-banner-1-mb.jpg" />
+                            <img class="lozad fetch-img" data-src="./assets/images/banner/4w-banner-1.jpg"
+                                alt="ABCD Home Banner" title="ABCD Home Banner" />
+                        </picture>
+                    </div>
+                    <div class="banner-image-overlay"></div>
+                    <div class="banner-info">
+                        <div class="banner-title">
+                            <h2>Long-Lasting <br> Grip on all terrains ! </h2>
+                            <h1> Reign all terrains! </h1>
+                            <a href="javascript:void(0)">Explore Tyres</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-7">
+                <div class="header-container">
+                    <div class="banner-image">
+                        <picture>
+                            <source width="1366px" media="(min-width: 1025px)"
+                                srcSet="./assets/images/banner/4w-banner-2.jpg" />
+                            <source width="1024px" media="(min-width: 768px) and (max-width: 1024px)"
+                                srcSet="./assets/images/banner/4w-banner-2.jpg" />
+                            <source width="767px" media="(max-width: 767px)"
+                                srcSet="./assets/images/banner/4w-banner-2-mb.jpg" />
+                            <img class="lozad fetch-img" data-src="./assets/images/banner/4w-banner-2.jpg"
+                                alt="ABCD Home Banner" title="ABCD Home Banner" />
+                        </picture>
+                    </div>
+                    <div class="banner-image-overlay"></div>
+                    <div class="banner-info">
+                        <div class="banner-title">
+                            <h2>Long-Lasting <br> Grip on all terrains ! </h2>
+                            <h1> Reign all terrains! </h1>
+                            <a href="javascript:void(0)">Explore Tyres</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-8">
+                <div class="header-container">
+                    <div class="banner-image">
+                        <picture>
+                            <source width="1366px" media="(min-width: 1025px)"
+                                srcSet="./assets/images/banner/4w-banner-4.jpg" />
+                            <source width="1024px" media="(min-width: 768px) and (max-width: 1024px)"
+                                srcSet="./assets/images/banner/4w-banner-4.jpg" />
+                            <source width="767px" media="(max-width: 767px)"
+                                srcSet="./assets/images/banner/4w-banner-4-mb.jpg" />
+                            <img class="lozad fetch-img" data-src="./assets/images/banner/4w-banner-4.jpg"
+                                alt="ABCD Home Banner" title="ABCD Home Banner" />
+                        </picture>
+                    </div>
+                    <div class="banner-image-overlay"></div>
+                    <div class="banner-info">
+                        <div class="banner-title">
+                            <h2>Long-Lasting <br> Grip on all terrains ! </h2>
+                            <h1> Reign all terrains! </h1>
+                            <a href="javascript:void(0)">Explore Tyres</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-bottom-shape">
+            <span class="shape"></span>
+        </div>
+    </div>
+    <!-- Banner ends -->
+
+
+
+    <section>
+
+        <h2 class="scroll-title">Start Scrolling From here</h2>
+
+        <div class="flex-container" id="animation-container">
+            <!-- <div class="top-white-panel"></div>
+            <div class="bottom-white-panel"></div> -->
+
+            <div class="left-div">
+
+                <div class="box2">
+                    <h1 class="text4">Tyres are the essential point of contact between your vehicle and the road.<h2>
+                            <h1 class="text5">You can buy brand new tyres online in just few steps.
+                        </h2>
+
+                </div>
+
+                <div class="content-wrapper">
+                    <h1 class="animate" id="reveal1">
+                        Puncture Safe
+                    </h1>
+                    <p class="animate" id="reveal2">“The Gripp XL is perfect Classic 500. Enhanced performance, superior
+                        handling”
+                    </p>
+                    <a class="animate" href="javascript:void(0)" id="reveal3">View Tyres</a>
+                </div>
+
+            </div>
+            <div id="imagesequence" class="right-div">
+                <img id="myimg" src="/images/0000.png"><br>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- tyre range starts -->
+    <div class="tyre-range-main-wrap">
+        <section class="tyre-range-section" id="tyre-range-section">
+            <div class="tyre-range-wrapper">
+                <div class="tyre-card-heading-and-control">
+                    <div class="heading">
+                        <h2>Tyre Range</h2>
+                    </div>
+                    <div class="link">
+                        <a href="javascript:void(0)">View all</a>
+                    </div>
+                </div>
+                <div class="tyre-range-card-wrapper">
+                    <div class="tyre-range-card-container tyre-range-slick">
+                        <a href="javascript:void(0)">
+                            <div class="tyre-range-card">
+                                <div class="lhs">
+                                    <img class="lozad" data-src="./assets/images/4-wheeler/secura-drive.png" alt="">
+                                </div>
+                                <div class="rhs">
+                                    <div class="heading">
+                                        <h3>
+                                            Secura Drive
+                                        </h3>
+                                    </div>
+                                    <div class="list">
+                                        <ul>
+                                            <li>
+                                                <img class="lozad"
+                                                    data-src="./assets/images/4-wheeler/excellent-wet-grip.svg" alt="">
+                                                <span>Excellent wet grip </span>
+                                            </li>
+                                            <li>
+                                                <img class="lozad" data-src="./assets/images/4-wheeler/extra-life.svg"
+                                                    alt="">
+                                                <span>Extra life</span>
+                                            </li>
+                                            <li>
+                                                <img class="lozad"
+                                                    data-src="./assets/images/4-wheeler/better-control.svg" alt="">
+                                                <span>Better Control</span>
+                                            </li>
+                                            <li>
+                                                <img class="lozad" data-src="./assets/images/4-wheeler/low-noise.svg"
+                                                    alt="">
+                                                <span>Low Noise</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <div class="tyre-range-card">
+                                <div class="lhs">
+                                    <img class="lozad" data-src="./assets/images/4-wheeler/ecodrive.png" alt="">
+                                </div>
+                                <div class="rhs">
+                                    <div class="heading">
+                                        <h3>
+                                            Ecodrive
+                                        </h3>
+                                    </div>
+                                    <div class="list">
+                                        <ul>
+                                            <li>
+                                                <img class="lozad"
+                                                    data-src="./assets/images/4-wheeler/excellent-wet-grip.svg" alt="">
+                                                <span>Excellent wet grip </span>
+                                            </li>
+                                            <li>
+                                                <img class="lozad" data-src="./assets/images/4-wheeler/extra-life.svg"
+                                                    alt="">
+                                                <span>Extra life</span>
+                                            </li>
+                                            <li>
+                                                <img class="lozad"
+                                                    data-src="./assets/images/4-wheeler/better-control.svg" alt="">
+                                                <span>Better Control</span>
+                                            </li>
+                                            <li>
+                                                <img class="lozad" data-src="./assets/images/4-wheeler/low-noise.svg"
+                                                    alt="">
+                                                <span>Low Noise</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <div class="tyre-range-card">
+                                <div class="lhs">
+                                    <img class="lozad" data-src="./assets/images/4-wheeler/sportsdrive.png" alt="">
+                                </div>
+                                <div class="rhs">
+                                    <div class="heading">
+                                        <h3>
+                                            Sportsdrive
+                                        </h3>
+                                    </div>
+                                    <div class="list">
+                                        <ul>
+                                            <li>
+                                                <img class="lozad"
+                                                    data-src="./assets/images/4-wheeler/superior-grip.svg" alt="">
+                                                <span>Superior Grip at High Speed </span>
+                                            </li>
+                                            <li>
+                                                <img class="lozad" data-src="./assets/images/4-wheeler/superior-wet.svg"
+                                                    alt="">
+                                                <span>
+                                                    Superior Wet Grip
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <img class="lozad"
+                                                    data-src="./assets/images/4-wheeler/better-control.svg" alt="">
+                                                <span>Better Control</span>
+                                            </li>
+                                            <li>
+                                                <img class="lozad" data-src="./assets/images/4-wheeler/longer-life.svg"
+                                                    alt="">
+                                                <span>Longer life of the tyre </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <div class="tyre-range-card">
+                                <div class="lhs">
+                                    <img class="lozad" data-src="./assets/images/4-wheeler/secura-drive.png" alt="">
+                                </div>
+                                <div class="rhs">
+                                    <div class="heading">
+                                        <h3>
+                                            Secura Drive
+                                        </h3>
+                                    </div>
+                                    <div class="list">
+                                        <ul>
+                                            <li>
+                                                <img class="lozad"
+                                                    data-src="./assets/images/4-wheeler/excellent-wet-grip.svg" alt="">
+                                                <span>Excellent wet grip </span>
+                                            </li>
+                                            <li>
+                                                <img class="lozad" data-src="./assets/images/4-wheeler/extra-life.svg"
+                                                    alt="">
+                                                <span>Extra life</span>
+                                            </li>
+                                            <li>
+                                                <img class="lozad"
+                                                    data-src="./assets/images/4-wheeler/better-control.svg" alt="">
+                                                <span>Better Control</span>
+                                            </li>
+                                            <li>
+                                                <img class="lozad" data-src="./assets/images/4-wheeler/low-noise.svg"
+                                                    alt="">
+                                                <span>Low Noise</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- tyre range ends -->
+
+
+    <!-- tips and advice section starts -->
+    <div class="tips-and-advcie-section-wrapper">
+        <section class="tips-and-advice-section">
+            <div class="tips-and-advice-wrapper">
+                <div class="lhs">
+                    <div class="heading">
+                        <h3>Tips & Advice</h3>
+                        <a href="tipsandadvice.html">view all</a>
+                    </div>
+                    <ul class="content">
+                        <li class="content-item">
+                            <span>01</span>
+                            <p>Check tyre pressure regularly (every 2-4 weeks) for safer drive and to make them last
+                                longer.</p>
+                        </li>
+                        <li class="content-item">
+                            <span>02</span>
+                            <p>If tread wear bars of hard rubber are visible its time to change your tyre. These are
+                                specially designed to be visible when your tyre’s tread has become worn. (mark on the
+                                sidewall will help you locate the same)</p>
+                        </li>
+                        <li class="content-item">
+                            <span>03</span>
+                            <p>If you see crazing i.e. small cracks in the side wall you should replace your tyres.
+                                Sidewalls aren’t very thick and a damaged sidewall can cause your tyre to fail</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rhs">
+                    <div class="image">
+                        <img class="lozad" data-src="./assets/images/4-wheeler/Screenshot_2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- tips and advice section ends -->
+
+    <!-- dealer network section starts -->
+    <section class="dealer-network-section" id="dealer-network-section">
+        <div class="dealer-network-wrapper">
+            <img class="lozad" data-src="./assets/images/4-wheeler/pngguru-com.png">
+            <div class="dealer-network-content">
+                <div class="lhs">
+                    <img class="lozad" data-src="./assets/images/4-wheeler/map.svg" alt="">
+                    <div class="content-inner">
+                        <div class="content-inner-heading">
+                            <h3>100+ </h3>
+                            <h3>Countries</h3>
+                        </div>
+                        <p>our global network</p>
+                    </div>
+                </div>
+                <div class="rhs">
+                    <div class="content-inner">
+                        <div class="content-inner-heading">
+                            <h3>50+ </h3>
+                            <h3>OEM Partners</h3>
+                        </div>
+                        <p>our oem partners</p>
+                    </div>
+                    <div class="content-inner">
+                        <div class="content-inner-heading">
+                            <h3>3400+ </h3>
+                            <h3>Dealers</h3>
+                        </div>
+                        <p>locate dealer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- dealer network section ends -->
+
+    <!-- Become a partner section starts  -->
+    <div class="partner-section-main-wrap">
+        <section class="partner-section" id="partner-section">
+            <div class="partner-section-wrapper">
+                <div class="partner-section-image">
+                    <img class="lozad" data-src="./assets/images/partner-image.svg" alt="">
+                </div>
+                <div class="partner-section-content">
+                    <h2>Want to become a channel partner with ABCD ?</h2>
+                    <a class="partnerLink" href="javascript:void(0)">Become a Partner</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Become a partner section ends  -->
+
+    <!-- Footer start -->
+    <footer class="footer" id="footer">
+        <section>
+            <div class="footer-section">
+                <div class="tyre-type">
+                    <a class="footer-drop" href="javascript:void(0)">Tyre Type <i class="icon-down-arrow"
+                            aria-hidden="true"></i></a>
+                    <ul class="footer-list-items">
+                        <li><a href="javascript:void(0)">2 Wheeler</a></li>
+                        <li><a href="javascript:void(0)">4 Wheeler</a></li>
+                        <li><a href="javascript:void(0)">Commercial</a></li>
+                    </ul>
+                    <a class="rop" href="javascript:void(0)">Range of Products</a>
+                    <a class="tyreg" href="javascript:void(0)">Tyre Guide</a>
+                </div>
+                <div class="why-ceat">
+                    <a class="footer-drop" href="javascript:void(0)">Why ABCD <i class="icon-down-arrow"
+                            aria-hidden="true"></i></a>
+                    <ul class="footer-list-items">
+                        <li><a href="javascript:void(0)">Our Purpose</a></li>
+                        <li><a href="javascript:void(0)">Leadership</a></li>
+                        <li><a href="javascript:void(0)">Business&nbsp;Excellence</a></li>
+                        <li><a href="javascript:void(0)">Innovation</a></li>
+                        <li><a href="javascript:void(0)">Sustainabillity</a></li>
+                        <li><a href="javascript:void(0)">Manufacturing</a></li>
+                        <li><a href="javascript:void(0)">CSR</a></li>
+                        <li><a href="javascript:void(0)">Investors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-inner">
+                    <div class="links">
+                        <a href="javascript:void(0)">NEWS</a>
+                        <a href="javascript:void(0)">Support</a>
+                    </div>
+                    <div class="social-media">
+                        <p>Follow Us</p>
+                        <div class="social-icons">
+                            <a href="javascript:void(0)" class="fb">
+                                <span class="icon-facebook"></span>
+                            </a>
+                            <a href="javascript:void(0)" class="instagram">
+                                <span class="icon-instagram"></span>
+                            </a>
+                            <a href="javascript:void(0)" class="linkedin">
+                                <span class="icon-linkedin"></span>
+                            </a>
+                            <a href="javascript:void(0)" class="twitter">
+                                <span class="icon-twitter"></span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="lorem">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minima omnis architecto
+                            fuga provident! Incidunt dicta laboriosam dolor? Delectus, quasi possimus impedit aut
+                            repudiandae non error dolorum culpa. Voluptas, recusandae.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; Copyrights ABCD 2021 </p>
+            </div>
+        </section>
+    </footer>
+    <!--Footer End  -->
+    <script src="./assets/js/silk_slider.js"></script>
+    <script src="./assets/js/lozad.js"></script>
+    <script src="./assets/js/header-with-banner.js"></script>
+    <!-- <script src="./assets/js/popup.js"></script> -->
+    <script src="./assets/js/footer.js"></script>
+    <script src="./assets/js/banner.js"></script>
+
+    <script>
+
+
+        var start = window.innerWidth < 768 ? "+=500 center" : "center center"; // Set different duration for mobile devices
+        var end = window.innerWidth < 768 ? "bottom bottom" : "bottom bottom";
+
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".content-wrapper",
+                // start: "+=500 center",  
+                start: start,
+                end: end, // Adjusted end time
+                scrub: 2,
+                pin: true,
+            }
+        })
+            .fromTo("#reveal1", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1, fadeIn: true, duration: 2 })
+            .fromTo("#reveal2", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1, fadeIn: true, duration: 2 })
+            .fromTo("#reveal3", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1, fadeIn: true, duration: 2 });
+
+
+        var imageContainer = $('.right-div');
+        var image = $('#myimg');
+
+        // Set initial full-screen size
+        var initialHeight = $(window).innerHeight();
+        imageContainer.css('height', initialHeight + 600);
+
+        var maxScrollHeight = 800
+
+        $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop();
+            var duration = Math.abs(scrollTop - initialHeight) / 500; // Adjust the division factor as needed
+            var translateX = (scrollTop - initialHeight) / 8; // Adjust the division factor as needed
+
+            if (scrollTop > 550) {
+                gsap.to(imageContainer, { height: 'auto', duration: duration });
+                
+                if (scrollTop < maxScrollHeight || scrollTop > 1100 ) {
+                    gsap.to(image, { scale: 1.2, duration: duration + 1 });
+                    gsap.to(image, { x: translateX, duration: duration + 1 });
+                }
+            } else {
+                gsap.to(imageContainer, { height: initialHeight, duration: duration });
+                gsap.to(image, { scale: 2, duration: duration + 1 });
+                gsap.to(image, { x: "-50%", duration: duration + 1 });
+            }
+        });
+
+
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".box2",
+                start: "20% 50%",
+                end: "20% 50%",
+                scrub: 3,
+                pin: true,
+            }
+        })
+            .from(".text4", { opacity: 1, duration: 1, ease: "power2.out", fadeIn: true, })
+            .from(".text5", { opacity: 1, duration: 1, ease: "power2.out", fadeIn: true, })
+            .to(".text4", { opacity: 0, x: innerWidth * -1, duration: 1, fadeIn: true, ease: "power2.out" }, "-=1") // Move text4 to the left
+            .to(".text5", { opacity: 0, x: innerWidth * 1, duration: 1, fadeIn: true, ease: "power2.out" }, "-=1");
+
+        $(document).ready(function () {
+            $(".tyre-range-slick").slick({
+                dots: false,
+                arrows: true,
+                slidesToShow: 2.7,
+                slidesToScroll: 1,
+                infinite: false,
+                prevArrow: '<div class="control-left" id="control-left"><a href="javascript:void(0)" ><span class="icon-arrow-left"></span></a></div>',
+                nextArrow: '<div class="control-right" id="control-right"><a href="javascript:void(0)" ><span class="icon-arrow-right"></span></a></div>',
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }, {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 1.5
+                        }
+                    }
+                    , {
+                        breakpoint: 768,
+                        settings: {
+                            dots: true,
+                            slidesToShow: 1.1,
+                        }
+                    }
+                ]
+            })
+        });
+    </script>
 </body>
 
 </html>
