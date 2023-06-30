@@ -14,7 +14,8 @@ section{
 /* animation */
 
 #myimg {
-  width: 700px;
+  width: 300px;
+  display: none;
   margin: 0 auto;
 }
 
@@ -118,7 +119,7 @@ section{
 
 .right-div {
   position: sticky;
-  top: 10%;
+  top: 25%;
   text-align: center;
   width: 50%;
   max-width: 600px;
@@ -166,7 +167,7 @@ section{
 } */
 
 #myimg {
-  transform: scale(2) translateX(-20%); /* Adjust the scale value as needed */
+  transform: scale(1) translateX(0%); /* Adjust the scale value as needed */
 }
 .box2{
   z-index: 500;
