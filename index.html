@@ -24,6 +24,8 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/4-wheeler-homepage/4-wheeler-find-perfect-tyres.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/4-wheeler-homepage/4-wheeler-tips-and-advice.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/4-wheeler-homepage/4-wheeler-tyre-range-revamp.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/locomotive.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
     <link rel="preload" as="image" href="./animated-images/0000.png">
     <link rel="preload" as="image" href="./animated-images/0001.png">
@@ -289,7 +291,7 @@
         </div>
     </header>
     <!-- header end -->
-
+    <div id="main">
     <!-- Banner starts -->
     <div class="cp-banner">
         <div class="banner-slider-wrapper">
@@ -489,24 +491,22 @@
         <div class="banner-bottom-shape">
             <span class="shape"></span>
         </div>
-    </div>
+    </div> 
     <!-- Banner ends -->
 
 
 
-    <section>
+    <!-- <section>
 
         <h2 class="scroll-title">Start Scrolling From here</h2>
 
         <div class="flex-container" id="animation-container">
-            <!-- <div class="top-white-panel"></div>
-            <div class="bottom-white-panel"></div> -->
 
             <div class="left-div">
 
                 <div class="box2">
-                    <h1 class="text4">Tyres are the essential point of contact between your vehicle and the road.<h2>
-                            <h1 class="text5">You can buy brand new tyres online in just few steps.
+                    <h1 class="text4">Tyres are the essential point of contact between your vehicle and the road.<h1>
+                            <h2 class="text5">You can buy brand new tyres online in just few steps.
                         </h2>
 
                 </div>
@@ -580,7 +580,8 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
+
 
     <!-- tyre range starts -->
     <div class="tyre-range-main-wrap">
@@ -757,6 +758,19 @@
     </div>
     <!-- tyre range ends -->
 
+    <div id="page">
+        <div id="loop">
+            <h1><b>SECURA</b>DRIVE IS THE <b><i>BEST</i></b> <span>TIRE</span> FOR <span><i>COMFORT.</i></span></h1>
+            <h1><b>SECURA</b>DRIVE IS THE <b><i>BEST</i></b> <span>TIRE</span> FOR <span><i>COMFORT.</i></span></h1>
+            <h1><b>SECURA</b>DRIVE IS THE <b><i>BEST</i></b> <span>TIRE</span> FOR <span><i>COMFORT.</i></span></h1>
+        </div>
+        <h2 class="text1" >SAVE FUEL WITH ENERGY DRIVE <br>Enhanced performance, superior handling  </h2>
+        <h3 class="text2">SUPERIOR CONTROL AT HIGH SPEED  <br>  Tread towards sustainability </h3>
+        <h5 class="text3">SUPERIOR CONTROL AT HIGH SPEED  <br>  Tread towards sustainability </h5>
+        <h4>...SCROLL TO READ</h4>
+        <canvas id="tire-img"></canvas>
+    </div>
+
 
     <!-- tips and advice section starts -->
     <div class="tips-and-advcie-section-wrapper">
@@ -912,6 +926,7 @@
             </div>
         </section>
     </footer>
+</div>
     <!--Footer End  -->
     <script src="./assets/js/silk_slider.js"></script>
     <script src="./assets/js/lozad.js"></script>
@@ -919,59 +934,63 @@
     <!-- <script src="./assets/js/popup.js"></script> -->
     <script src="./assets/js/footer.js"></script>
     <script src="./assets/js/banner.js"></script>
+    <script src="./assets/js/js/gsap.js"></script>
+    <script src="./assets/js/js/locomotive.js"></script>
+    <script src="./assets/js/js/scrolltrigger.js"></script>
+    <script src="./assets/js/js/script.js"></script>
 
     <script>
 
 
-        var start = window.innerWidth < 768 ? "+=500 center" : "+=300 center"; // Set different duration for mobile devices
-        var end = window.innerWidth < 768 ? "bottom bottom" : "bottom bottom";
+        // var start = window.innerWidth < 768 ? "+=500 center" : "+=300 center"; // Set different duration for mobile devices
+        // var end = window.innerWidth < 768 ? "bottom bottom" : "bottom bottom";
 
-        gsap.timeline({
-            scrollTrigger: {
-                trigger: ".content-wrapper",
-                // start: "+=500 center",  
-                start: start,
-                end: end, // Adjusted end time
-                scrub: 2,
-                pin: true,
-            }
-        })
-            .fromTo("#reveal1", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1, fadeIn: true, duration: 2 })
-            .fromTo("#reveal2", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1, fadeIn: true, duration: 2 })
-            .fromTo("#reveal3", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1, fadeIn: true, duration: 2 });
+        // gsap.timeline({
+        //     scrollTrigger: {
+        //         trigger: ".content-wrapper",
+        //         // start: "+=500 center",  
+        //         start: start,
+        //         end: end, // Adjusted end time
+        //         scrub: 2,
+        //         pin: true,
+        //     }
+        // })
+        //     .fromTo("#reveal1", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1, fadeIn: true, duration: 2 })
+        //     .fromTo("#reveal2", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1, fadeIn: true, duration: 2 })
+        //     .fromTo("#reveal3", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1, fadeIn: true, duration: 2 });
 
 
-        var imageContainer = $('.right-div');
-        var image = $('#myimg');
+        // var imageContainer = $('.right-div');
+        // var image = $('#myimg');
 
         // Set initial full-screen size
         // var initialHeight = $(window).innerHeight();
         // imageContainer.css('height', initialHeight + 600);
         // var maxScrollHeight = 800;
 
-        gsap.timeline({
-            scrollTrigger: {
-                trigger: image,
-                start: '50% 50%',
-                end: '90% bottom',
-                scrub: 2,
-                markers: true,
-            }
-        })
-            .fromTo(image,
-                {
-                    x: '-50%' ,
-                    opacity: 1,
-                    scale: 2 // Initial scale of 2
-                },
-                {
-                    x: 0,
-                    opacity: 1,
-                    scale: 1.2, // Scale from 2 to 1.2
-                    fadeIn: true,
-                    duration: 2
-                }
-            );
+        // gsap.timeline({
+        //     scrollTrigger: {
+        //         trigger: image,
+        //         start: '50% 50%',
+        //         end: '90% bottom',
+        //         scrub: 2,
+        //         markers: true,
+        //     }
+        // })
+        //     .fromTo(image,
+        //         {
+        //             x: '-50%' ,
+        //             opacity: 1,
+        //             scale: 2 // Initial scale of 2
+        //         },
+        //         {
+        //             x: 0,
+        //             opacity: 1,
+        //             scale: 1.2, // Scale from 2 to 1.2
+        //             fadeIn: true,
+        //             duration: 2
+        //         }
+        //     );
 
 
         // $(window).scroll(function () {
@@ -992,19 +1011,19 @@
         //     }
         // });
 
-        gsap.timeline({
-            scrollTrigger: {
-                trigger: ".box2",
-                start: "20% 50%",
-                end: "20% 50%",
-                scrub: 3,
-                pin: true,
-            }
-        })
-            .from(".text4", { opacity: 1, duration: 1, ease: "power2.out", fadeIn: true, })
-            .from(".text5", { opacity: 1, duration: 1, ease: "power2.out", fadeIn: true, })
-            .to(".text4", { opacity: 0, x: innerWidth * -1, duration: 1, fadeIn: true, ease: "power2.out" }, "-=1") // Move text4 to the left
-            .to(".text5", { opacity: 0, x: innerWidth * 1, duration: 1, fadeIn: true, ease: "power2.out" }, "-=1");
+        // gsap.timeline({
+        //     scrollTrigger: {
+        //         trigger: ".box2",
+        //         start: "20% 50%",
+        //         end: "20% 50%",
+        //         scrub: 3,
+        //         pin: true,
+        //     }
+        // })
+        //     .from(".text4", { opacity: 1, duration: 1, ease: "power2.out", fadeIn: true, })
+        //     .from(".text5", { opacity: 1, duration: 1, ease: "power2.out", fadeIn: true, })
+        //     .to(".text4", { opacity: 0, x: innerWidth * -1, duration: 1, fadeIn: true, ease: "power2.out" }, "-=1") // Move text4 to the left
+        //     .to(".text5", { opacity: 0, x: innerWidth * 1, duration: 1, fadeIn: true, ease: "power2.out" }, "-=1");
 
         $(document).ready(function () {
             $(".tyre-range-slick").slick({
