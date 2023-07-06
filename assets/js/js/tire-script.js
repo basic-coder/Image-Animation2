@@ -118,10 +118,10 @@ for (let i = 0; i < frameCount; i++) {
   images.push(img);
 }
 
+// ease: `none`,
 gsap.to(imageSeq, {
   frame: frameCount - 1,
   snap: "frame",
-  ease: `none`,
   scrollTrigger: {
     scrub: 0.15,
     trigger: `#page>canvas`,
@@ -161,7 +161,7 @@ function render() {
 // // Render the scaled image with the new width
 // scaleImage(images[imageSeq.frame], context, newWidth);
 
-innerWidth > 800 ? scaleImage(images[imageSeq.frame], context, 1650) : scaleImage(images[imageSeq.frame], context, 700);
+innerWidth > 800 ? scaleImage(images[imageSeq.frame], context, 1400) : scaleImage(images[imageSeq.frame], context, 700);
 }
 
 function scaleImage(img, ctx, newWidth) {
@@ -241,11 +241,11 @@ gsap.timeline({
       markers: true
   }
 })
-.fromTo("#tire-img", { scale: 1 }, { scale: .5, fadeIn: true, duration: 1 })
+.fromTo("#tire-img", { scale: 1 }, { scale: .5,  duration: 1 })
 .fromTo(".text2", { x: 0, opacity: 1 }, { x: innerWidth * -1, opacity: 0, fadeIn: true, duration: 1 },0)
 .fromTo(".text1", { x: 0, opacity: 1 }, { x:  innerWidth * 1, opacity: 0, fadeIn: true, duration: 1 },0)
 .fromTo(".text3", { x: innerWidth * -1, opacity: 0 }, { x:  0, opacity: 1, fadeIn: true, duration: 1 })
-.fromTo("#tire-img", { x: 0, opacity: 1 }, { x:  "20%", opacity: 1, fadeIn: true, duration: 1 })
+.fromTo("#tire-img", { x: 0, opacity: 1 }, { x:  "20%", opacity: 1, duration: 1 })
 
 
 //   gsap.timeline({
