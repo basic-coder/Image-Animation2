@@ -128,7 +128,7 @@ gsap.to(imageSeq, {
     start: `top top`,
     end: `100% top`,
     scroller: `#main`,
-    anticipatePin: 1,
+    // anticipatePin: 1,
   },
   onUpdate: render,
 });
