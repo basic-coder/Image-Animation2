@@ -74,7 +74,7 @@ ScrollTrigger.create({
 gsap.to(airpods, {
     frame: frameCount - 1,
     snap: "frame",
-    ease: "power2",
+    ease: "none",
     scrollTrigger: {
         scrub: 2,
         anticipatePin: 1,
