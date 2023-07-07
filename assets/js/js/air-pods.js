@@ -44,7 +44,7 @@ window.addEventListener("resize", function () {
     canvas.height = window.innerHeight;
     render();
 });
-const frameCount = 62;
+const frameCount = 147;
 const currentFrame = index => (
     `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${(index + 1).toString().padStart(4, '0')}.jpg`
     // `https://www.apple.com/105/media/us/airpods-3rd-generation/2021/3c0b27aa-a5fe-4365-a9ae-83c28d10fa21/anim/battery/small/${(index + 1).toString().padStart(4, '0')}.jpg`
@@ -61,15 +61,6 @@ for (let i = 0; i < frameCount; i++) {
     img.src = currentFrame(i);
     images.push(img);
 }
-
-ScrollTrigger.create({
-    trigger: "#canvas",
-    pin: true,
-    markers:true,
-    scroller: `#main`,
-    start: `top top`,
-    end: `0% center`
-  }); 
 
 gsap.to(airpods, {
     frame: frameCount - 1,
@@ -109,3 +100,11 @@ function scaleImage(img, ctx, newWidth) {
     );
 }
 
+ScrollTrigger.create({
+    trigger: "#canvas",
+    pin: true,
+    markers: true,
+    scroller: `#main`,
+    start: `top top`,
+    end: `0% center`
+}); 
