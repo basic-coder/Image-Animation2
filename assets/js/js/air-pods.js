@@ -35,7 +35,7 @@ gsap.to(airpods, {
     ease: "none",
     scrollTrigger: {
         scrub: 0.15,
-        
+        anticipatePin: 1,
     },
     onUpdate: render
 })
