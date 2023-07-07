@@ -65,7 +65,7 @@ for (let i = 0; i < frameCount; i++) {
 ScrollTrigger.create({
     trigger: "#canvas",
     pin: true,
-    // markers:true,
+    markers:true,
     scroller: `#main`,
     start: `top top`,
     end: `0% center`
@@ -74,9 +74,9 @@ ScrollTrigger.create({
 gsap.to(airpods, {
     frame: frameCount - 1,
     snap: "frame",
-    ease: "none",
+    ease: "power2",
     scrollTrigger: {
-        scrub: 0.15,
+        scrub: 2,
         anticipatePin: 1,
     },
     onUpdate: render
