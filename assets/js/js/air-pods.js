@@ -68,7 +68,8 @@ ScrollTrigger.create({
     markers:true,
     scroller: `#main`,
     start: `top top`,
-    end: `0% center`
+    end: `0% center`,
+    scrub: 1,
   }); 
 
 gsap.to(airpods, {
@@ -76,7 +77,7 @@ gsap.to(airpods, {
     snap: "frame",
     ease: "none",
     scrollTrigger: {
-        scrub: 2,
+        scrub: 1,
         anticipatePin: 1,
     },
     onUpdate: render
