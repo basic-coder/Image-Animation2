@@ -68,8 +68,7 @@ ScrollTrigger.create({
     markers:true,
     scroller: `#main`,
     start: `top top`,
-    end: `0% center`,
-    scrub: 1,
+    end: `0% center`
   }); 
 
 gsap.to(airpods, {
