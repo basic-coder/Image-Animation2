@@ -241,11 +241,11 @@ gsap.timeline({
       markers: true
   }
 })
-.fromTo("#tire-img", { scale: 1 }, { scale: .5,  duration: 1 })
+.fromTo("#tire-img", { scale: 1 }, { scale: .5, fadeIn: true, duration: 1 })
 .fromTo(".text2", { x: 0, opacity: 1 }, { x: innerWidth * -1, opacity: 0, fadeIn: true, duration: 1 },0)
 .fromTo(".text1", { x: 0, opacity: 1 }, { x:  innerWidth * 1, opacity: 0, fadeIn: true, duration: 1 },0)
 .fromTo(".text3", { x: innerWidth * -1, opacity: 0 }, { x:  0, opacity: 1, fadeIn: true, duration: 1 })
-.fromTo("#tire-img", { x: 0, opacity: 1 }, { x:  "20%", opacity: 1, duration: 1 })
+.fromTo("#tire-img", { x: 0, opacity: 1 }, { x:  "20%", opacity: 1, fadeIn: true, duration: 1 })
 
 
 //   gsap.timeline({
