@@ -161,7 +161,7 @@ function render() {
 // // Render the scaled image with the new width
 // scaleImage(images[imageSeq.frame], context, newWidth);
 
-innerWidth > 800 ? scaleImage(images[imageSeq.frame], context, 1650) : scaleImage(images[imageSeq.frame], context, 700);
+innerWidth > 800 ? scaleImage(images[imageSeq.frame], context, 1650) : scaleImage(images[imageSeq.frame], context, 500);
 }
 
 function scaleImage(img, ctx, newWidth) {
