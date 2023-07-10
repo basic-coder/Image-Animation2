@@ -7,15 +7,15 @@
     overflow: hidden;
 }
 #page{
-    /* position: relative; */
+    position: relative;
     height: 100vh;
     width: 100vw;
     background-color: #000;
     /* left: 0 !important; */
 }
 #page>canvas{
-  /* position: relative; */
-  z-index: 9;
+  position: relative;
+  /* z-index: 9; */
   max-width: 100vw;
   max-height: 100vh;
 }
