@@ -118,12 +118,12 @@ for (let i = 0; i < frameCount; i++) {
   images.push(img);
 }
 
-// ease: `none`,
 gsap.to(imageSeq, {
   frame: frameCount - 1,
   snap: "frame",
+  ease: `none`,
   scrollTrigger: {
-    scrub: 0.15,
+    scrub: .5,
     trigger: `#page`,
     start: `top top`,
     end: `100% top`,
