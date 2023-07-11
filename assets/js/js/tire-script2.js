@@ -123,8 +123,8 @@ function locomotive() {
     frame: frameCount - 1,
     snap: "frame",
     scrollTrigger: {
-      scrub: 0.15,
-      trigger: `#page>canvas`,
+      scrub: .5,
+      trigger: `#page`,
       start: `top top`,
       end: `100% top`,
       scroller: `#main`,
@@ -210,7 +210,7 @@ function locomotive() {
   // }
   
   ScrollTrigger.create({
-    trigger: "#page>canvas",
+    trigger: "#page",
     pin: true,
     // markers:true,
     scroller: `#main`,
