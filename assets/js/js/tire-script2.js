@@ -211,7 +211,7 @@ function locomotive() {
   
   ScrollTrigger.create({
     trigger: "#page",
-    pin: true,
+    // pin: true,
     // markers:true,
     scroller: `#main`,
     start: `top top`,
