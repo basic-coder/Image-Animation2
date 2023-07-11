@@ -125,6 +125,7 @@ function locomotive() {
     scrollTrigger: {
       scrub: 0.5,
       trigger: `#page`,
+      pin:true,
       start: `top top`,
       end: `100% top`,
       scroller: `#main`,
@@ -234,11 +235,10 @@ function locomotive() {
         trigger: "#page",
         start: "top top",
         end: "bottom top",
-        scrub: 2,
+        scrub: .5,
         pin: true,
         scroller: "#main",
-        markers: true,
-        reversed: true
+        markers: true
     }
   })
   .fromTo("#tire-img", { scale: 1 }, { scale: .5, fadeIn: true, duration: 1 })
