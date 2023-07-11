@@ -123,11 +123,13 @@ function locomotive() {
     snap: "frame",
     ease: `none`,
     scrollTrigger: {
-      scrub: .5,
+      scrub: 0.5,
       trigger: `#page`,
       start: `top top`,
       end: `100% top`,
       scroller: `#main`,
+      pin:true,
+      markers:true,
     },
     onUpdate: render,
   });
@@ -229,23 +231,23 @@ function locomotive() {
   // })
   
   
-  gsap.timeline({
-    scrollTrigger: {
-        trigger: "#page",
-        start: "top top",
-        end: "bottom top",
-        scrub: 2,
-        pin: true,
-        scroller: "#main",
-        markers: true,
-        reversed: true
-    }
-  })
-  .fromTo("#tire-img", { scale: 1 }, { scale: .5, fadeIn: true, duration: 1 })
-  .fromTo(".text2", { x: 0, opacity: 1 }, { x: innerWidth * -1, opacity: 0, fadeIn: true, duration: 1 },0)
-  .fromTo(".text1", { x: 0, opacity: 1 }, { x:  innerWidth * 1, opacity: 0, fadeIn: true, duration: 1 },0)
-  .fromTo(".text3", { x: innerWidth * -1, opacity: 0 }, { x:  0, opacity: 1, fadeIn: true, duration: 1 })
-  .fromTo("#tire-img", { x: 0, opacity: 1 }, { x:  "20%",  opacity: 1, fadeIn: true, duration: 1 })
+//   gsap.timeline({
+//     scrollTrigger: {
+//         trigger: "#page",
+//         start: "top top",
+//         end: "bottom top",
+//         scrub: 2,
+//         pin: true,
+//         scroller: "#main",
+//         markers: true,
+//         reversed: true
+//     }
+//   })
+//   .fromTo("#tire-img", { scale: 1 }, { scale: .5, fadeIn: true, duration: 1 })
+//   .fromTo(".text2", { x: 0, opacity: 1 }, { x: innerWidth * -1, opacity: 0, fadeIn: true, duration: 1 },0)
+//   .fromTo(".text1", { x: 0, opacity: 1 }, { x:  innerWidth * 1, opacity: 0, fadeIn: true, duration: 1 },0)
+//   .fromTo(".text3", { x: innerWidth * -1, opacity: 0 }, { x:  0, opacity: 1, fadeIn: true, duration: 1 })
+//   .fromTo("#tire-img", { x: 0, opacity: 1 }, { x:  "20%",  opacity: 1, fadeIn: true, duration: 1 })
   
   
   //   gsap.timeline({
