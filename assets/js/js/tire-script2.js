@@ -123,9 +123,8 @@ function locomotive() {
     snap: "frame",
     ease: `none`,
     scrollTrigger: {
-      scrub: 0.5,
+      scrub: 0.15,
       trigger: `#page`,
-      pin:true,
       start: `top top`,
       end: `100% top`,
       scroller: `#main`,
@@ -161,7 +160,7 @@ function locomotive() {
   // // Render the scaled image with the new width
   // scaleImage(images[imageSeq.frame], context, newWidth);
   
-  innerWidth > 800 ? scaleImage(images[imageSeq.frame], context, 1650) : scaleImage(images[imageSeq.frame], context, 700);
+  innerWidth > 800 ? scaleImage(images[imageSeq.frame], context, 1400) : scaleImage(images[imageSeq.frame], context, 700);
   }
   
   function scaleImage(img, ctx, newWidth) {
@@ -211,7 +210,7 @@ function locomotive() {
   
   ScrollTrigger.create({
     trigger: "#page",
-    // pin: true,
+    pin: true,
     // markers:true,
     scroller: `#main`,
     start: `top top`,
@@ -235,17 +234,17 @@ function locomotive() {
         trigger: "#page",
         start: "top top",
         end: "bottom top",
-        scrub: .5,
+        scrub: 2,
         pin: true,
-        // scroller: "#main",
+        scroller: "#main",
         markers: true
     }
   })
   .fromTo("#tire-img", { scale: 1 }, { scale: .5, fadeIn: true, duration: 1 })
-  .fromTo(".text2", { x: 0, opacity: 1 }, { x: innerWidth * -1, opacity: 0, fadeIn: true, duration: 1 },0)
-  .fromTo(".text1", { x: 0, opacity: 1 }, { x:  innerWidth * 1, opacity: 0, fadeIn: true, duration: 1 },0)
-  .fromTo(".text3", { x: innerWidth * -1, opacity: 0 }, { x:  0, opacity: 1, fadeIn: true, duration: 1 })
-  .fromTo("#tire-img", { x: 0, opacity: 1 }, { x:  "20%",  opacity: 1, fadeIn: true, duration: 1 })
+  .fromTo("#tire-img", { x: 0, opacity: 1 }, { x:  "20%", opacity: 1, fadeIn: true, duration: 1 })
+//   .fromTo(".text2", { x: 0, opacity: 1 }, { x: innerWidth * -1, opacity: 0, fadeIn: true, duration: 1 },0)
+//   .fromTo(".text1", { x: 0, opacity: 1 }, { x:  innerWidth * 1, opacity: 0, fadeIn: true, duration: 1 },0)
+//   .fromTo(".text3", { x: innerWidth * -1, opacity: 0 }, { x:  0, opacity: 1, fadeIn: true, duration: 1 })
   
   
   //   gsap.timeline({
