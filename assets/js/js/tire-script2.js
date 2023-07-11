@@ -118,10 +118,10 @@ function locomotive() {
     images.push(img);
   }
   
-  // ease: `none`,
   gsap.to(imageSeq, {
     frame: frameCount - 1,
     snap: "frame",
+    ease: `none`,
     scrollTrigger: {
       scrub: .5,
       trigger: `#page`,
