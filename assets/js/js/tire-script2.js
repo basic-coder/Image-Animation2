@@ -161,15 +161,17 @@ function locomotive() {
   // // Render the scaled image with the new width
   // scaleImage(images[imageSeq.frame], context, newWidth);
   
-  innerWidth > 800 ? scaleImage(images[imageSeq.frame], context, 1400) : scaleImage(images[imageSeq.frame], context, 700);
+  scaleImage(images[imageSeq.frame], context);
+
   }
   
-  function scaleImage(img, ctx, newWidth) {
+  function scaleImage(img, ctx) {
     var canvas = ctx.canvas;
-    var ratio = newWidth / img.width;
-    var newHeight = img.height * ratio;
-    var centerShift_x = (canvas.width - newWidth) / 2;
-    var centerShift_y = (canvas.height - newHeight) / 2;
+    var hRatio = canvas.width / img.width;
+    var vRatio = canvas.height / img.height;
+    var ratio = Math.max(hRatio, vRatio);
+    var centerShift_x = (canvas.width - img.width * ratio) / 2;
+    var centerShift_y = (canvas.height - img.height * ratio) / 2;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(
       img,
@@ -179,8 +181,8 @@ function locomotive() {
       img.height,
       centerShift_x,
       centerShift_y,
-      newWidth,
-      newHeight
+      img.width * ratio,
+      img.height * ratio
     );
   }
   
