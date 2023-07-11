@@ -237,7 +237,7 @@ function locomotive() {
         end: "bottom top",
         scrub: .5,
         pin: true,
-        scroller: "#main",
+        // scroller: "#main",
         markers: true
     }
   })
