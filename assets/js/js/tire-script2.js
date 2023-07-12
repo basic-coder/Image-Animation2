@@ -1,52 +1,52 @@
 function locomotive() {
     gsap.registerPlugin(ScrollTrigger);
-  
+
     const locoScroll = new LocomotiveScroll({
-      el: document.querySelector("#main"),
-      smooth: true ,
+        el: document.querySelector("#main"),
+        smooth: true,
     });
     locoScroll.on("scroll", ScrollTrigger.update);
-  
+
     ScrollTrigger.scrollerProxy("#main", {
-      scrollTop(value) {
-        return arguments.length
-          ? locoScroll.scrollTo(value, 0, 0)
-          : locoScroll.scroll.instance.scroll.y;
-      },
-  
-      getBoundingClientRect() {
-        return {
-          top: 0,
-          left: 0,
-          width: window.innerWidth,
-          height: window.innerHeight,
-        };
-      },
-  
-      pinType: document.querySelector("#main").style.transform
-        ? "transform"
-        : "fixed",
+        scrollTop(value) {
+            return arguments.length
+                ? locoScroll.scrollTo(value, 0, 0)
+                : locoScroll.scroll.instance.scroll.y;
+        },
+
+        getBoundingClientRect() {
+            return {
+                top: 0,
+                left: 0,
+                width: window.innerWidth,
+                height: window.innerHeight,
+            };
+        },
+
+        pinType: document.querySelector("#main").style.transform
+            ? "transform"
+            : "fixed",
     });
     ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
     ScrollTrigger.refresh();
-  }
-  locomotive();
-  
-  
-  const canvas = document.querySelector("canvas");
-  const context = canvas.getContext("2d");
-  
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  
-  
-  window.addEventListener("resize", function () {
+}
+locomotive();
+
+
+const canvas = document.querySelector("canvas");
+const context = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+
+window.addEventListener("resize", function () {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     render();
-  });
-  
-  function files(index) {
+});
+
+function files(index) {
     var data = [
         '/assets/images/images/0000.png',
         '/assets/images/images/0001.png',
@@ -99,73 +99,49 @@ function locomotive() {
         '/assets/images/images/0048.png',
         '/assets/images/images/0049.png'
     ];
-    var splitData = data.map(function(url) {
+    var splitData = data.map(function (url) {
         return url.split(",");
     });
     return splitData[index];
-  }
-  
-  const frameCount = 50;
-  
-  const images = [];
-  const imageSeq = {
+}
+
+const frameCount = 50;
+
+const images = [];
+const imageSeq = {
     frame: 1,
-  };
-  
-  for (let i = 0; i < frameCount; i++) {
+};
+
+for (let i = 0; i < frameCount; i++) {
     const img = new Image();
     img.src = files(i);
     images.push(img);
-  }
-  
-  gsap.to(imageSeq, {
+}
+
+gsap.to(imageSeq, {
     frame: frameCount - 1,
     snap: "frame",
     ease: `none`,
     scrollTrigger: {
-      scrub: 0.15,
-      trigger: `#page`,
-      start: `top top`,
-      end: `100% top`,
-      scroller: `#main`,
-      markers: true
+        scrub: 0.15,
+        trigger: `#page`,
+        start: `top top`,
+        end: `100% top`,
+        scroller: `#main`,
+        markers: true
 
     },
     onUpdate: render,
-  });
-  
-  images[1].onload = render;
-  
-  // // Define the initial width and the decrement amount
-  // var initialWidth = 2000; // Initial width when innerWidth > 800
-  // var smallWidth = 700; // Width when innerWidth <= 800
-  // var decrementAmount = 20; // Amount to decrement the width on each scroll event
-  
-  // // Counter to keep track of scroll events
-  // var scrollCounter = 0;
-  
-  // // Listen for the scroll event
-  // window.addEventListener('scroll', function() {
-  // render()
-  // });
-  
-  function render() {
-  //    // Increment the scroll counter
-  // scrollCounter++;
-  
-  // // Calculate the new width based on the number of scroll events
-  // var newWidth = innerWidth > 800 ? initialWidth - (scrollCounter * decrementAmount) : smallWidth;
-  
-  // // Limit the reduction in width to imageSeq.frame = 10
-  // newWidth = Math.max(newWidth, smallWidth + (10 * decrementAmount));
-  
-  // // Render the scaled image with the new width
-  // scaleImage(images[imageSeq.frame], context, newWidth);
-  
-  innerWidth > 800 ? scaleImage(images[imageSeq.frame], context, 1400) : scaleImage(images[imageSeq.frame], context, 700);
-  }
-  
-  function scaleImage(img, ctx, newWidth) {
+});
+
+images[1].onload = render;
+
+function render() {
+
+    innerWidth > 800 ? scaleImage(images[imageSeq.frame], context, 1400) : scaleImage(images[imageSeq.frame], context, 700);
+}
+
+function scaleImage(img, ctx, newWidth) {
     var canvas = ctx.canvas;
     var ratio = newWidth / img.width;
     var newHeight = img.height * ratio;
@@ -173,64 +149,29 @@ function locomotive() {
     var centerShift_y = (canvas.height - newHeight) / 2;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(
-      img,
-      0,
-      0,
-      img.width,
-      img.height,
-      centerShift_x,
-      centerShift_y,
-      newWidth,
-      newHeight
+        img,
+        0,
+        0,
+        img.width,
+        img.height,
+        centerShift_x,
+        centerShift_y,
+        newWidth,
+        newHeight
     );
-  }
-  
-  
-  // function render() {
-  //   innerWidth > 800 ? scaleImage(images[imageSeq.frame], context, 1400, 20) : scaleImage(images[imageSeq.frame], context, 700, 00);
-  // }
-  
-  // function scaleImage(img, ctx, newWidth, newTop) {
-  //   var canvas = ctx.canvas;
-  //   var ratio = newWidth / img.width;
-  //   var newHeight = img.height * ratio;
-  //   var centerShift_x = (canvas.width - newWidth) / 2;
-  //   var centerShift_y = newTop - (newHeight - canvas.height) / 2;
-  //   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  //   ctx.drawImage(
-  //     img,
-  //     0,
-  //     0,
-  //     img.width,
-  //     img.height,
-  //     centerShift_x,
-  //     centerShift_y,
-  //     newWidth,
-  //     newHeight
-  //   );
-  // }
-  
-  ScrollTrigger.create({
-    trigger: "#page",
-    pin: true,
-    // markers:true,
-    scroller: `#main`,
-    start: `top top`,
-    end: `0% center`
-  }); 
-  
-  // gsap.to("#page1", {
-  //   scrollTrigger: {
-  //     trigger: "#page1",
-  //     start: "top top",
-  //     end: "bottom top",
-  //     pin: true,
-  //     markers: true,
-  //     scroller: "#main"
-  //   }
-  // })
-  
-  
+}
+
+
+
+//   ScrollTrigger.create({
+//     trigger: "#page",
+//     pin: true,
+//     markers:true,
+//     scroller: `#main`,
+//     start: `top top`,
+//     end: `0% center`
+//   }); 
+
 //   gsap.timeline({
 //     scrollTrigger: {
 //         trigger: "#page",
@@ -246,31 +187,14 @@ function locomotive() {
 //   .fromTo(".text2", { x: 0, opacity: 1 }, { x: innerWidth * -1, opacity: 0, fadeIn: true, duration: 1 },0)
 //   .fromTo(".text1", { x: 0, opacity: 1 }, { x:  innerWidth * 1, opacity: 0, fadeIn: true, duration: 1 },0)
 //   .fromTo(".text3", { x: innerWidth * -1, opacity: 0 }, { x:  0, opacity: 1, fadeIn: true, duration: 1 })
-  
-  
-  //   gsap.timeline({
-  //     scrollTrigger: {
-  //         trigger: "#page2",
-  //         // start: "+=500 center",  
-  //         start:`top top`,
-  //         end:`bottom top`,
-  //         scrub: 2,
-  //         pin: true,
-  //         scroller:`#main`
-  //     }
-  // })
-  //     .fromTo("#text1", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1, fadeIn: true, duration: 2 })
-  //     .fromTo("#text2", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1, fadeIn: true, duration: 2 })
-  
-  
-  //     gsap.timeline({
-  //       scrollTrigger: {
-  //           trigger: "#page3",
-  //           start:`top top`,
-  //           end:`bottom top`,
-  //           scrub: 2,
-  //           pin: true,
-  //           scroller:`#main`
-  //       }
-  //   })
-  //   .fromTo("#text3", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1, fadeIn: true, duration: 5 })
+
+// Detect viewport resize using ResizeObserver
+const resizeObserver = new ResizeObserver(entries => {
+    for (let entry of entries) {
+        // Update your animation or reposition elements as needed
+        tl.invalidate(); // This forces the ScrollTrigger to recalculate
+    }
+});
+
+// Observe the document's root element
+resizeObserver.observe(document.documentElement);
