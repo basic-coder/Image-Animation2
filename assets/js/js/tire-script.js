@@ -128,7 +128,7 @@ gsap.to(imageSeq, {
       scrub: 0.15,
       trigger: `#page`,
       start: `top top`,
-      end: `100% top`,
+      end: `65% top`,
       scroller: `#main`,
       markers: true
 
@@ -178,10 +178,10 @@ function scaleImage(img, ctx, newWidth) {
     scrollTrigger: {
         trigger: "#page",
         scroller: "#main",
-        start: "top top",
-        end: "bottom top",
+        // start: "top top",
+        // end: "bottom top",
         scrub: 2,
-        markers: true
+        // markers: true
     }
   })
   .fromTo("#tire-img", { scale: 1 }, { scale: .5, fadeIn: true, duration: 1 })

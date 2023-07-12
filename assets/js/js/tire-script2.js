@@ -128,7 +128,7 @@ gsap.to(imageSeq, {
         scrub: 0.15,
         trigger: `#page`,
         start: `top top`,
-        end: `100% top`,
+        end: `65% top`,
         scroller: `#main`,
         markers: true
 
