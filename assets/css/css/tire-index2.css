@@ -20,6 +20,7 @@ canvas {
     position: relative;
     /* z-index: 9; */
     max-width: 100vw;
+    object-fit: cover;
     max-height: 100vh;
 }
 
@@ -33,4 +34,15 @@ canvas {
     height: 100vh;
     width: 100vw;
     background-color: blue;
+}
+
+@media (max-width: 768px) {
+    canvas {
+      height: 100%;
+      width: 100%;
+    }
+
+    #page{
+        height: 700px;
+    }
 }
