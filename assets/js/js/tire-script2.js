@@ -46,6 +46,17 @@ window.addEventListener("resize", function () {
     render();
 });
 
+window.addEventListener("scroll", function () {
+    // Check if the address bar is hidden
+    // debugger;
+    const isAddressBarHidden = window.innerHeight < document.documentElement.clientHeight;
+  
+    if (isAddressBarHidden) {
+      // Update the scroll position of the scroller
+      ScrollTrigger.refresh();
+    }
+});
+
 function files(index) {
     var data = [
         '/assets/images/images/0000.png',
