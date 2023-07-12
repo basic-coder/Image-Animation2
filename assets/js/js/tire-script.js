@@ -128,7 +128,7 @@ gsap.to(imageSeq, {
     start: `top top`,
     end: `100% top`,
     scroller: `#main`,
-    pin: true,
+    // pin: true,
     markers: true
 
   },
