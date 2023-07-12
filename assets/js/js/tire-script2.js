@@ -44,6 +44,7 @@ window.addEventListener("resize", function () {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     render();
+    ScrollTrigger.refresh();
 });
 
 
@@ -164,14 +165,14 @@ function scaleImage(img, ctx, newWidth) {
 
 
 
-ScrollTrigger.create({
-    trigger: "#page",
-    pin: true,
-    // markers: true,
-    scroller: `#main`,
-    start: `top top`,
-    end: `250% center`
-}); 
+// ScrollTrigger.create({
+//     trigger: "#page",
+//     pin: true,
+//     markers: true,
+//     scroller: `#main`,
+//     start: `top top`,
+//     end: `250% center`
+// }); 
 
 //   gsap.timeline({
 //     scrollTrigger: {
