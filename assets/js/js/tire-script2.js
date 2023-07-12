@@ -118,7 +118,7 @@ for (let i = 0; i < frameCount; i++) {
     images.push(img);
 }
 
-var imagesequence = gsap.to(imageSeq, {
+gsap.to(imageSeq, {
     frame: frameCount - 1,
     snap: "frame",
     ease: `none`,
@@ -188,13 +188,3 @@ function scaleImage(img, ctx, newWidth) {
 //   .fromTo(".text1", { x: 0, opacity: 1 }, { x:  innerWidth * 1, opacity: 0, fadeIn: true, duration: 1 },0)
 //   .fromTo(".text3", { x: innerWidth * -1, opacity: 0 }, { x:  0, opacity: 1, fadeIn: true, duration: 1 })
 
-// Detect viewport resize using ResizeObserver
-const resizeObserver = new ResizeObserver(entries => {
-    for (let entry of entries) {
-        // Update your animation or reposition elements as needed
-        imagesequence.invalidate(); // This forces the ScrollTrigger to recalculate
-    }
-});
-
-// Observe the document's root element
-resizeObserver.observe(document.documentElement);
