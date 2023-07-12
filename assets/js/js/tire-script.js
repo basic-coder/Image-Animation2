@@ -128,6 +128,7 @@ gsap.to(imageSeq, {
     start: `top top`,
     end: `100% top`,
     scroller: `#main`,
+    pin: true,
     markers: true
 
   },
@@ -210,14 +211,14 @@ function scaleImage(img, ctx, newWidth) {
 //   );
 // }
 
-ScrollTrigger.create({
-  trigger: "#page",
-  pin: true,
-  // markers:true,
-  scroller: `#main`,
-  start: `top top`,
-  end: `0% center`
-}); 
+// ScrollTrigger.create({
+//   trigger: "#page",
+//   pin: true,
+//   // markers:true,
+//   scroller: `#main`,
+//   start: `top top`,
+//   end: `0% center`
+// }); 
 
 // gsap.to("#page1", {
 //   scrollTrigger: {
