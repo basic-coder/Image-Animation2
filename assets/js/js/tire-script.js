@@ -48,57 +48,57 @@ window.addEventListener("resize", function () {
 
 function files(index) {
   var data = [
-    '/assets/images/images/0000.png',
-    '/assets/images/images/0001.png',
-    '/assets/images/images/0002.png',
-    '/assets/images/images/0003.png',
-    '/assets/images/images/0004.png',
-    '/assets/images/images/0005.png',
-    '/assets/images/images/0006.png',
-    '/assets/images/images/0007.png',
-    '/assets/images/images/0008.png',
-    '/assets/images/images/0009.png',
-    '/assets/images/images/0010.png',
-    '/assets/images/images/0011.png',
-    '/assets/images/images/0012.png',
-    '/assets/images/images/0013.png',
-    '/assets/images/images/0014.png',
-    '/assets/images/images/0015.png',
-    '/assets/images/images/0016.png',
-    '/assets/images/images/0017.png',
-    '/assets/images/images/0018.png',
-    '/assets/images/images/0019.png',
-    '/assets/images/images/0020.png',
-    '/assets/images/images/0021.png',
-    '/assets/images/images/0022.png',
-    '/assets/images/images/0023.png',
-    '/assets/images/images/0024.png',
-    '/assets/images/images/0025.png',
-    '/assets/images/images/0026.png',
-    '/assets/images/images/0027.png',
-    '/assets/images/images/0028.png',
-    '/assets/images/images/0029.png',
-    '/assets/images/images/0030.png',
-    '/assets/images/images/0031.png',
-    '/assets/images/images/0032.png',
-    '/assets/images/images/0033.png',
-    '/assets/images/images/0034.png',
-    '/assets/images/images/0035.png',
-    '/assets/images/images/0036.png',
-    '/assets/images/images/0037.png',
-    '/assets/images/images/0038.png',
-    '/assets/images/images/0039.png',
-    '/assets/images/images/0040.png',
-    '/assets/images/images/0041.png',
-    '/assets/images/images/0042.png',
-    '/assets/images/images/0043.png',
-    '/assets/images/images/0044.png',
-    '/assets/images/images/0045.png',
-    '/assets/images/images/0046.png',
-    '/assets/images/images/0047.png',
-    '/assets/images/images/0048.png',
-    '/assets/images/images/0049.png'
-];
+      '/assets/images/images/0000.png',
+      '/assets/images/images/0001.png',
+      '/assets/images/images/0002.png',
+      '/assets/images/images/0003.png',
+      '/assets/images/images/0004.png',
+      '/assets/images/images/0005.png',
+      '/assets/images/images/0006.png',
+      '/assets/images/images/0007.png',
+      '/assets/images/images/0008.png',
+      '/assets/images/images/0009.png',
+      '/assets/images/images/0010.png',
+      '/assets/images/images/0011.png',
+      '/assets/images/images/0012.png',
+      '/assets/images/images/0013.png',
+      '/assets/images/images/0014.png',
+      '/assets/images/images/0015.png',
+      '/assets/images/images/0016.png',
+      '/assets/images/images/0017.png',
+      '/assets/images/images/0018.png',
+      '/assets/images/images/0019.png',
+      '/assets/images/images/0020.png',
+      '/assets/images/images/0021.png',
+      '/assets/images/images/0022.png',
+      '/assets/images/images/0023.png',
+      '/assets/images/images/0024.png',
+      '/assets/images/images/0025.png',
+      '/assets/images/images/0026.png',
+      '/assets/images/images/0027.png',
+      '/assets/images/images/0028.png',
+      '/assets/images/images/0029.png',
+      '/assets/images/images/0030.png',
+      '/assets/images/images/0031.png',
+      '/assets/images/images/0032.png',
+      '/assets/images/images/0033.png',
+      '/assets/images/images/0034.png',
+      '/assets/images/images/0035.png',
+      '/assets/images/images/0036.png',
+      '/assets/images/images/0037.png',
+      '/assets/images/images/0038.png',
+      '/assets/images/images/0039.png',
+      '/assets/images/images/0040.png',
+      '/assets/images/images/0041.png',
+      '/assets/images/images/0042.png',
+      '/assets/images/images/0043.png',
+      '/assets/images/images/0044.png',
+      '/assets/images/images/0045.png',
+      '/assets/images/images/0046.png',
+      '/assets/images/images/0047.png',
+      '/assets/images/images/0048.png',
+      '/assets/images/images/0049.png'
+  ];
   var splitData = data.map(function(url) {
       return url.split(",");
   });
@@ -123,12 +123,13 @@ gsap.to(imageSeq, {
   snap: "frame",
   ease: `none`,
   scrollTrigger: {
-    scrub: .5,
+    scrub: 0.15,
     trigger: `#page`,
     start: `top top`,
     end: `100% top`,
     scroller: `#main`,
-    anticipatePin: 1,
+    markers: true
+
   },
   onUpdate: render,
 });
@@ -230,22 +231,21 @@ ScrollTrigger.create({
 // })
 
 
-gsap.timeline({
-  scrollTrigger: {
-      trigger: "#page",
-      start: "top top",
-      end: "bottom top",
-      scrub: 2,
-      pin: true,
-      scroller: "#main",
-      markers: true
-  }
-})
-.fromTo("#tire-img", { scale: 1 }, { scale: .5, fadeIn: true, duration: 1 })
-.fromTo(".text2", { x: 0, opacity: 1 }, { x: innerWidth * -1, opacity: 0, fadeIn: true, duration: 1 },0)
-.fromTo(".text1", { x: 0, opacity: 1 }, { x:  innerWidth * 1, opacity: 0, fadeIn: true, duration: 1 },0)
-.fromTo(".text3", { x: innerWidth * -1, opacity: 0 }, { x:  0, opacity: 1, fadeIn: true, duration: 1 })
-.fromTo("#tire-img", { x: 0, opacity: 1 }, { x:  "20%", opacity: 1, fadeIn: true, duration: 1 })
+//   gsap.timeline({
+//     scrollTrigger: {
+//         trigger: "#page",
+//         scroller: "#main",
+//         start: "top top",
+//         end: "bottom top",
+//         scrub: 2,
+//         markers: true
+//     }
+//   })
+//   .fromTo("#tire-img", { scale: 1 }, { scale: .5, fadeIn: true, duration: 1 })
+//   .fromTo("#tire-img", { x: 0, opacity: 1 }, { x:  "20%", opacity: 1, fadeIn: true, duration: 1 })
+//   .fromTo(".text2", { x: 0, opacity: 1 }, { x: innerWidth * -1, opacity: 0, fadeIn: true, duration: 1 },0)
+//   .fromTo(".text1", { x: 0, opacity: 1 }, { x:  innerWidth * 1, opacity: 0, fadeIn: true, duration: 1 },0)
+//   .fromTo(".text3", { x: innerWidth * -1, opacity: 0 }, { x:  0, opacity: 1, fadeIn: true, duration: 1 })
 
 
 //   gsap.timeline({
