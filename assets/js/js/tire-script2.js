@@ -46,16 +46,6 @@ window.addEventListener("resize", function () {
     render();
 });
 
-window.addEventListener("scroll", function () {
-    // Check if the address bar is hidden
-    // debugger;
-    const isAddressBarHidden = window.innerHeight < document.documentElement.clientHeight;
-  
-    if (isAddressBarHidden) {
-      // Update the scroll position of the scroller
-      ScrollTrigger.refresh();
-    }
-});
 
 function files(index) {
     var data = [
@@ -174,14 +164,14 @@ function scaleImage(img, ctx, newWidth) {
 
 
 
-//   ScrollTrigger.create({
-//     trigger: "#page",
-//     pin: true,
-//     markers:true,
-//     scroller: `#main`,
-//     start: `top top`,
-//     end: `0% center`
-//   }); 
+ScrollTrigger.create({
+    trigger: "#page",
+    pin: true,
+    // markers: true,
+    scroller: `#main`,
+    start: `top top`,
+    end: `250% center`
+}); 
 
 //   gsap.timeline({
 //     scrollTrigger: {
