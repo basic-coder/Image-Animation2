@@ -2,30 +2,30 @@ function locomotive() {
   gsap.registerPlugin(ScrollTrigger);
 
   const locoScroll = new LocomotiveScroll({
-    el: document.querySelector("#main"),
-    smooth: true ,
+      el: document.querySelector("#main"),
+      smooth: true,
   });
   locoScroll.on("scroll", ScrollTrigger.update);
 
   ScrollTrigger.scrollerProxy("#main", {
-    scrollTop(value) {
-      return arguments.length
-        ? locoScroll.scrollTo(value, 0, 0)
-        : locoScroll.scroll.instance.scroll.y;
-    },
+      scrollTop(value) {
+          return arguments.length
+              ? locoScroll.scrollTo(value, 0, 0)
+              : locoScroll.scroll.instance.scroll.y;
+      },
 
-    getBoundingClientRect() {
-      return {
-        top: 0,
-        left: 0,
-        width: window.innerWidth,
-        height: window.innerHeight,
-      };
-    },
+      getBoundingClientRect() {
+          return {
+              top: 0,
+              left: 0,
+              width: window.innerWidth,
+              height: window.innerHeight,
+          };
+      },
 
-    pinType: document.querySelector("#main").style.transform
-      ? "transform"
-      : "fixed",
+      pinType: document.querySelector("#main").style.transform
+          ? "transform"
+          : "fixed",
   });
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
   ScrollTrigger.refresh();
@@ -44,7 +44,9 @@ window.addEventListener("resize", function () {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   render();
+  ScrollTrigger.refresh();
 });
+
 
 function files(index) {
   var data = [
@@ -99,7 +101,7 @@ function files(index) {
       '/assets/images/images/0048.png',
       '/assets/images/images/0049.png'
   ];
-  var splitData = data.map(function(url) {
+  var splitData = data.map(function (url) {
       return url.split(",");
   });
   return splitData[index];
@@ -123,13 +125,12 @@ gsap.to(imageSeq, {
   snap: "frame",
   ease: `none`,
   scrollTrigger: {
-    scrub: 0.15,
-    trigger: `#page`,
-    start: `top top`,
-    end: `100% top`,
-    scroller: `#main`,
-    // pin: true,
-    markers: true
+      scrub: 0.15,
+      trigger: `#page`,
+      start: `top top`,
+      end: `100% top`,
+      scroller: `#main`,
+      markers: true
 
   },
   onUpdate: render,
@@ -137,33 +138,9 @@ gsap.to(imageSeq, {
 
 images[1].onload = render;
 
-// // Define the initial width and the decrement amount
-// var initialWidth = 2000; // Initial width when innerWidth > 800
-// var smallWidth = 700; // Width when innerWidth <= 800
-// var decrementAmount = 20; // Amount to decrement the width on each scroll event
-
-// // Counter to keep track of scroll events
-// var scrollCounter = 0;
-
-// // Listen for the scroll event
-// window.addEventListener('scroll', function() {
-// render()
-// });
-
 function render() {
-//    // Increment the scroll counter
-// scrollCounter++;
 
-// // Calculate the new width based on the number of scroll events
-// var newWidth = innerWidth > 800 ? initialWidth - (scrollCounter * decrementAmount) : smallWidth;
-
-// // Limit the reduction in width to imageSeq.frame = 10
-// newWidth = Math.max(newWidth, smallWidth + (10 * decrementAmount));
-
-// // Render the scaled image with the new width
-// scaleImage(images[imageSeq.frame], context, newWidth);
-
-innerWidth > 800 ? scaleImage(images[imageSeq.frame], context, 1400) : scaleImage(images[imageSeq.frame], context, 700);
+  innerWidth > 800 ? scaleImage(images[imageSeq.frame], context, 1400) : scaleImage(images[imageSeq.frame], context, 700);
 }
 
 function scaleImage(img, ctx, newWidth) {
@@ -174,104 +151,42 @@ function scaleImage(img, ctx, newWidth) {
   var centerShift_y = (canvas.height - newHeight) / 2;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.drawImage(
-    img,
-    0,
-    0,
-    img.width,
-    img.height,
-    centerShift_x,
-    centerShift_y,
-    newWidth,
-    newHeight
+      img,
+      0,
+      0,
+      img.width,
+      img.height,
+      centerShift_x,
+      centerShift_y,
+      newWidth,
+      newHeight
   );
 }
 
 
-// function render() {
-//   innerWidth > 800 ? scaleImage(images[imageSeq.frame], context, 1400, 20) : scaleImage(images[imageSeq.frame], context, 700, 00);
-// }
-
-// function scaleImage(img, ctx, newWidth, newTop) {
-//   var canvas = ctx.canvas;
-//   var ratio = newWidth / img.width;
-//   var newHeight = img.height * ratio;
-//   var centerShift_x = (canvas.width - newWidth) / 2;
-//   var centerShift_y = newTop - (newHeight - canvas.height) / 2;
-//   ctx.clearRect(0, 0, canvas.width, canvas.height);
-//   ctx.drawImage(
-//     img,
-//     0,
-//     0,
-//     img.width,
-//     img.height,
-//     centerShift_x,
-//     centerShift_y,
-//     newWidth,
-//     newHeight
-//   );
-// }
 
 // ScrollTrigger.create({
-//   trigger: "#page",
-//   pin: true,
-//   // markers:true,
-//   scroller: `#main`,
-//   start: `top top`,
-//   end: `0% center`
-// }); 
-
-// gsap.to("#page1", {
-//   scrollTrigger: {
-//     trigger: "#page1",
-//     start: "top top",
-//     end: "bottom top",
+//     trigger: "#page",
 //     pin: true,
 //     markers: true,
-//     scroller: "#main"
-//   }
-// })
+//     scroller: `#main`,
+//     start: `top top`,
+//     end: `250% center`
+// }); 
 
-
-//   gsap.timeline({
-//     scrollTrigger: {
-//         trigger: "#page",
-//         scroller: "#main",
-//         start: "top top",
-//         end: "bottom top",
-//         scrub: 2,
-//         markers: true
-//     }
-//   })
-//   .fromTo("#tire-img", { scale: 1 }, { scale: .5, fadeIn: true, duration: 1 })
-//   .fromTo("#tire-img", { x: 0, opacity: 1 }, { x:  "20%", opacity: 1, fadeIn: true, duration: 1 })
+  gsap.timeline({
+    scrollTrigger: {
+        trigger: "#page",
+        scroller: "#main",
+        start: "top top",
+        end: "bottom top",
+        scrub: 2,
+        markers: true
+    }
+  })
+  .fromTo("#tire-img", { scale: 1 }, { scale: .5, fadeIn: true, duration: 1 })
+  .fromTo("#tire-img", { x: 0, opacity: 1 }, { x:  "20%", opacity: 1, fadeIn: true, duration: 1 })
 //   .fromTo(".text2", { x: 0, opacity: 1 }, { x: innerWidth * -1, opacity: 0, fadeIn: true, duration: 1 },0)
 //   .fromTo(".text1", { x: 0, opacity: 1 }, { x:  innerWidth * 1, opacity: 0, fadeIn: true, duration: 1 },0)
 //   .fromTo(".text3", { x: innerWidth * -1, opacity: 0 }, { x:  0, opacity: 1, fadeIn: true, duration: 1 })
 
-
-//   gsap.timeline({
-//     scrollTrigger: {
-//         trigger: "#page2",
-//         // start: "+=500 center",  
-//         start:`top top`,
-//         end:`bottom top`,
-//         scrub: 2,
-//         pin: true,
-//         scroller:`#main`
-//     }
-// })
-//     .fromTo("#text1", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1, fadeIn: true, duration: 2 })
-//     .fromTo("#text2", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1, fadeIn: true, duration: 2 })
-
-
-//     gsap.timeline({
-//       scrollTrigger: {
-//           trigger: "#page3",
-//           start:`top top`,
-//           end:`bottom top`,
-//           scrub: 2,
-//           pin: true,
-//           scroller:`#main`
-//       }
-//   })
-//   .fromTo("#text3", { x: innerWidth * -1, opacity: 0 }, { x: 0, opacity: 1, fadeIn: true, duration: 5 })
