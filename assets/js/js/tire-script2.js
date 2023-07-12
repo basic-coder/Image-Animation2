@@ -118,7 +118,7 @@ for (let i = 0; i < frameCount; i++) {
     images.push(img);
 }
 
-gsap.to(imageSeq, {
+var imagesequence = gsap.to(imageSeq, {
     frame: frameCount - 1,
     snap: "frame",
     ease: `none`,
@@ -192,7 +192,7 @@ function scaleImage(img, ctx, newWidth) {
 const resizeObserver = new ResizeObserver(entries => {
     for (let entry of entries) {
         // Update your animation or reposition elements as needed
-        tl.invalidate(); // This forces the ScrollTrigger to recalculate
+        imagesequence.invalidate(); // This forces the ScrollTrigger to recalculate
     }
 });
 
